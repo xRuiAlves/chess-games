@@ -1,0 +1,38 @@
+[
+  {
+    "pgn": "1.e4",
+    "date": "10-04-2016",
+    "event": "Torneio X",
+    "round": 2,
+    "table": 3,
+    "white": {
+      "name": "Rui",
+      "elo": 1650,
+      "club": "GX Porto"
+    },
+    "black": {
+      "name": "John Doe",
+      "elo": 0,
+      "club": "GX Rio Tinto"
+    },
+    "result": "white"
+  }, 
+  {
+    "pgn": "1.e4",
+    "date": "11-04-2016",
+    "event": "Torneio X",
+    "round": 2,
+    "table": 3,
+    "white": {
+      "name": "Rui",
+      "elo": 1650,
+      "club": "GX Porto"
+    },
+    "black": {
+      "name": "Jane Doe",
+      "elo": 2300,
+      "club": "GX Rio Tinto"
+    },
+    "result": "white"
+  }
+]
