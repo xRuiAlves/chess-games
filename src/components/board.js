@@ -62,10 +62,8 @@ const updateHighlightedMove = (move_number) => {
         pgn_elem.children[1] && pgn_elem.children[1].removeAttribute("highlighted");
         pgn_elem.children[2] && pgn_elem.children[2].removeAttribute("highlighted");
     }
-    if (move_number > 0) {
-        const pgn_elem = pgn_elems[Math.floor((move_number - 1) / 2)];
-        pgn_elem.children[((move_number - 1) % 2) + 1].setAttribute("highlighted", "banana");
-    }
+    const move = document.querySelector(`.pgn-move[move=m${move_number}]`);
+    move && move.setAttribute("highlighted", true);
 };
 
 const parseFen = (fen) => {
@@ -112,7 +110,14 @@ class Board extends Component {
         }
 
         const pgn_moves = chess.history().map((move, i) => (
-            <div className="pgn-move" key={i}>{move}</div>
+            <div
+                className="pgn-move"
+                key={i}
+                move={`m${i + 1}`}
+                onClick={() => this.updateMoveNumber(i + 1)}
+            >
+                {move}
+            </div>
         ));
 
         const pgn_elems = [];
@@ -142,24 +147,28 @@ class Board extends Component {
         drawBoardFromFen(fens[0], reversed_view);
     }
 
+    updateMoveNumber = (move_number) => {
+        this.setState({ move_number }, this.drawBoard);
+    }
+
     gotoFirstMove = () => {
-        this.setState({ move_number: 0 }, this.drawBoard);
+        this.updateMoveNumber(0);
     }
 
     gotoPrevMove = () => {
         if (this.state.move_number > 0) {
-            this.setState({ move_number: this.state.move_number - 1 }, this.drawBoard);
+            this.updateMoveNumber(this.state.move_number - 1);
         }
     }
 
     gotoNextMove = () => {
         if (this.state.move_number < this.state.fens.length - 1) {
-            this.setState({ move_number: this.state.move_number + 1 }, this.drawBoard);
+            this.updateMoveNumber(this.state.move_number + 1);
         }
     }
 
     gotoLastMove = () => {
-        this.setState({ move_number: this.state.fens.length - 1 }, this.drawBoard);
+        this.updateMoveNumber(this.state.fens.length - 1);
     }
 
     swapView = () => {
