@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby";
 
 import Layout from "../components/layout";
 import "../css/game.css";
+import Board from "../components/board";
 
 const prettifyPlayerData = (player) => {
     const name = prettifyPlayerName(player.name);
@@ -85,6 +86,8 @@ const Game = ({ data }) => {
                     </p>
                 }
             </header>
+
+            <Board pgn={game.pgn} view={game.view} />
         </Layout>
     );
 };

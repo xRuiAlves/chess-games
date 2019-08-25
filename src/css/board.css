@@ -11,9 +11,11 @@
     top: 3px;
     left: 3px;
     position: absolute;
-    background-color: white;
     width: 560px;
     height: 560px;
+    background-image: url("./images/board.png");
+    background-color: white;
+    background-size: cover;
 }
 
 .board-row {
@@ -25,4 +27,58 @@
     display: inline-block;
     width: 12.5%;
     height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.board-cell[type=white-pawn] {
+    background-image: url("./images/white_pawn.png");
+}
+
+.board-cell[type=white-knight] {
+    background-image: url("./images/white_knight.png");
+}
+
+.board-cell[type=white-bishop] {
+    background-image: url("./images/white_bishop.png");
+}
+
+.board-cell[type=white-rook] {
+    background-image: url("./images/white_rook.png");
+}
+
+.board-cell[type=white-queen] {
+    background-image: url("./images/white_queen.png");
+}
+
+.board-cell[type=white-king] {
+    background-image: url("./images/white_king.png");
+}
+
+.board-cell[type=black-pawn] {
+    background-image: url("./images/black_pawn.png");
+}
+
+.board-cell[type=black-knight] {
+    background-image: url("./images/black_knight.png");
+}
+
+.board-cell[type=black-bishop] {
+    background-image: url("./images/black_bishop.png");
+}
+
+.board-cell[type=black-rook] {
+    background-image: url("./images/black_rook.png");
+}
+
+.board-cell[type=black-queen] {
+    background-image: url("./images/black_queen.png");
+}
+
+.board-cell[type=black-king] {
+    background-image: url("./images/black_king.png");
+}
+
+.board-cell[type=none] {
+    background-image: none;
 }
