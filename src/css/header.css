@@ -1,0 +1,16 @@
+@import "common.css";
+
+header {
+    background-color: var(--color-primary);
+    padding: 1em;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.header-icon {
+    margin-left: 0.35em;
+    font-size: 1.2em;
+}
