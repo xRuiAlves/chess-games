@@ -99,7 +99,14 @@ class Board extends Component {
         };
     }
 
+    keyNavigationListener = (event) => {
+        event.keyCode === 39 && this.gotoNextMove();
+        event.keyCode === 37 && this.gotoPrevMove();
+    }
+
     componentDidMount() {
+        document.addEventListener("keydown", this.keyNavigationListener);
+
         const chess = new Chess();
         const success = chess.load_pgn(this.props.pgn);
         const reversed_view = this.props.view === "black";
@@ -145,6 +152,10 @@ class Board extends Component {
         });
 
         drawBoardFromFen(fens[0], reversed_view);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener("keydown", this.keyNavigationListener);
     }
 
     updateMoveNumber = (move_number) => {
