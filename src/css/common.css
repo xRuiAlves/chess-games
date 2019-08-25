@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #306bac;
+    --color-primary: #5287c0;
     --color-primary-light: #99b2dd;
     --color-secondary: #ffc857;
 }
@@ -9,7 +9,7 @@ a {
     color: inherit;
 }
 
-a.emphasized-anchor {
+.emphasized-anchor {
     text-decoration: underline;
     font-weight: bold;
 }
