@@ -1,0 +1,28 @@
+@import "common.css";
+
+#board_container {
+    position: relative;
+    background-color: black;
+    width: 566px;
+    height: 566px;
+}
+
+#board {
+    top: 3px;
+    left: 3px;
+    position: absolute;
+    background-color: white;
+    width: 560px;
+    height: 560px;
+}
+
+.board-row {
+    width: 100%;
+    height: 12.5%;
+}
+
+.board-cell {
+    display: inline-block;
+    width: 12.5%;
+    height: 100%;
+}
