@@ -3,6 +3,7 @@
 header#page_header {
     background-color: var(--color-primary);
     padding: 1em;
+    padding-left: 3em;
     margin-bottom: 2rem;
 }
 

@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-
 import "../css/board.css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSyncAlt, faChevronLeft, faChevronRight, faFastBackward, faFastForward } from "@fortawesome/free-solid-svg-icons";
 import PgnViewer from "./pgnViewer";
 import Chess from "chess.js";
+import { Link } from "gatsby";
 
 const FEN_CHAR_TO_TYPE = {
     "p": "black-pawn",
@@ -53,6 +56,18 @@ const drawBoardFromFen = (fen, reversed_view) => {
     }
 };
 
+const updateHighlightedMove = (move_number) => {
+    const pgn_elems = document.getElementById("pgn_container").children;
+    for (const pgn_elem of pgn_elems) {
+        pgn_elem.children[1] && pgn_elem.children[1].removeAttribute("highlighted");
+        pgn_elem.children[2] && pgn_elem.children[2].removeAttribute("highlighted");
+    }
+    if (move_number > 0) {
+        const pgn_elem = pgn_elems[Math.floor((move_number - 1) / 2)];
+        pgn_elem.children[((move_number - 1) % 2) + 1].setAttribute("highlighted", "banana");
+    }
+};
+
 const parseFen = (fen) => {
     const parsed_fen = [];
 
@@ -82,6 +97,7 @@ class Board extends Component {
             move_number: 0,
             status: "ok",
             fens: [],
+            pgn_elems: [],
         };
     }
 
@@ -95,6 +111,21 @@ class Board extends Component {
             return;
         }
 
+        const pgn_moves = chess.history().map((move, i) => (
+            <div className="pgn-move" key={i}>{move}</div>
+        ));
+
+        const pgn_elems = [];
+        for (let i = 0; i < pgn_moves.length / 2; ++i) {
+            pgn_elems.push(
+                <div className="pgn-elem" key={i}>
+                    <div className="pgn-elem-num">{i + 1}</div>
+                    {pgn_moves[2 * i]}
+                    {pgn_moves[(2 * i) + 1] ||  <div className="pgn-move" />}
+                </div>,
+            );
+        }
+
         const fens = [];
         while (chess.history().length > 0) {
             fens.unshift(parseFen(chess.fen()));
@@ -105,6 +136,7 @@ class Board extends Component {
         this.setState({
             fens,
             reversed_view,
+            pgn_elems,
         });
 
         drawBoardFromFen(fens[0], reversed_view);
@@ -130,32 +162,52 @@ class Board extends Component {
         this.setState({ move_number: this.state.fens.length - 1 }, this.drawBoard);
     }
 
+    swapView = () => {
+        this.setState({ reversed_view: !this.state.reversed_view }, this.drawBoard);
+    }
+
     drawBoard = () => {
         const { fens, move_number, reversed_view } = this.state;
         drawBoardFromFen(fens[move_number], reversed_view);
+        updateHighlightedMove(move_number);
     }
 
     render() {
         return (this.state.status === "ok" ?
-            <>
-                <div id="board_container">
-                    <div id="board">
-                        {buildBoard()}
+            <div id="game_data">
+                <div>
+                    <div id="board_container">
+                        <div id="board">
+                            {buildBoard()}
+                        </div>
+                    </div>
+                    <div id="game_controls">
+                        <div className="board-control-button" onClick={this.gotoFirstMove}>
+                            <FontAwesomeIcon icon={faFastBackward}  />
+                        </div>
+                        <div className="board-control-button" onClick={this.gotoPrevMove}>
+                            <FontAwesomeIcon icon={faChevronLeft}  />
+                        </div>
+                        <div className="board-control-button" onClick={this.gotoNextMove}>
+                            <FontAwesomeIcon icon={faChevronRight}  />
+                        </div>
+                        <div className="board-control-button" onClick={this.gotoLastMove}>
+                            <FontAwesomeIcon icon={faFastForward}  />
+                        </div>
+                        <div className="board-control-button" onClick={this.swapView}>
+                            <FontAwesomeIcon icon={faSyncAlt}  />
+                        </div>
                     </div>
                 </div>
-                <button onClick={this.gotoFirstMove}>{"<<<"}</button>
-                <button onClick={this.gotoPrevMove}>{"<-"}</button>
-                <button onClick={this.gotoNextMove}>{"->"}</button>
-                <button onClick={this.gotoLastMove}>{">>>"}</button>
-                <br /><br />
                 <div id="pgn-container">
-                    <PgnViewer pgn={this.props.pgn} />
+                    <PgnViewer pgn_elems={this.state.pgn_elems} result={this.props.result} />
                 </div>
-            </>
+            </div>
             :
-            <>
-                Error
-            </>
+            <p style={{ marginTop: "3em" }}>
+                It appears that the requested game is corrupted or missing. Please return
+                to the <Link className="emphasized-anchor" to="/">home page</Link>.
+            </p>
         );
     }
 }

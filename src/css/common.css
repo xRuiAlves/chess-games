@@ -1,6 +1,7 @@
 :root {
     --color-primary: #5287c0;
-    --color-primary-light: #99b2dd;
+    --color-primary-light: #7fa5ce;
+    --color-primary-lighter: #cde5ff;
     --color-secondary: #ffc857;
 }
 
@@ -15,7 +16,7 @@ a {
 }
 
 .page-content {
-    margin-left: 1rem;
+    margin-left: 3rem;
 }
 
 h2 ~ h2 {

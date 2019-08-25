@@ -42,6 +42,7 @@ const isMissingGameData = (game) => (
     !game.event ||
     !game.date ||
     !game.pgn ||
+    !game.view ||
     !game.result
 );
 
@@ -87,7 +88,7 @@ const Game = ({ data }) => {
                 }
             </header>
 
-            <Board pgn={game.pgn} view={game.view} />
+            <Board pgn={game.pgn} view={game.view} result={game.result} />
         </Layout>
     );
 };

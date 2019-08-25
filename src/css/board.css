@@ -82,3 +82,75 @@
 .board-cell[type=none] {
     background-image: none;
 }
+
+#game_controls {
+    width: 566px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.board-control-button {
+    width: 20%;
+    padding: 0.2em 0;
+    background-color: #ddd;
+    border: 2px solid #bbb;
+    color: #444;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.board-control-button:hover {
+    background-color: #c3c3c3;
+}
+
+.board-control-button ~ .board-control-button {
+    border-left-width: 0;
+}
+
+.pgn-container {
+    border: 3px solid black;
+    background-color: white;
+    width: 300px;
+    height: 566px;
+    overflow-y: auto;
+}
+
+.pgn-elem {
+    display: flex;
+    border-bottom: 1px solid #666;
+}
+
+.pgn-elem .pgn-elem-num {
+    width: 20%;
+    border-right: 1px solid #666;
+    color: #9d9d9d;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.pgn-elem .pgn-move {
+    width: 40%;
+    padding-left: 0.4em;
+    background-color: transparent;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.pgn-elem .pgn-move:last-child {
+    border-left: 1px solid #666;
+}
+
+.pgn-elem .pgn-move[highlighted] {
+    background-color: var(--color-primary-lighter);
+}
+
+#game_data {
+    display: flex;
+}
+
+.game-result {
+    text-align: center;
+    margin: 0.3em 0;
+}
