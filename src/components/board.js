@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import "../css/board.css";
 import PgnViewer from "./pgnViewer";
+import Chess from "chess.js";
 
 const FEN_CHAR_TO_TYPE = {
     "p": "black-pawn",
@@ -33,20 +34,20 @@ const buildBoard = () => {
     return board.map((row, i) => (
         <div className="board-row" id={`board_row_${i + 1}`} key={i}>
             {row.map((cell) => (
-                <div className="board-cell" id={`board_cell_${cell}`} key={cell} type="none"></div>
+                <div className="board-cell" id={`board_cell_${cell}`} key={cell} type="none" />
             ))}
         </div>
     ));
 };
 
-const drawBoardFromFen = (fen, reversed) => {
+const drawBoardFromFen = (fen, reversed_view) => {
     fen = fen.split(" ")[0];
     const parsed_fen = parseFen(fen);
 
     for (let i = 0; i < 8; ++i) {
         for (let j = 0; j < 8; ++j) {
             const cell_id = `board_cell_${i + 1}${j + 1}`;
-            const parsed_fen_index = reversed ? (63 - ((i * 8) + j)) : ((i * 8) + j);
+            const parsed_fen_index = reversed_view ? (63 - ((i * 8) + j)) : ((i * 8) + j);
             document.getElementById(cell_id).setAttribute("type", FEN_CHAR_TO_TYPE[parsed_fen[parsed_fen_index]]);
         }
     }
@@ -78,26 +79,82 @@ class Board extends Component {
         super(props);
 
         this.state = {
-            move_number: 1,
-            fen: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+            move_number: 0,
+            status: "ok",
+            fens: [],
         };
     }
 
     componentDidMount() {
-        drawBoardFromFen(this.state.fen, this.props.view === "black");
+        const chess = new Chess();
+        const success = chess.load_pgn(this.props.pgn);
+        const reversed_view = this.props.view === "black";
+
+        if (!success) {
+            this.setState({ status: "error" });
+            return;
+        }
+
+        const fens = [];
+        while (chess.history().length > 0) {
+            fens.unshift(parseFen(chess.fen()));
+            chess.undo();
+        }
+        fens.unshift(parseFen(chess.fen()));
+
+        this.setState({
+            fens,
+            reversed_view,
+        });
+
+        drawBoardFromFen(fens[0], reversed_view);
+    }
+
+    gotoFirstMove = () => {
+        this.setState({ move_number: 0 }, this.drawBoard);
+    }
+
+    gotoPrevMove = () => {
+        if (this.state.move_number > 0) {
+            this.setState({ move_number: this.state.move_number - 1 }, this.drawBoard);
+        }
+    }
+
+    gotoNextMove = () => {
+        if (this.state.move_number < this.state.fens.length - 1) {
+            this.setState({ move_number: this.state.move_number + 1 }, this.drawBoard);
+        }
+    }
+
+    gotoLastMove = () => {
+        this.setState({ move_number: this.state.fens.length - 1 }, this.drawBoard);
+    }
+
+    drawBoard = () => {
+        const { fens, move_number, reversed_view } = this.state;
+        drawBoardFromFen(fens[move_number], reversed_view);
     }
 
     render() {
-        return (
+        return (this.state.status === "ok" ?
             <>
                 <div id="board_container">
                     <div id="board">
                         {buildBoard()}
                     </div>
                 </div>
+                <button onClick={this.gotoFirstMove}>{"<<<"}</button>
+                <button onClick={this.gotoPrevMove}>{"<-"}</button>
+                <button onClick={this.gotoNextMove}>{"->"}</button>
+                <button onClick={this.gotoLastMove}>{">>>"}</button>
+                <br /><br />
                 <div id="pgn-container">
                     <PgnViewer pgn={this.props.pgn} />
                 </div>
+            </>
+            :
+            <>
+                Error
             </>
         );
     }
