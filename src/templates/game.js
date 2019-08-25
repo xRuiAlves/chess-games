@@ -36,9 +36,9 @@ const Game = ({ data }) => {
             <header className="game-header">
                 <h2>
                     <span className="game-players">
-                        {prettifyPlayerData(game.white)}
+                        {game.white.title && `${game.white.title} `}{prettifyPlayerData(game.white)}
                         <span style={{ fontWeight: "normal" }}> vs </span>
-                        {prettifyPlayerData(game.black)}
+                        {game.black.title && `${game.black.title} `}{prettifyPlayerData(game.black)}
                     </span>
                     <span className="game-date">
                         {game.date}
@@ -83,6 +83,7 @@ export const query = graphql`
               name
               elo
               club
+              title
             }
             result
             view

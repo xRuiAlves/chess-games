@@ -8,9 +8,9 @@ const GameItem = (game) => (
         <Link to={buildGameUrl(game)}>
             <p className="game-header">
                 <span className="game-players">
-                    <strong>{prettifyPlayerData(game.white)}</strong>
+                    <strong>{game.white.title && `${game.white.title} `}{prettifyPlayerData(game.white)}</strong>
                 &nbsp;vs&nbsp;
-                    <strong>{prettifyPlayerData(game.black)}</strong>
+                    <strong>{game.black.title && `${game.black.title} `}{prettifyPlayerData(game.black)}</strong>
                 </span>
                 <span className="game-date">
                     {game.date}

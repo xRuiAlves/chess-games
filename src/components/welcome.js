@@ -8,7 +8,7 @@ const Welcome = () => (
                 from <a className="emphasized-anchor" href="www.gxp.pt">Grupo de Xadrez do Porto</a>.
             </p>
             <p style={{ marginBottom: "0.3em" }}>
-                In this website you can find a collection of all my classical games through my
+                In this website you can find a collection of all my classical games throughout my
                 "chess career".
             </p>
             <p>
