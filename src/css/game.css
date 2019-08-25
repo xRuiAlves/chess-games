@@ -20,3 +20,38 @@ header.game-header .game-date::before {
 header.game-header .game-date {
     font-weight: normal;
 }
+
+.game-item {
+    width: 40em;
+    background-color: var(--color-primary-lighterer);
+    padding: 0.5em 1em;
+    -webkit-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.3);
+    transition-property: box-shadow, background-color;
+    transition-duration: 0.3s;
+}
+
+.game-item:hover {
+    -webkit-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.52);
+    box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.52);
+    background-color: var(--color-primary-lighter);
+}
+
+.game-item .game-header {
+    font-size: 1.15em;
+    margin-bottom: 0.8em;
+}
+
+.game-item ~ .game-item {
+    margin-top: 2em;
+}
+
+.game-item p {
+    margin: 0.2em;
+}
+
+.game-item .game-date::before {
+    content: ", ";
+}
