@@ -15,7 +15,8 @@
       "elo": 0,
       "club": "GX Rio Tinto"
     },
-    "result": "white"
+    "result": "white",
+    "view": "white"
   }, 
   {
     "pgn": "1.e4",
@@ -24,15 +25,16 @@
     "round": 2,
     "table": 3,
     "white": {
-      "name": "Rui",
-      "elo": 1650,
-      "club": "GX Porto"
-    },
-    "black": {
       "name": "Jane Doe",
       "elo": 2300,
       "club": "GX Rio Tinto"
     },
-    "result": "white"
+    "black": {
+      "name": "Rui",
+      "elo": 1650,
+      "club": "GX Porto"
+    },
+    "result": "white",
+    "view": "black"
   }
 ]

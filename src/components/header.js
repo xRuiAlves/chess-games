@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChess } from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({ siteTitle }) => (
-    <header>
+    <header id="page_header">
         <h1>
             <Link to="/">
                 {siteTitle}

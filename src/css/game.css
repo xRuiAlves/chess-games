@@ -1,0 +1,22 @@
+@import "common.css";
+
+header.game-header {
+    margin-bottom: 2em;
+}
+
+header.game-header h2 {
+    margin-bottom: 0.4em;
+}
+
+header.game-header p {
+    font-size: 1.1em;
+    margin-bottom: 0.3em;
+}
+
+header.game-header .game-date::before {
+    content: ", ";
+}
+
+header.game-header .game-date {
+    font-weight: normal;
+}

@@ -44,7 +44,6 @@ module.exports = {
       "default-case": "error",
       "eqeqeq": "error",
       "no-eq-null": "error",
-      "no-param-reassign": "error",
       "no-return-assign": "error",
       "no-return-await": "error",
       "require-await": "error",
