@@ -22,7 +22,7 @@ header.game-header .game-date {
 }
 
 .game-item {
-    width: 40em;
+    max-width: 40em;
     background-color: var(--color-primary-lighterer);
     padding: 0.5em 1em;
     -webkit-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.3);

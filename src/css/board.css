@@ -18,6 +18,119 @@
     background-size: cover;
 }
 
+#game_controls {
+    width: 566px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pgn-container {
+    border: 3px solid black;
+    background-color: white;
+    width: 300px;
+    height: 566px;
+    overflow-y: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #board {
+        top: 2px;
+        left: 2px;
+    }
+
+    #board_container {
+        width: 636px;
+        height: 636px;
+        flex-direction: column;
+    }
+    
+    #board {
+        width: 632px;
+        height: 632px;
+    }
+    
+    #game_controls {
+        width: 636px;
+    }
+    
+    .pgn-container {
+        width: 636px;
+        height: 424px;
+    }
+
+    .pgn-container {
+        border-width: 2px;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    #board_container {
+        width: 396px;
+        height: 396px;
+        flex-direction: column;
+    }
+    
+    #board {
+        width: 392px;
+        height: 392px;
+    }
+    
+    #game_controls {
+        width: 396px;
+    }
+    
+    .pgn-container {
+        width: 396px;
+        height: 312px;
+    }
+}
+
+
+@media only screen and (max-width: 430px) {
+    #board_container {
+        width: 356px;
+        height: 356px;
+    }
+    
+    #board {
+        width: 352px;
+        height: 352px;
+    }
+    
+    #game_controls {
+        width: 356px;
+    }
+    
+    .pgn-container {
+        width: 356px;
+        height: 312px;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    #board_container {
+        width: 316px;
+        height: 316px;
+    }
+    
+    #board {
+        width: 312px;
+        height: 312px;
+    }
+    
+    #game_controls {
+        width: 316px;
+    }
+    
+    .pgn-container {
+        width: 316px;
+        height: 312px;
+    }
+}
+
 .board-row {
     width: 100%;
     height: 12.5%;
@@ -83,12 +196,6 @@
     background-image: none;
 }
 
-#game_controls {
-    width: 566px;
-    display: flex;
-    justify-content: space-between;
-}
-
 .board-control-button {
     width: 20%;
     padding: 0.2em 0;
@@ -101,20 +208,18 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+    .board-control-button {
+        border-color: black;
+    }
+}
+
 .board-control-button:hover {
     background-color: #c3c3c3;
 }
 
 .board-control-button ~ .board-control-button {
     border-left-width: 0;
-}
-
-.pgn-container {
-    border: 3px solid black;
-    background-color: white;
-    width: 300px;
-    height: 566px;
-    overflow-y: auto;
 }
 
 .pgn-elem {
@@ -149,6 +254,18 @@
 
 #game_data {
     display: flex;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #game_data {
+        flex-direction: column;
+    }
 }
 
 .game-result {
