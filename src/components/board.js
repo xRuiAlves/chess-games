@@ -7,6 +7,7 @@ import { faSyncAlt, faChevronLeft, faChevronRight, faFastBackward, faFastForward
 import PgnViewer from "./pgnViewer";
 import Chess from "chess.js";
 import { Link } from "gatsby";
+import PGNExportTool from "./pgnExportTool";
 
 const FEN_CHAR_TO_TYPE = {
     "p": "black-pawn",
@@ -219,6 +220,7 @@ class Board extends Component {
                             <FontAwesomeIcon icon={faSyncAlt}  />
                         </div>
                     </div>
+                    <PGNExportTool {...this.props} />
                 </div>
                 <div id="pgn-container">
                     <PgnViewer pgn_elems={this.state.pgn_elems} result={this.props.result} />
@@ -236,6 +238,9 @@ class Board extends Component {
 Board.propTypes = {
     pgn: PropTypes.string.isRequired,
     view: PropTypes.string.isRequired,
+    white: PropTypes.object.isRequired,
+    black: PropTypes.object.isRequired,
+    date: PropTypes.string.isRequired,
 };
 
 export default Board;

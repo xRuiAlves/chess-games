@@ -58,7 +58,7 @@ const Game = ({ data }) => {
                 }
             </header>
 
-            <Board pgn={game.pgn} view={game.view} result={game.result} />
+            <Board {...game} />
         </Layout>
     );
 };
