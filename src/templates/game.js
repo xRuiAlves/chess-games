@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import "../css/game.css";
 import Board from "../components/board";
 import { prettifyPlayerData } from "../utils.js";
+import SEO from "../components/seo";
 
 const isMissingGameData = (game) => (
     !game.white.name ||
@@ -31,14 +32,18 @@ const Game = ({ data }) => {
         );
     }
 
+    const white_name = prettifyPlayerData(game.white);
+    const black_name = prettifyPlayerData(game.black);
+
     return (
         <Layout>
+            <SEO title={`${white_name} vs ${black_name}`} />
             <header className="game-header">
                 <h2>
                     <span className="game-players">
-                        {game.white.title && `${game.white.title} `}{prettifyPlayerData(game.white)}
+                        {game.white.title && `${game.white.title} `}{white_name}
                         <span style={{ fontWeight: "normal" }}> vs </span>
-                        {game.black.title && `${game.black.title} `}{prettifyPlayerData(game.black)}
+                        {game.black.title && `${game.black.title} `}{black_name}
                     </span>
                     <span className="game-date">
                         {game.date}
