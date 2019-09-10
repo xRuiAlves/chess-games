@@ -63,6 +63,7 @@ const updateHighlightedMove = (move_number) => {
         pgn_elem.children[2] && pgn_elem.children[2].removeAttribute("highlighted");
     }
     const move = document.querySelector(`.pgn-move[move=m${move_number}]`);
+    move && move.scrollIntoView(false);
     move && move.setAttribute("highlighted", true);
 };
 
