@@ -250,5 +250,26 @@
     },
     "result": "white",
     "view": "white"
+  },
+  {
+    "pgn": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. Nf3 Bg4 5. Be2 Nc6 6. O-O e6 7. h3 Bf5 8. Na3 a6 9. Nc4 Rd8 10. Ne3 Qd7 11. Nxf5 exf5 12. Re1 Be7 13. Bc4 b5 14. Bb3 c4 15. Bc2 Nf6 16. Qe2 Nd5 17. Ne5 Qe6 18. Nxc6 Qxc6 19. Qe5 O-O 20. Qxf5 g6 21. Qf3 Rfe8 22. d4 Rd6 23. Be4 f5 24. Bxd5+ Qxd5 25. Qxd5+ Rxd5 26. Bg5 Kf7 27. Bxe7 Rxe7 28. Rxe7+ Kxe7 29. Re1+ Kf7 30. f4 Rd6 31. Re5 Re6 32. Rxe6 Kxe6 33. Kf2 Kd5 34. Ke3 a5 35. h4 a4 36. a3 h5 37. g3 Ke6 38. Kd2 Kd6 39. Ke2 Ke6 40. Kf3 Kd5 41. Ke2 Ke6 1/2-1/2",
+    "date": "24-11-2018",
+    "event": "Torneio Interno GXP 2018",
+    "round": 7,
+    "table": "",
+    "white": {
+        "title": "",
+        "name": "Miguel Coelho",
+        "elo": 1402,
+        "club": "GXP"
+    },
+    "black": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 0,
+        "club": "GXP"
+    },
+    "result": "draw",
+    "view": "black"
   }
 ]
