@@ -208,5 +208,26 @@
     },
     "result": "white",
     "view": "black"
+  },
+  {
+    "pgn": "1. e4 c5 2. f4 e6 3. Nf3 d5 4. Bb5+ Nd7 5. exd5 exd5 6. O-O c4 7. Re1+ Be7 8. Nd4 a6 9. Bxd7+ Bxd7 10. Nc3 Qb6 11. Ne2 O-O-O 12. Kh1 Nf6 13. h3 Rhe8 14. c3 Bc5 15. Rf1 Re7 16. b4 Bxd4 17. Nxd4 Ne4 18. Rf3 Rde8 19. Qc2 Qg6 20. Kh2 h5 21. f5 Qd6+ 22. g3 Nxg3 23. Kg2 Ne2 24. Bb2 Nxd4 25. cxd4 Re2+ 26. Rf2 Rxf2+ 27. Kxf2 Qh2+ 0-1",
+    "date": "10-11-2018",
+    "event": "Torneio Interno GXP 2018",
+    "round": 5,
+    "table": "",
+    "white": {
+        "title": "",
+        "name": "Alvaro Sousa Brandão",
+        "elo": 1620,
+        "club": "GXP"
+    },
+    "black": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 0,
+        "club": "GXP"
+    },
+    "result": "black",
+    "view": "black"
   }
 ]
