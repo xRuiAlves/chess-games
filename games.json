@@ -124,5 +124,26 @@
     },
     "result": "black",
     "view": "black"
+  },
+  {
+    "pgn": "1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 Be7 7. f4 Bg4 8. Qd2 h6 9. Bxf6 Bxf6 10. f5 Bh4+ 11. g3 Bg5 12. Qf2 c5 13. Nb3 Bf6 14. h3 Bh5 15. Nd5 Bxb2 16. Rb1 Bf6 17. Nxf6+ Qxf6 18. g4 Bxg4 19. hxg4 b5 20. Qd2 O-O 21. Bg2 Nd7 22. Rd1 Ne5 23. Qxd6 Nxg4 24. Qxf6 Nxf6 25. Nxc5 Rfe8 26. Kd2 Rac8 27. Nxa6 Nxe4+ 28. Bxe4 Rxe4 29. Rhe1 Ra4 30. Re5 Rxa6 31. Rxb5 Rxa2 32. Rc1 Ra3 33. c4 Kf8 34. Rd5 h5 35. c5 h4 36. c6 h3 37. c7 Re8 38. c8=Q Ra2+ 39. Qc2 Rxc2+ 40. Kxc2 h2 41. Rh1 Re2+ 42. Rd2 Re5 43. Rf2 Ke7 44. Rhxh2 Kf6 45. Rhg2 Ra5 46. Kb3 Re5 47. Rg4 Ra5 48. Kb4 Re5 49. Kc4 Ra5 50. Rg3 Re5 51. Kd4 Ra5 52. Rc2 Ra4+ 53. Ke3 Ra3+ 54. Kf2 Rxg3 55. Kxg3 Kxf5 56. Rc7 Kg6 57. Kf4 f6 58. Rd7 Kh7 59. Kf5 Kh6 60. Rd3 1-0",
+    "date": "14-10-2018",
+    "event": "Torneio Interno GXP 2018",
+    "round": 1,
+    "table": "",
+    "white": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 0,
+        "club": "GXP"
+    },
+    "black": {
+        "title": "",
+        "name": "Artur Sequeira",
+        "elo": 1626,
+        "club": "GXP"
+    },
+    "result": "white",
+    "view": "white"
   }
 ]
