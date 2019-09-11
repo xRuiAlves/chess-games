@@ -229,5 +229,26 @@
     },
     "result": "black",
     "view": "black"
+  },
+  {
+    "pgn": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c4 Nf6 5. Nc3 O-O 6. Be2 Nc6 7. d5 Ne5 8. Nxe5 dxe5 9. O-O c6 10. dxc6 bxc6 11. Be3 Qc7 12. h3 Rd8 13. Qa4 a6 14. Rfd1 Bb7 15. Qb4 Rxd1+ 16. Rxd1 Rc8 17. Bb6 Qb8 18. Qxe7 Re8 19. Qc7 Qxc7 20. Bxc7 c5 21. f3 Bh6 22. Kf2 Bf8 23. Nd5 Nxd5 24. cxd5 f6 25. d6 1-0",
+    "date": "18-11-2018",
+    "event": "Torneio Interno GXP 2018",
+    "round": 6,
+    "table": "",
+    "white": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 0,
+        "club": "GXP"
+    },
+    "black": {
+        "title": "",
+        "name": "Nuno Rosário",
+        "elo": 1684,
+        "club": "GXP"
+    },
+    "result": "white",
+    "view": "white"
   }
 ]
