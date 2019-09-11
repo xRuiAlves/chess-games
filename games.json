@@ -82,5 +82,26 @@
     },
     "result": "white",
     "view": "black"
+  },
+  {
+    "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4 Bd6 13. Re1 Qh4 14. g3 Qh3 15. Qf3 Bg4 16. Qg2 Rfe8 17. Be3 Qh5 18. Nd2 Re6 19. Bxd5 cxd5 20. f3 Bh3 21. Qf2 Rg6 22. g4 f5 23. Nf1 fxg4 24. f4 Bxf1 25. Rxf1 g3 26. hxg3 Qh3 27. Qh2 Rxg3+ 28. Kh1 Qxh2+ 29. Kxh2 Rxe3 30. b4 Rxc3 31. Kg2 Bxb4 32. f5 Rac8 33. a4 Ra3 34. Rxa3 Bxa3 35. axb5 axb5 36. Kf3 b4 37. Ke3 b3 38. Ra1 b2 0-1",
+    "date": "18-02-2018",
+    "event": "I Torneio Amador Cidade Matosinhos",
+    "round": 5,
+    "table": "",
+    "white": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 0,
+        "club": "GXP"
+    },
+    "black": {
+        "title": "",
+        "name": "Sara Soares",
+        "elo": 1329,
+        "club": "EXP"
+    },
+    "result": "black",
+    "view": "white"
   }
 ]
