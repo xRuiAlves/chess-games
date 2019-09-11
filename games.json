@@ -19,5 +19,28 @@
     },
     "result": "black",
     "view": "white"
+  },
+  {
+    "pgn": "1. e4 c5 2. Nf3 Nc6 3. Bc4 g6 4. O-O Bg7 5. c3 Nf6 6. e5 Ng4 7. h3 Ngxe5 8. Nxe5 Nxe5 9. Bb5 a6 10. Ba4 b5 11. Bb3 c4 12. Bc2 O-O 13. Qe2 Bb7 14. Re1 Qc7 15. Qe3 d5 16. Na3 Rad8 17. Qf4 d4 18. cxd4 Nf3+ 19. gxf3 Qxf4 20. Kg2 Qxf3+ 21. Kf1 Qh1+ 22. Ke2 Bf3+ 23. Ke3 Qxe1+ 24. Kxf3 Bxd4 25. Rb1 Qxf2+ 26. Kg4 f5+ 27. Bxf5 gxf5+ 28. Kh5 Qf3+ 29. Kh4 Bf6# 0-1",
+    "date": "17-02-2018",
+    "event": "I Torneio Amador Cidade Matosinhos",
+    "round": 2,
+    "table": "",
+    "white": {
+        "title": "",
+        "name": "Manuel Salvador",
+        "elo": 0,
+        "club": "EXP"
+    },
+    "black": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 0,
+        "club": "GXP"
+    },
+    "result": "black",
+    "view": "black"
   }
 ]
+
+
