@@ -166,5 +166,26 @@
     },
     "result": "black",
     "view": "black"
+  },
+  {
+    "pgn": "1. e4 c5 2. Nf3 a6 3. d4 cxd4 4. Nxd4 e5 5. Nf3 Nf6 6. Nc3 Bb4 7. Bc4 Qc7 8. Qd3 b5 9. Bd5 Nxd5 10. exd5 O-O 11. Ng5 f5 12. a3 Be7 13. Be3 e4 14. Qe2 f4 15. Qh5 h6 16. Ngxe4 fxe3 17. d6 exf2+ 18. Kd2 Bxd6 19. Qd5+ Kh8 20. Nxd6 Nc6 21. Nf7+ Kh7 22. Qf5+ g6 23. Qf6 d5 24. Ng5+ hxg5 25. Qxf8 Bf5 26. Qxa8 Qf4+ 27. Ke2 Nd4+ 28. Kf1 Nxc2 29. Qe8 Bd3+ 30. Ne2 Ne3+ 0-1",
+    "date": "27-10-2018",
+    "event": "Torneio Interno GXP 2018",
+    "round": 3,
+    "table": "",
+    "white": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 0,
+        "club": "GXP"
+    },
+    "black": {
+        "title": "",
+        "name": "Alberto Paulo Ferreira",
+        "elo": 2048,
+        "club": "GXP"
+    },
+    "result": "black",
+    "view": "white"
   }
 ]
