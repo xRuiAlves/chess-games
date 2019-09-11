@@ -40,7 +40,26 @@
     },
     "result": "black",
     "view": "black"
+  },
+  {
+    "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 a6 6. g4 g6 7. Be3 Bg7 8. Be2 e5 9. Nb3 Nge7 10. Qd2 Be6 11. O-O-O Qd7 12. Qxd6 Qxd6 13. Rxd6 O-O 14. Nc5 Nd8 15. Rhd1 Rc8 16. Nxe6 Nxe6 17. Rd7 Nc6 18. Rxb7 Ncd4 19. Bxa6 Ra8 20. Bc4 Rfc8 21. Bb3 Nc5 22. Rb4 Ndxb3+ 23. cxb3 Nxe4 24. Rxe4 Rxa2 25. Kb1 Raa8 26. Nd5 Rcb8 27. b4 Rb7 28. Rc4 Rab8 29. Rdc1 Bf8 30. Rc8 Rxc8 31. Rxc8 Kg7 32. Bh6+ Kxh6 33. Rxf8 Kg7 34. Re8 Rb5 35. Rxe5 f6 36. Re7+ Kf8 37. Rd7 Ke8 38. Nc7+ Kxd7 39. Nxb5 Kc6 40. Nd4+ Kd5 41. b5 1-0",
+    "date": "17-02-2018",
+    "event": "I Torneio Amador Cidade Matosinhos",
+    "round": 3,
+    "table": "",
+    "white": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 0,
+        "club": "GXP"
+    },
+    "black": {
+        "title": "",
+        "name": "Rafael Borges",
+        "elo": 0,
+        "club": "CX Colégio Português"
+    },
+    "result": "white",
+    "view": "white"
   }
 ]
-
-
