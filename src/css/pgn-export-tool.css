@@ -5,7 +5,6 @@
     cursor: pointer;
     padding: 0.3em 1em;
     font-weight: bold;
-    border-radius: 0.5em;
     -webkit-box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.4);
     -moz-box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.4);
     box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.4);
