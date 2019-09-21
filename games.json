@@ -4,7 +4,7 @@
     "date": "17-02-2018",
     "event": "I Torneio Amador Cidade Matosinhos",
     "round": 1,
-    "table": "",
+    "table": null,
     "white": {
         "title": "",
         "name": "Rui Alves",
@@ -25,7 +25,7 @@
     "date": "17-02-2018",
     "event": "I Torneio Amador Cidade Matosinhos",
     "round": 2,
-    "table": "",
+    "table": null,
     "white": {
         "title": "",
         "name": "Manuel Salvador",
@@ -46,7 +46,7 @@
     "date": "17-02-2018",
     "event": "I Torneio Amador Cidade Matosinhos",
     "round": 3,
-    "table": "",
+    "table": null,
     "white": {
         "title": "",
         "name": "Rui Alves",
@@ -67,7 +67,7 @@
     "date": "18-02-2018",
     "event": "I Torneio Amador Cidade Matosinhos",
     "round": 4,
-    "table": "",
+    "table": null,
     "white": {
         "title": "",
         "name": "Miguel Sismeiro",
@@ -88,7 +88,7 @@
     "date": "18-02-2018",
     "event": "I Torneio Amador Cidade Matosinhos",
     "round": 5,
-    "table": "",
+    "table": null,
     "white": {
         "title": "",
         "name": "Rui Alves",
@@ -109,7 +109,7 @@
     "date": "18-02-2018",
     "event": "I Torneio Amador Cidade Matosinhos",
     "round": 6,
-    "table": "",
+    "table": null,
     "white": {
         "title": "",
         "name": "Duarte Basílio",
@@ -130,7 +130,7 @@
     "date": "14-10-2018",
     "event": "Torneio Interno GXP 2018",
     "round": 1,
-    "table": "",
+    "table": null,
     "white": {
         "title": "",
         "name": "Rui Alves",
@@ -151,7 +151,7 @@
     "date": "20-10-2018",
     "event": "Torneio Interno GXP 2018",
     "round": 2,
-    "table": "",
+    "table": null,
     "white": {
         "title": "",
         "name": "Alberto Pinto Monteiro",
@@ -172,7 +172,7 @@
     "date": "27-10-2018",
     "event": "Torneio Interno GXP 2018",
     "round": 3,
-    "table": "",
+    "table": null,
     "white": {
         "title": "",
         "name": "Rui Alves",
@@ -193,7 +193,7 @@
     "date": "03-11-2018",
     "event": "Torneio Interno GXP 2018",
     "round": 4,
-    "table": "",
+    "table": null,
     "white": {
         "title": "",
         "name": "Rui Mendes",
@@ -214,7 +214,7 @@
     "date": "10-11-2018",
     "event": "Torneio Interno GXP 2018",
     "round": 5,
-    "table": "",
+    "table": null,
     "white": {
         "title": "",
         "name": "Alvaro Sousa Brandão",
@@ -235,7 +235,7 @@
     "date": "18-11-2018",
     "event": "Torneio Interno GXP 2018",
     "round": 6,
-    "table": "",
+    "table": null,
     "white": {
         "title": "",
         "name": "Rui Alves",
@@ -256,7 +256,7 @@
     "date": "24-11-2018",
     "event": "Torneio Interno GXP 2018",
     "round": 7,
-    "table": "",
+    "table": null,
     "white": {
         "title": "",
         "name": "Miguel Coelho",
