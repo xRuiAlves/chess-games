@@ -334,5 +334,26 @@
     },
     "result": "white",
     "view": "white"
+  },
+  {
+    "pgn": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Bd3 Bxd3 6. Qxd3 Qb6 7. O-O c5 8. c3 cxd4 9. cxd4 Nc6 10. a3 Nge7 11. b4 Nf5 12. Rd1 Be7 13. Nc3 O-O 14. Nxd5 exd5 15. Qxf5 a5 16. bxa5 Rxa5 17. Qd3 Rfa8 18. h3 Qa7 19. Qb3 h6 20. Bd2 Ra4 21. Be3 Rxa3 22. Rxa3 Qxa3 23. Qxd5 Qa4 24. Rc1 Rd8 25. Qe4 Qa5 26. Qg4 Kh8 27. Qe4 Rd5 28. Bd2 Qd8 29. Be3 Qd7 30. Qc2 Bd8 31. Qb2 Be7 32. Rb1 b5 33. Qb3 b4 34. Rd1 Na5 35. Qb2 Qb5 36. Nd2 Qd3 37. Qb1 Qa3 38. Rc1 g5 39. Nc4 Nxc4 40. Rxc4 Rb5 41. Bc1 Qa4 42. Rc7 Qd1+ 43. Kh2 Qxd4 44. Rxe7 Rxe5 45. Rxe5 Qxe5+ 46. g3 Qc5 47. Be3 Qc4 48. Qb2+ Kg8 49. Kg2 f5 50. Bd2 b3 51. Bc3 Qd5+ 52. Kh2 h5 53. Bh8 Qf7 54. Bd4 g4 55. h4 Qd5 56. Kg1 Kh7 57. Kf1 Qc4+ 58. Ke1 Qd3 59. Qc3 Qb1+ 60. Kd2 Qa2+ 61. Kc1 Qa3+ 62. Kb1 Qa2+ 63. Kc1 Qa3+ 64. Qb2 Qb4 65. Qc3 Qa3+ 66. Kd2 Qa2+ 67. Ke3 Kg6 68. Qc6+ Kf7 69. Qd7+ Kf8 70. Qxf5+ Ke7 71. Bc5+ Kd8 72. Bb6+ Ke7 73. Qe5+ Kd7 74. Qd5+ Ke7 75. Bc5+ Kf6 76. Qd6+ Kf5 77. Qd5+ Kf6 78. Qg5+ Ke6 79. Qe7+ Kd5 80. Qd6+ Kc4 81. Qd4+ Kb5 82. Qb4+ Kc6 83. Bd4 Qc2 84. Qc3+ Kd5 85. Qxc2 bxc2 86. Bb2 1-0",
+    "date": "05-01-2019",
+    "event": "Campeonato Nacional 3ª Divisão",
+    "round": 1,
+    "table": 3,
+    "white": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 1639,
+        "club": "GX Porto"
+    },
+    "black": {
+        "title": "",
+        "name": "Nuno Azevedo",
+        "elo": 1557,
+        "club": "CX UGTV"
+    },
+    "result": "white",
+    "view": "white"
   }
 ]
