@@ -64,8 +64,24 @@ const updateHighlightedMove = (move_number) => {
         pgn_elem.children[2] && pgn_elem.children[2].removeAttribute("highlighted");
     }
     const move = document.querySelector(`.pgn-move[move=m${move_number}]`);
-    move && move.scrollIntoView(false);
+    move && fixScroll(move);
     move && move.setAttribute("highlighted", true);
+};
+
+const fixScroll = (move_node) => {
+    const pgn_container = document.getElementById("pgn_container");
+    const container_rect = pgn_container.getBoundingClientRect();
+    const move_node_rect = move_node.getBoundingClientRect();
+
+    if (move_node_rect.top > container_rect.top + container_rect.height) {
+        pgn_container.scrollTo(0,
+            (move_node_rect.top + pgn_container.scrollTop + move_node_rect.height) - (container_rect.top + container_rect.height),
+        );
+    } else if (move_node_rect.top < container_rect.top) {
+        pgn_container.scrollTo(0,
+            move_node_rect.top + pgn_container.scrollTop - container_rect.top - 3,
+        );
+    }
 };
 
 const parseFen = (fen) => {
@@ -166,6 +182,7 @@ class Board extends Component {
 
     gotoFirstMove = () => {
         this.updateMoveNumber(0);
+        document.getElementById("pgn_container").scrollTo(0, 0);
     }
 
     gotoPrevMove = () => {
