@@ -12,7 +12,7 @@ const Welcome = () => (
                 "chess career".
             </p>
             <p>
-                If you wish to reach out to me to play some games, feel free todo it
+                If you wish to reach out to me to play some games, feel free to do it
                 via <a className="emphasized-anchor" href="mailto:ruialves.esrt.98@gmail.com">my email</a>.
             </p>
         </>

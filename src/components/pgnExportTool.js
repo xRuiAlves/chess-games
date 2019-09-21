@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { saveAs } from "file-saver";
-import "../css/pgn-export-tool.css";
+import "../css/export-tool.css";
 
 const exportPGN = (pgn, white, black, date) => {
     const file_content = new Blob([pgn], { type: "text/plain;charset=utf-8" });
@@ -12,7 +12,7 @@ const exportPGN = (pgn, white, black, date) => {
 };
 
 const PGNExportTool = ({ pgn, white, black, date }) => (
-    <span className="pgn-export-tool-button" onClick={() => exportPGN(pgn, white, black, date)}>
+    <span className="export-tool-button" onClick={() => exportPGN(pgn, white, black, date)}>
         Export PGN
     </span>
 );

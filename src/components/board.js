@@ -8,6 +8,7 @@ import PgnViewer from "./pgnViewer";
 import Chess from "chess.js";
 import { Link } from "gatsby";
 import PGNExportTool from "./pgnExportTool";
+import FENExportTool from "./fenExportTool";
 
 const FEN_CHAR_TO_TYPE = {
     "p": "black-pawn",
@@ -212,7 +213,8 @@ class Board extends Component {
     }
 
     render() {
-        return (this.state.status === "ok" ?
+        const { status, pgn_elems, fens, move_number } = this.state;
+        return (status === "ok" ?
             <div>
                 <div id="game_data">
                     <div>
@@ -240,10 +242,13 @@ class Board extends Component {
                         </div>
                     </div>
                     <div id="pgn-container">
-                        <PgnViewer pgn_elems={this.state.pgn_elems} result={this.props.result} />
+                        <PgnViewer pgn_elems={pgn_elems} result={this.props.result} />
                     </div>
                 </div>
-                <PGNExportTool {...this.props} />
+                <div className="export-tools">
+                    <PGNExportTool {...this.props} />
+                    <FENExportTool fen={fens[move_number] || ""} move_number={move_number} />
+                </div>
             </div>
             :
             <p style={{ marginTop: "3em" }}>

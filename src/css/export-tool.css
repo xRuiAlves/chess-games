@@ -1,4 +1,4 @@
-.pgn-export-tool-button {
+.export-tool-button {
     display: inline-block;
     margin-top: 1.5em;
     background-color: var(--color-primary-lighter);
@@ -13,6 +13,10 @@
     transition-duration: 0.2s;
 }
 
-.pgn-export-tool-button:hover {
+.export-tool-button:hover {
     background-color: var(--color-primary-light)
+}
+
+.export-tool-button ~ .export-tool-button {
+    margin-left: 0.8em;
 }
