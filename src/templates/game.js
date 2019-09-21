@@ -83,6 +83,7 @@ export const query = graphql`
               name
               elo
               club
+              title
             }
             black {
               name

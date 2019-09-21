@@ -32,6 +32,10 @@ header.game-header .game-date {
     transition-duration: 0.3s;
 }
 
+.event-item {
+    background-color: var(--color-secondary-light);
+}
+
 .game-item:hover {
     -webkit-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.52);
     -moz-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.52);
@@ -39,9 +43,13 @@ header.game-header .game-date {
     background-color: var(--color-primary-lighter);
 }
 
+.event-item:hover {
+    background-color: var(--color-secondary);
+}
+
 .game-item .game-header {
     font-size: 1.15em;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.9em;
 }
 
 .game-item ~ .game-item {
