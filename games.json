@@ -313,5 +313,26 @@
     },
     "result": "white",
     "view": "black"
+  },
+  {
+    "pgn": "1. e4 e5 2. Nf3 d6 3. Bc4 Qd7 4. O-O Nf6 5. Nc3 Be7 6. d4 exd4 7. Nxd4 c5 8. Nf5 Bf8 9. Bf4 Nc6 10. Nxd6+ Kd8 11. Nxf7+ Ke8 12. Nxh8 Qg4 13. Bf7+ Ke7 14. Qd6# 1-0",
+    "date": "12-01-2019",
+    "event": "Taça Portugal 2018/2019",
+    "round": 1,
+    "table": 4,
+    "white": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 1639,
+        "club": "GX Porto"
+    },
+    "black": {
+        "title": "",
+        "name": "Francisca Camacho",
+        "elo": 0,
+        "club": "CX Colégio Português"
+    },
+    "result": "white",
+    "view": "white"
   }
 ]
