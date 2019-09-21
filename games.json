@@ -397,5 +397,26 @@
     },
     "result": "white",
     "view": "black"
+  },
+  {
+    "pgn": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h6 7. Nf3 Nd7 8. Bd3 Bxd3 9. Qxd3 Ngf6 10. Bd2 e6 11. O-O-O Qc7 12. Ne4 Nxe4 13. Qxe4 Nf6 14. Qe2 Bd6 15. Ne5 O-O-O 16. Nc4 Bf4 17. Bxf4 Qxf4+ 18. Qe3 Nd5 19. Qxf4 Nxf4 20. c3 h5 21. Ne5 Rhf8 22. g3 Nd5 23. Rhe1 Kc7 24. Kc2 Rde8 25. Re2 Rd8 26. Rd3 Ne7 27. Rf3 Nf5 28. b3 b6 29. Rd3 g6 30. a4 a5 31. Nf3 Rde8 32. Ng5 Rd8 33. Red2 Rd7 1/2-1/2",
+    "date": "11-05-2019",
+    "event": "Campeonato Nacional 3ª Divisão",
+    "round": 5,
+    "table": 3,
+    "white": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 1651,
+        "club": "GX Porto"
+    },
+    "black": {
+        "title": "",
+        "name": "Rafael Ribeiro",
+        "elo": 1744,
+        "club": "CX Colégio Português"
+    },
+    "result": "draw",
+    "view": "white"
   }
 ]
