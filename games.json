@@ -355,5 +355,26 @@
     },
     "result": "white",
     "view": "white"
+  },
+  {
+    "pgn": "1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. e5 Nfd7 5. f4 c5 6. Nf3 Nc6 7. Be3 cxd4 8. Nxd4 Bc5 9. Na4 Qa5+ 10. c3 Be7 11. b4 Qc7 12. a3 Nxd4 13. Bxd4 O-O 14. Bd3 f5 15. O-O Nb8 16. Rf3 Bd7 17. Nc5 b6 18. Nxd7 Nxd7 19. Rh3 g6 20. Rc1 Qb7 21. Qe2 a5 22. g4 Rf7 23. gxf5 gxf5 24. Kh1 Kh8 25. Qh5 Rg7 26. Rg1 Rag8 27. Rxg7 Rxg7 28. Qe8+ Nf8 29. Bb5 axb4 30. cxb4 Rg4 31. Be3 d4+ 32. Bc6 Qa6 33. Rg3 Rxg3 34. hxg3 dxe3 35. Qxe7 Ng6 36. Qf6+ Kg8 37. Qxe6+ Kg7 38. Qf6+ Kh6 39. Qg5+ Kg7 40. Qf6+ Kh6 41. Qg5+ 1/2-1/2",
+    "date": "23-02-2019",
+    "event": "Campeonato Nacional 3ª Divisão",
+    "round": 2,
+    "table": 2,
+    "white": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 1639,
+        "club": "GX Porto"
+    },
+    "black": {
+        "title": "NM",
+        "name": "Stephane Silva",
+        "elo": 2043,
+        "club": "CA Téssera"
+    },
+    "result": "draw",
+    "view": "white"
   }
 ]
