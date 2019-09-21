@@ -114,6 +114,7 @@ class Board extends Component {
             move_number: 0,
             status: "ok",
             fens: [],
+            raw_fens: [],
             pgn_elems: [],
         };
     }
@@ -158,14 +159,18 @@ class Board extends Component {
         }
 
         const fens = [];
+        const raw_fens = [];
         while (chess.history().length > 0) {
             fens.unshift(parseFen(chess.fen()));
+            raw_fens.unshift(chess.fen());
             chess.undo();
         }
         fens.unshift(parseFen(chess.fen()));
+        raw_fens.unshift(chess.fen());
 
         this.setState({
             fens,
+            raw_fens,
             reversed_view,
             pgn_elems,
         });
@@ -213,7 +218,7 @@ class Board extends Component {
     }
 
     render() {
-        const { status, pgn_elems, fens, move_number } = this.state;
+        const { status, pgn_elems, raw_fens, move_number } = this.state;
         return (status === "ok" ?
             <div>
                 <div id="game_data">
@@ -247,7 +252,7 @@ class Board extends Component {
                 </div>
                 <div className="export-tools">
                     <PGNExportTool {...this.props} />
-                    <FENExportTool fen={fens[move_number] || ""} move_number={move_number} />
+                    <FENExportTool fen={raw_fens[move_number] || ""} move_number={move_number} />
                 </div>
             </div>
             :
