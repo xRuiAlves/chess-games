@@ -213,35 +213,37 @@ class Board extends Component {
 
     render() {
         return (this.state.status === "ok" ?
-            <div id="game_data">
-                <div>
-                    <div id="board_container">
-                        <div id="board">
-                            {buildBoard()}
+            <div>
+                <div id="game_data">
+                    <div>
+                        <div id="board_container">
+                            <div id="board">
+                                {buildBoard()}
+                            </div>
+                        </div>
+                        <div id="game_controls">
+                            <div className="board-control-button" onClick={this.gotoFirstMove}>
+                                <FontAwesomeIcon icon={faFastBackward}  />
+                            </div>
+                            <div className="board-control-button" onClick={this.gotoPrevMove}>
+                                <FontAwesomeIcon icon={faChevronLeft}  />
+                            </div>
+                            <div className="board-control-button" onClick={this.gotoNextMove}>
+                                <FontAwesomeIcon icon={faChevronRight}  />
+                            </div>
+                            <div className="board-control-button" onClick={this.gotoLastMove}>
+                                <FontAwesomeIcon icon={faFastForward}  />
+                            </div>
+                            <div className="board-control-button" onClick={this.swapView}>
+                                <FontAwesomeIcon icon={faSyncAlt}  />
+                            </div>
                         </div>
                     </div>
-                    <div id="game_controls">
-                        <div className="board-control-button" onClick={this.gotoFirstMove}>
-                            <FontAwesomeIcon icon={faFastBackward}  />
-                        </div>
-                        <div className="board-control-button" onClick={this.gotoPrevMove}>
-                            <FontAwesomeIcon icon={faChevronLeft}  />
-                        </div>
-                        <div className="board-control-button" onClick={this.gotoNextMove}>
-                            <FontAwesomeIcon icon={faChevronRight}  />
-                        </div>
-                        <div className="board-control-button" onClick={this.gotoLastMove}>
-                            <FontAwesomeIcon icon={faFastForward}  />
-                        </div>
-                        <div className="board-control-button" onClick={this.swapView}>
-                            <FontAwesomeIcon icon={faSyncAlt}  />
-                        </div>
+                    <div id="pgn-container">
+                        <PgnViewer pgn_elems={this.state.pgn_elems} result={this.props.result} />
                     </div>
-                    <PGNExportTool {...this.props} />
                 </div>
-                <div id="pgn-container">
-                    <PgnViewer pgn_elems={this.state.pgn_elems} result={this.props.result} />
-                </div>
+                <PGNExportTool {...this.props} />
             </div>
             :
             <p style={{ marginTop: "3em" }}>
