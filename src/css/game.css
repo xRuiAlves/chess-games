@@ -30,6 +30,7 @@ header.game-header .game-date {
     box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.3);
     transition-property: box-shadow, background-color;
     transition-duration: 0.3s;
+    user-select: none;
 }
 
 .event-item {
