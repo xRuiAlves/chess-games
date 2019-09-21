@@ -9,13 +9,13 @@
         "title": "",
         "name": "Rui Alves",
         "elo": 0,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "black": {
         "title": "",
         "name": "João Branco",
         "elo": 1677,
-        "club": "EXP"
+        "club": "EX Porto"
     },
     "result": "black",
     "view": "white"
@@ -30,13 +30,13 @@
         "title": "",
         "name": "Manuel Salvador",
         "elo": 0,
-        "club": "EXP"
+        "club": "EX Porto"
     },
     "black": {
         "title": "",
         "name": "Rui Alves",
         "elo": 0,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "result": "black",
     "view": "black"
@@ -51,7 +51,7 @@
         "title": "",
         "name": "Rui Alves",
         "elo": 0,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "black": {
         "title": "",
@@ -72,13 +72,13 @@
         "title": "",
         "name": "Miguel Sismeiro",
         "elo": 1614,
-        "club": "EXP"
+        "club": "EX Porto"
     },
     "black": {
         "title": "",
         "name": "Rui Alves",
         "elo": 0,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "result": "white",
     "view": "black"
@@ -93,13 +93,13 @@
         "title": "",
         "name": "Rui Alves",
         "elo": 0,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "black": {
         "title": "",
         "name": "Sara Soares",
         "elo": 1329,
-        "club": "EXP"
+        "club": "EX Porto"
     },
     "result": "black",
     "view": "white"
@@ -114,13 +114,13 @@
         "title": "",
         "name": "Duarte Basílio",
         "elo": 0,
-        "club": "AAC"
+        "club": "AA Coimbra"
     },
     "black": {
         "title": "",
         "name": "Rui Alves",
         "elo": 0,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "result": "black",
     "view": "black"
@@ -135,13 +135,13 @@
         "title": "",
         "name": "Rui Alves",
         "elo": 0,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "black": {
         "title": "",
         "name": "Artur Sequeira",
         "elo": 1626,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "result": "white",
     "view": "white"
@@ -156,13 +156,13 @@
         "title": "",
         "name": "Alberto Pinto Monteiro",
         "elo": 1835,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "black": {
         "title": "",
         "name": "Rui Alves",
         "elo": 0,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "result": "black",
     "view": "black"
@@ -177,13 +177,13 @@
         "title": "",
         "name": "Rui Alves",
         "elo": 0,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "black": {
         "title": "",
         "name": "Alberto Paulo Ferreira",
         "elo": 2048,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "result": "black",
     "view": "white"
@@ -198,13 +198,13 @@
         "title": "",
         "name": "Rui Mendes",
         "elo": 1786,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "black": {
         "title": "",
         "name": "Rui Alves",
         "elo": 0,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "result": "white",
     "view": "black"
@@ -219,13 +219,13 @@
         "title": "",
         "name": "Alvaro Sousa Brandão",
         "elo": 1620,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "black": {
         "title": "",
         "name": "Rui Alves",
         "elo": 0,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "result": "black",
     "view": "black"
@@ -240,13 +240,13 @@
         "title": "",
         "name": "Rui Alves",
         "elo": 0,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "black": {
         "title": "",
         "name": "Nuno Rosário",
         "elo": 1684,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "result": "white",
     "view": "white"
@@ -261,15 +261,36 @@
         "title": "",
         "name": "Miguel Coelho",
         "elo": 1402,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "black": {
         "title": "",
         "name": "Rui Alves",
         "elo": 0,
-        "club": "GXP"
+        "club": "GX Porto"
     },
     "result": "draw",
     "view": "black"
+  },
+  {
+    "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 Bd6 7. O-O Nf6 8. Qb3 O-O 9. Ba3 exd4 10. Bxd6 cxd6 11. cxd4 Nxe4 12. Re1 Qe7 13. Nc3 Na5 14. Qa4 Nxc4 15. Rxe4 Qd8 16. Qxc4 Qa5 17. h4 a6 18. Ng5 b5 19. Qb3 Bb7 20. Re7 Qb6 21. Nxf7 Bc6 22. Nh6+ Kh8 23. Qg8+ Rxg8 24. Nf7# 1-0",
+    "date": "18-01-2019",
+    "event": "Taça AXP 2018/2019",
+    "round": 1,
+    "table": 4,
+    "white": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 1639,
+        "club": "GX Porto"
+    },
+    "black": {
+        "title": "",
+        "name": "Daniel Silva",
+        "elo": 0,
+        "club": "EX Porto"
+    },
+    "result": "white",
+    "view": "white"
   }
 ]
