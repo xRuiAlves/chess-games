@@ -292,5 +292,26 @@
     },
     "result": "white",
     "view": "white"
+  },
+  {
+    "pgn": "1. d4 d5 2. Bf4 Nf6 3. e3 c5 4. c3 Qb6 5. Qb3 c4 6. Qc2 Nc6 7. Nd2 Nh5 8. Bg5 h6 9. Bh4 g5 10. Be2 Ng7 11. Bg3 Nf5 12. e4 Nxg3 13. hxg3 dxe4 14. Nxe4 Be6 15. Nxg5 Nxd4 16. cxd4 Qa5+ 17. Qd2 c3 18. bxc3 Bg7 19. Nxe6 fxe6 20. Bh5+ Kd7 21. Rb1 Rac8 22. Rxb7+ Kd8 23. Ne2 Rf8 24. Bf3 Ke8 25. O-O h5 26. Rfb1 Kf7 27. R7b5 Qc7 28. Qf4+ Qxf4 29. Nxf4 Rxc3 30. Bxh5+ Kg8 31. Nxe6 Rfc8 32. Rg5 1-0",
+    "date": "09-03-2019",
+    "event": "Taça AXP 2018/2019",
+    "round": 2,
+    "table": 4,
+    "white": {
+        "title": "",
+        "name": "Ricardo Andrade",
+        "elo": 1720,
+        "club": "GD Dias Ferreira"
+    },
+    "black": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 1639,
+        "club": "GX Porto"
+    },
+    "result": "white",
+    "view": "black"
   }
 ]
