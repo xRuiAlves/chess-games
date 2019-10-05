@@ -28,7 +28,11 @@ const buildEvents = () => {
 const EventsList = () => (
         <>
             <h2>Tournaments</h2>
-            {buildEvents().map((event) => <EventItem key={event.name} {...event} />)}
+            <div className="grid-list">
+                {buildEvents().map((event) =>
+                    <EventItem key={event.name} {...event} />,
+                )}
+            </div>
         </>
 );
 
