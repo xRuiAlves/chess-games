@@ -35,6 +35,7 @@ header.game-header .game-date {
 }
 
 .game-item {
+    position: relative;
     background-color: var(--color-primary-lighterer);
     padding: 0.5em 1em;
     -webkit-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.3);
@@ -43,6 +44,18 @@ header.game-header .game-date {
     transition-property: box-shadow, background-color;
     transition-duration: 0.3s;
     user-select: none;
+    overflow: hidden;
+}
+
+.game-item img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.1;
+    z-index: inherit;
+    cursor: pointer;
 }
 
 .event-item {
