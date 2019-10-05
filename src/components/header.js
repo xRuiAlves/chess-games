@@ -11,8 +11,8 @@ const Header = ({ siteTitle }) => (
         <h1>
             <Link to="/">
                 {siteTitle}
+                <FontAwesomeIcon icon={faChess} className="header-icon" />
             </Link>
-            <FontAwesomeIcon icon={faChess} className="header-icon" />
         </h1>
     </header>
 );
