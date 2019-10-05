@@ -26,6 +26,13 @@ const FEN_CHAR_TO_TYPE = {
     "_": "none",
 };
 
+const getSquareNumber = (move, reversed_view) => {
+    const i = parseInt(move[1], 10) - 1;
+    const j = move.charCodeAt(0) - "a".charCodeAt(0) + 1;
+
+    return reversed_view ? `${i + 1}${(8 - j) + 1}` : `${(8 - i)}${j}`;
+};
+
 const buildBoard = () => {
     const board = [];
     for (let i = 1; i <= 8; ++i) {
@@ -116,12 +123,14 @@ class Board extends Component {
             fens: [],
             raw_fens: [],
             pgn_elems: [],
+            history: [],
+            highlighted_squares: [],
         };
     }
 
     keyNavigationListener = (event) => {
-        event.keyCode === 39 && this.gotoNextMove();
         event.keyCode === 37 && this.gotoPrevMove();
+        event.keyCode === 39 && this.gotoNextMove();
     }
 
     componentDidMount() {
@@ -130,6 +139,10 @@ class Board extends Component {
         const chess = new Chess();
         const success = chess.load_pgn(this.props.pgn);
         const reversed_view = this.props.view === "black";
+
+        this.setState({
+            history: chess.history({ verbose: true }),
+        });
 
         if (!success) {
             this.setState({ status: "error" });
@@ -212,10 +225,25 @@ class Board extends Component {
     }
 
     drawBoard = () => {
-        const { fens, move_number, reversed_view } = this.state;
+        const { fens, move_number, reversed_view, history } = this.state;
         drawBoardFromFen(fens[move_number], reversed_view);
+        this.updateHighlightedSquares(history[move_number - 1], reversed_view);
         updateHighlightedMove(move_number);
     }
+
+    updateHighlightedSquares = (move, reversed_view) => {
+        const { highlighted_squares, move_number } = this.state;
+        while (highlighted_squares.length > 0) {
+            highlighted_squares.pop().removeAttribute("highlighted");
+        }
+
+        if (move_number === 0) return;
+
+        highlighted_squares.push(document.getElementById(`board_cell_${getSquareNumber(move.from, reversed_view)}`));
+        highlighted_squares.push(document.getElementById(`board_cell_${getSquareNumber(move.to, reversed_view)}`));
+
+        highlighted_squares.forEach((square) => square.setAttribute("highlighted", true));
+    };
 
     render() {
         const { status, pgn_elems, raw_fens, move_number } = this.state;

@@ -196,6 +196,10 @@
     background-image: none;
 }
 
+.board-cell[highlighted=true] {
+    background-color: rgba(205, 210, 108, 0.6);
+}
+
 .board-control-button {
     width: 20%;
     padding: 0.2em 0;
