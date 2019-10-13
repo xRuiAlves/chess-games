@@ -5,7 +5,9 @@ const Welcome = () => (
             <h2>Welcome!</h2>
             <p>
                 My name is <strong>Rui Alves</strong> and I'm a chess player
-                from <a className="emphasized-anchor" href="http://www.gxp.pt">Grupo de Xadrez do Porto</a>.
+                from <a className="emphasized-anchor" target="_blank" rel="noopener noreferrer" href="http://www.gxp.pt">
+                    Grupo de Xadrez do Porto
+                </a>.
             </p>
             <p style={{ marginBottom: "0.3em" }}>
                 In this website you can find a collection of all my classical games throughout my
