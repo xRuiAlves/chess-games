@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { buildEventUrl } from "../utils.js";
+import { buildEventUrl } from "../utils/utils";
 import "../css/game.css";
 import Watermark from "../css/images/watermark.jpg";
 

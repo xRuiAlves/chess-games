@@ -1,6 +1,6 @@
 const path = require("path");
 const data = require("./games.json");
-const utils = require("./src/utils.js");
+const utils = require("./src/utils/utils");
 
 exports.createPages = ({ actions }) => {
     const { createPage } = actions;

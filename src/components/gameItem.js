@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { buildGameUrl, prettifyPlayerData } from "../utils.js";
+import { buildGameUrl, prettifyPlayerData } from "../utils/utils";
 import "../css/game.css";
 import Watermark from "../css/images/watermark.jpg";
 

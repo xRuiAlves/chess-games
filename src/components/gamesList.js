@@ -1,5 +1,5 @@
 import React from "react";
-import { compareDates } from "../utils.js";
+import { compareDates } from "../utils/utils";
 import GameItem from "./gameItem.js";
 
 const GamesList = ({ header, games }) => (

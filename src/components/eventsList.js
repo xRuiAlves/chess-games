@@ -1,5 +1,5 @@
 import React from "react";
-import { minDate, maxDate, compareDates } from "../utils.js";
+import { minDate, maxDate, compareDates } from "../utils/utils";
 import games from "../../games.json";
 import EventItem from "./eventItem.js";
 

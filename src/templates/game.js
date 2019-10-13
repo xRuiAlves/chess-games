@@ -4,7 +4,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import "../css/game.css";
 import Board from "../components/board";
-import { prettifyPlayerData } from "../utils.js";
+import { prettifyPlayerData } from "../utils/utils";
 import SEO from "../components/seo";
 
 const isMissingGameData = (game) => (
