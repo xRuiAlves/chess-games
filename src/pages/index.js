@@ -8,6 +8,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Welcome from "../components/welcome";
 import EventsList from "../components/eventsList";
+import Ratings from "../components/ratings";
 
 config.autoAddCss = false;
 
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Layout>
         <SEO title="Home" />
         <Welcome />
+        <Ratings />
         <EventsList />
     </Layout>
 );
