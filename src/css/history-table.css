@@ -1,0 +1,27 @@
+@import "common.css";
+
+#ratings_history {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#ratings_history td, #ratings_history th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#ratings_history tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#ratings_history tr:hover {
+    background-color: var(--color-primary-lighter);
+}
+
+#ratings_history th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--color-primary);
+    font-weight: bold;
+}

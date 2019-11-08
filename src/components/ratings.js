@@ -1,23 +1,13 @@
 import React from "react";
-import axios from "axios";
 import { parseShortDate } from "../utils/utils";
-
-const RATINGS_API_BASE_URL = "https://lit-wildwood-98645.herokuapp.com";
-const PLAYER_FIDE_NUM = 1962000;
+import { getPlayerHistory } from "../utils/api";
 
 export default class Ratings extends React.Component {
     state = {};
 
     componentDidMount() {
-        this.getHistory();
+        getPlayerHistory().then((res) => res.status === 200 && this.parseHistory(res.data));
     }
-
-    getHistory = () => {
-        const endpoint = `${RATINGS_API_BASE_URL}/player/${PLAYER_FIDE_NUM}/history`;
-
-        axios.get(endpoint)
-            .then((res) => res.status === 200 && this.parseHistory(res.data));
-    };
 
     parseHistory = (history) => {
         const current = history[0];
