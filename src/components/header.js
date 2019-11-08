@@ -5,6 +5,7 @@ import "../css/header.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChess } from "@fortawesome/free-solid-svg-icons";
+import Copyright from "./copyright";
 
 const Header = ({ siteTitle }) => (
     <header id="page_header">
@@ -14,6 +15,7 @@ const Header = ({ siteTitle }) => (
                 <FontAwesomeIcon icon={faChess} className="header-icon" />
             </Link>
         </h1>
+        <Copyright />
     </header>
 );
 

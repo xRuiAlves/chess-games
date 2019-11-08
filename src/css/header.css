@@ -4,7 +4,11 @@ header#page_header {
     background-color: var(--color-primary);
     padding: 1em;
     padding-left: 6%;
+    padding-right: 6%;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header#page_header h1 {
@@ -16,7 +20,21 @@ header#page_header .header-icon {
     font-size: 1.2em;
 }
 
+header#page_header #copyright {
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width: 780px) {    
+    header#page_header #copyright {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 576px) {
+    header#page_header {
+        justify-content: flex-start;
+    }
+    
     header#page_header h1 {
         font-size: 1.8em;
     }
