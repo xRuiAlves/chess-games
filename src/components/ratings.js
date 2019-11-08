@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { parseShortDate } from "../utils/utils";
 import { getPlayerHistory } from "../utils/api";
 
@@ -30,16 +31,29 @@ export default class Ratings extends React.Component {
     render() {
         const { ratings } = this.state;
 
-        return (ratings ?
+        return (
             <>
                 <h2>Ratings</h2>
-                <div style={{ marginBottom: "0.4em" }}>
-                    <strong>Current Rating: </strong>&nbsp;{ratings.current.elo}, as of {ratings.current.date}
-                </div>
-                <div>
-                    <strong>Highest Rating: </strong>&nbsp;{ratings.highest.elo}, as of {ratings.highest.date}
-                </div>
-            </> : null
+                {!ratings ?
+                    <div>
+                        Loading ...
+                    </div> :
+                    <>
+                        <div style={{ marginBottom: "0.4em" }}>
+                            <strong>Current Rating: </strong>&nbsp;{ratings.current.elo}, as of {ratings.current.date}
+                        </div>
+                        <div style={{ marginBottom: "1.5em" }}>
+                            <strong>Highest Rating: </strong>&nbsp;{ratings.highest.elo}, as of {ratings.highest.date}
+                        </div>
+                        <div>
+                            See my full ratings list{" "}
+                            <Link className="emphasized-anchor" to={"/history"}>
+                                here
+                            </Link>.
+                        </div>
+                    </>
+                }
+            </>
         );
     }
 }

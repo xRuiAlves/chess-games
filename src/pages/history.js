@@ -15,9 +15,7 @@ export default class History extends React.Component {
 
     render() {
         const { history } = this.state;
-        if (history) {
-            console.log(history);
-        }
+
         return (
             <Layout>
                 <SEO title="Ratings History" />
