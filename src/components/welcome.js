@@ -17,6 +17,12 @@ const Welcome = () => (
                 If you wish to reach out to me to play some games, feel free to do it
                 via <a className="emphasized-anchor" href="mailto:ruialves.esrt.98@gmail.com">my email</a>.
             </p>
+            <p>
+                To find more projects developed by me (chess-related or not), visit my{" "}
+                <a className="emphasized-anchor" target="_blank" rel="noopener noreferrer" href="https://github.com/xRuiAlves">
+                    GitHub page
+                </a>.
+            </p>
         </>
 );
 
