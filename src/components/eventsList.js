@@ -13,6 +13,7 @@ const buildEvents = () => {
                 start: game.date,
                 end: game.date,
                 rounds: 1,
+                in_progress: game.in_progress,
             };
         } else {
             events[game.event].rounds++;
