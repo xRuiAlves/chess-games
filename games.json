@@ -2,6 +2,7 @@
   {
     "pgn": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. Nf3 Nd7 7. h4 h6 8. Bd3 Bxd3 9. Qxd3 e6 10. Bf4 Qa5+ 11. c3 Ngf6 12. Ne4 Nxe4 13. Qxe4 Nf6 14. Qe5 Qb6 15. O-O-O Rd8 16. Qc7 Qxc7 17. Bxc7 Rd7 18. Be5 Be7 19. Rhg1 O-O 20. g4 Ne4 21. Rde1 Nd6 22. g5 h5 23. Bf6 Nf5 24. Ne5 Rd5 25. Bxe7 Nxe7 26. f4 g6 27. Re4 Rfd8 28. Nf3 Nf5 29. Rd1 R8d7 30. Re5 b6 31. Rh1 Kg7 32. Nd2 c5 33. Nb3 cxd4 34. Nxd4 Nxd4 35. cxd4 Rxd4 36. Rf1 Rc4+ 37. Kb1 Rdd4 38. Re2 Rxf4 39. Rd1 Rxh4 40. b3 Rcd4 41. Rc1 Rhe4 42. Rxe4 Rxe4 43. Rc7 h4 44. Rxa7 h3 45. Rc7 Re1+ 0-1",
     "date": "17-02-2018",
+    "in_progress": false,
     "event": "I Torneio Amador Cidade Matosinhos",
     "round": 1,
     "table": null,
@@ -23,6 +24,7 @@
   {
     "pgn": "1. e4 c5 2. Nf3 Nc6 3. Bc4 g6 4. O-O Bg7 5. c3 Nf6 6. e5 Ng4 7. h3 Ngxe5 8. Nxe5 Nxe5 9. Bb5 a6 10. Ba4 b5 11. Bb3 c4 12. Bc2 O-O 13. Qe2 Bb7 14. Re1 Qc7 15. Qe3 d5 16. Na3 Rad8 17. Qf4 d4 18. cxd4 Nf3+ 19. gxf3 Qxf4 20. Kg2 Qxf3+ 21. Kf1 Qh1+ 22. Ke2 Bf3+ 23. Ke3 Qxe1+ 24. Kxf3 Bxd4 25. Rb1 Qxf2+ 26. Kg4 f5+ 27. Bxf5 gxf5+ 28. Kh5 Qf3+ 29. Kh4 Bf6# 0-1",
     "date": "17-02-2018",
+    "in_progress": false,
     "event": "I Torneio Amador Cidade Matosinhos",
     "round": 2,
     "table": null,
@@ -44,6 +46,7 @@
   {
     "pgn": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nc6 5. Nc3 a6 6. g4 g6 7. Be3 Bg7 8. Be2 e5 9. Nb3 Nge7 10. Qd2 Be6 11. O-O-O Qd7 12. Qxd6 Qxd6 13. Rxd6 O-O 14. Nc5 Nd8 15. Rhd1 Rc8 16. Nxe6 Nxe6 17. Rd7 Nc6 18. Rxb7 Ncd4 19. Bxa6 Ra8 20. Bc4 Rfc8 21. Bb3 Nc5 22. Rb4 Ndxb3+ 23. cxb3 Nxe4 24. Rxe4 Rxa2 25. Kb1 Raa8 26. Nd5 Rcb8 27. b4 Rb7 28. Rc4 Rab8 29. Rdc1 Bf8 30. Rc8 Rxc8 31. Rxc8 Kg7 32. Bh6+ Kxh6 33. Rxf8 Kg7 34. Re8 Rb5 35. Rxe5 f6 36. Re7+ Kf8 37. Rd7 Ke8 38. Nc7+ Kxd7 39. Nxb5 Kc6 40. Nd4+ Kd5 41. b5 1-0",
     "date": "17-02-2018",
+    "in_progress": false,
     "event": "I Torneio Amador Cidade Matosinhos",
     "round": 3,
     "table": null,
@@ -65,6 +68,7 @@
   {
     "pgn": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 g6 5. c4 Bg7 6. Be3 Nf6 7. Nc3 O-O 8. Be2 e5 9. Ndb5 a6 10. Nd6 Qc7 11. O-O Nd4 12. Bxd4 exd4 13. Qxd4 Ne8 14. Nxe8 Rxe8 15. Qe3 Bxc3 16. bxc3 b5 17. cxb5 axb5 18. Rfb1 Ba6 19. Qd4 Re5 20. a4 bxa4 21. Rxa4 Bb7 22. Rxb7 Rxa4 23. Rxc7 Rxd4 24. cxd4 Rxe4 25. Kf1 Rxd4 26. Bb5 d6 27. Ke2 Kg7 28. Ke3 Rd1 29. Bc4 d5 30. Rd7 d4+ 31. Rxd4 Rc1 32. Kd2 Rb1 33. Rd7 Rb2+ 34. Ke3 Rb4 35. Rxf7+ Kh6 36. Rc7 Ra4 37. h4 g5 38. Bd3 gxh4 39. f4 1-0",
     "date": "18-02-2018",
+    "in_progress": false,
     "event": "I Torneio Amador Cidade Matosinhos",
     "round": 4,
     "table": null,
@@ -86,6 +90,7 @@
   {
     "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4 Bd6 13. Re1 Qh4 14. g3 Qh3 15. Qf3 Bg4 16. Qg2 Rfe8 17. Be3 Qh5 18. Nd2 Re6 19. Bxd5 cxd5 20. f3 Bh3 21. Qf2 Rg6 22. g4 f5 23. Nf1 fxg4 24. f4 Bxf1 25. Rxf1 g3 26. hxg3 Qh3 27. Qh2 Rxg3+ 28. Kh1 Qxh2+ 29. Kxh2 Rxe3 30. b4 Rxc3 31. Kg2 Bxb4 32. f5 Rac8 33. a4 Ra3 34. Rxa3 Bxa3 35. axb5 axb5 36. Kf3 b4 37. Ke3 b3 38. Ra1 b2 0-1",
     "date": "18-02-2018",
+    "in_progress": false,
     "event": "I Torneio Amador Cidade Matosinhos",
     "round": 5,
     "table": null,
@@ -107,6 +112,7 @@
   {
     "pgn": "1. e4 c6 2. Nf3 d5 3. exd5 cxd5 4. d4 Bf5 5. Nc3 Nf6 6. Bf4 a6 7. Bd3 Bxd3 8. Qxd3 e6 9. O-O Nbd7 10. Rfe1 Be7 11. a3 O-O 12. b4 Rc8 13. Ne5 Nxe5 14. dxe5 Nd7 15. Rad1 Qc7 16. Nxd5 exd5 17. Qxd5 Nb6 18. Qf3 Qc6 19. Qxc6 Rxc6 20. Rd2 Re8 21. Rde2 Nd5 22. Bg3 Bg5 23. f4 Nxf4 24. Bxf4 Bxf4 25. g3 Bh6 26. a4 g6 27. Rf1 Rce6 28. Rfe1 Bg7 29. c4 Bxe5 30. Rc2 Bd4+ 31. Kf1 Rxe1+ 32. Kg2 R1e2+ 33. Rxe2 Rxe2+ 34. Kf3 Rxh2 35. b5 axb5 36. cxb5 Ra2 37. Ke4 Bg7 38. Kd5 Rxa4 39. Kc5 Bd4+ 40. Kd5 b6 41. Kc6 Rb4 42. g4 Bf6 43. Kxb6 Rxg4 44. Kc6 h5 45. b6 Be5 46. Kd5 f6 47. b7 h4 0-1",
     "date": "18-02-2018",
+    "in_progress": false,
     "event": "I Torneio Amador Cidade Matosinhos",
     "round": 6,
     "table": null,
@@ -128,6 +134,7 @@
   {
     "pgn": "1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 Be7 7. f4 Bg4 8. Qd2 h6 9. Bxf6 Bxf6 10. f5 Bh4+ 11. g3 Bg5 12. Qf2 c5 13. Nb3 Bf6 14. h3 Bh5 15. Nd5 Bxb2 16. Rb1 Bf6 17. Nxf6+ Qxf6 18. g4 Bxg4 19. hxg4 b5 20. Qd2 O-O 21. Bg2 Nd7 22. Rd1 Ne5 23. Qxd6 Nxg4 24. Qxf6 Nxf6 25. Nxc5 Rfe8 26. Kd2 Rac8 27. Nxa6 Nxe4+ 28. Bxe4 Rxe4 29. Rhe1 Ra4 30. Re5 Rxa6 31. Rxb5 Rxa2 32. Rc1 Ra3 33. c4 Kf8 34. Rd5 h5 35. c5 h4 36. c6 h3 37. c7 Re8 38. c8=Q Ra2+ 39. Qc2 Rxc2+ 40. Kxc2 h2 41. Rh1 Re2+ 42. Rd2 Re5 43. Rf2 Ke7 44. Rhxh2 Kf6 45. Rhg2 Ra5 46. Kb3 Re5 47. Rg4 Ra5 48. Kb4 Re5 49. Kc4 Ra5 50. Rg3 Re5 51. Kd4 Ra5 52. Rc2 Ra4+ 53. Ke3 Ra3+ 54. Kf2 Rxg3 55. Kxg3 Kxf5 56. Rc7 Kg6 57. Kf4 f6 58. Rd7 Kh7 59. Kf5 Kh6 60. Rd3 1-0",
     "date": "14-10-2018",
+    "in_progress": false,
     "event": "Torneio Interno GXP 2018",
     "round": 1,
     "table": null,
@@ -149,6 +156,7 @@
   {
     "pgn": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 d6 5. Nf3 Nc6 6. Bc4 e6 7. O-O Be7 8. Qe2 Nf6 9. Rd1 e5 10. h3 O-O 11. Bg5 a6 12. Rac1 Be6 13. Bxe6 fxe6 14. Qc4 Qd7 15. Na4 d5 16. exd5 exd5 17. Bxf6 dxc4 18. Rxd7 Bxf6 19. Rxb7 Na5 20. Rc7 Rac8 21. Rxc8 Rxc8 22. b4 Nb7 23. Nb6 Rc6 24. Nd5 Kf7 25. g4 e4 26. Nxf6 gxf6 27. Nd4 Rc7 28. a4 Ke7 29. Kf1 Kd6 30. b5 a5 31. Rd1 c3 32. Nc6+ Kc5 33. Ke2 Kc4 34. Rd4+ Kb3 35. Rxe4 c2 36. Nd4+ Kb2 37. Nxc2 Rxc2+ 38. Ke3 Nc5 39. Rd4 Rc3+ 40. Ke2 Rxh3 41. f3 Rh2+ 42. Ke3 Rc2 43. Rd2 Rxd2 44. Kxd2 Kb3 45. f4 Kxa4 46. b6 Kb5 47. b7 Nxb7 48. g5 f5 49. Ke3 0-1",
     "date": "20-10-2018",
+    "in_progress": false,
     "event": "Torneio Interno GXP 2018",
     "round": 2,
     "table": null,
@@ -170,6 +178,7 @@
   {
     "pgn": "1. e4 c5 2. Nf3 a6 3. d4 cxd4 4. Nxd4 e5 5. Nf3 Nf6 6. Nc3 Bb4 7. Bc4 Qc7 8. Qd3 b5 9. Bd5 Nxd5 10. exd5 O-O 11. Ng5 f5 12. a3 Be7 13. Be3 e4 14. Qe2 f4 15. Qh5 h6 16. Ngxe4 fxe3 17. d6 exf2+ 18. Kd2 Bxd6 19. Qd5+ Kh8 20. Nxd6 Nc6 21. Nf7+ Kh7 22. Qf5+ g6 23. Qf6 d5 24. Ng5+ hxg5 25. Qxf8 Bf5 26. Qxa8 Qf4+ 27. Ke2 Nd4+ 28. Kf1 Nxc2 29. Qe8 Bd3+ 30. Ne2 Ne3+ 0-1",
     "date": "27-10-2018",
+    "in_progress": false,
     "event": "Torneio Interno GXP 2018",
     "round": 3,
     "table": null,
@@ -191,6 +200,7 @@
   {
     "pgn": "1. d4 Nf6 2. c4 d5 3. e3 c6 4. Nc3 e6 5. Bd3 Nbd7 6. Nf3 dxc4 7. Bxc4 b5 8. Bd3 Bb7 9. O-O b4 10. Ne4 c5 11. Nxc5 Nxc5 12. dxc5 Bxc5 13. Qa4+ Ke7 14. Be2 Qc7 15. Bd2 a5 16. Rfc1 Rhd8 17. Be1 Rd5 18. Nd4 Rg5 19. Bf3 Bxf3 20. Nxf3 Rh5 21. Bxb4 Ng4 22. Bxc5+ Rxc5 23. Rxc5 Qxc5 24. Qxg4 Rc8 25. Qg5+ 1-0",
     "date": "03-11-2018",
+    "in_progress": false,
     "event": "Torneio Interno GXP 2018",
     "round": 4,
     "table": null,
@@ -212,6 +222,7 @@
   {
     "pgn": "1. e4 c5 2. f4 e6 3. Nf3 d5 4. Bb5+ Nd7 5. exd5 exd5 6. O-O c4 7. Re1+ Be7 8. Nd4 a6 9. Bxd7+ Bxd7 10. Nc3 Qb6 11. Ne2 O-O-O 12. Kh1 Nf6 13. h3 Rhe8 14. c3 Bc5 15. Rf1 Re7 16. b4 Bxd4 17. Nxd4 Ne4 18. Rf3 Rde8 19. Qc2 Qg6 20. Kh2 h5 21. f5 Qd6+ 22. g3 Nxg3 23. Kg2 Ne2 24. Bb2 Nxd4 25. cxd4 Re2+ 26. Rf2 Rxf2+ 27. Kxf2 Qh2+ 0-1",
     "date": "10-11-2018",
+    "in_progress": false,
     "event": "Torneio Interno GXP 2018",
     "round": 5,
     "table": null,
@@ -233,6 +244,7 @@
   {
     "pgn": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c4 Nf6 5. Nc3 O-O 6. Be2 Nc6 7. d5 Ne5 8. Nxe5 dxe5 9. O-O c6 10. dxc6 bxc6 11. Be3 Qc7 12. h3 Rd8 13. Qa4 a6 14. Rfd1 Bb7 15. Qb4 Rxd1+ 16. Rxd1 Rc8 17. Bb6 Qb8 18. Qxe7 Re8 19. Qc7 Qxc7 20. Bxc7 c5 21. f3 Bh6 22. Kf2 Bf8 23. Nd5 Nxd5 24. cxd5 f6 25. d6 1-0",
     "date": "18-11-2018",
+    "in_progress": false,
     "event": "Torneio Interno GXP 2018",
     "round": 6,
     "table": null,
@@ -254,6 +266,7 @@
   {
     "pgn": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. Nf3 Bg4 5. Be2 Nc6 6. O-O e6 7. h3 Bf5 8. Na3 a6 9. Nc4 Rd8 10. Ne3 Qd7 11. Nxf5 exf5 12. Re1 Be7 13. Bc4 b5 14. Bb3 c4 15. Bc2 Nf6 16. Qe2 Nd5 17. Ne5 Qe6 18. Nxc6 Qxc6 19. Qe5 O-O 20. Qxf5 g6 21. Qf3 Rfe8 22. d4 Rd6 23. Be4 f5 24. Bxd5+ Qxd5 25. Qxd5+ Rxd5 26. Bg5 Kf7 27. Bxe7 Rxe7 28. Rxe7+ Kxe7 29. Re1+ Kf7 30. f4 Rd6 31. Re5 Re6 32. Rxe6 Kxe6 33. Kf2 Kd5 34. Ke3 a5 35. h4 a4 36. a3 h5 37. g3 Ke6 38. Kd2 Kd6 39. Ke2 Ke6 40. Kf3 Kd5 41. Ke2 Ke6 1/2-1/2",
     "date": "24-11-2018",
+    "in_progress": false,
     "event": "Torneio Interno GXP 2018",
     "round": 7,
     "table": null,
@@ -275,6 +288,7 @@
   {
     "pgn": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 Bd6 7. O-O Nf6 8. Qb3 O-O 9. Ba3 exd4 10. Bxd6 cxd6 11. cxd4 Nxe4 12. Re1 Qe7 13. Nc3 Na5 14. Qa4 Nxc4 15. Rxe4 Qd8 16. Qxc4 Qa5 17. h4 a6 18. Ng5 b5 19. Qb3 Bb7 20. Re7 Qb6 21. Nxf7 Bc6 22. Nh6+ Kh8 23. Qg8+ Rxg8 24. Nf7# 1-0",
     "date": "18-01-2019",
+    "in_progress": false,
     "event": "Taça AXP 2018/2019",
     "round": 1,
     "table": 4,
@@ -296,6 +310,7 @@
   {
     "pgn": "1. d4 d5 2. Bf4 Nf6 3. e3 c5 4. c3 Qb6 5. Qb3 c4 6. Qc2 Nc6 7. Nd2 Nh5 8. Bg5 h6 9. Bh4 g5 10. Be2 Ng7 11. Bg3 Nf5 12. e4 Nxg3 13. hxg3 dxe4 14. Nxe4 Be6 15. Nxg5 Nxd4 16. cxd4 Qa5+ 17. Qd2 c3 18. bxc3 Bg7 19. Nxe6 fxe6 20. Bh5+ Kd7 21. Rb1 Rac8 22. Rxb7+ Kd8 23. Ne2 Rf8 24. Bf3 Ke8 25. O-O h5 26. Rfb1 Kf7 27. R7b5 Qc7 28. Qf4+ Qxf4 29. Nxf4 Rxc3 30. Bxh5+ Kg8 31. Nxe6 Rfc8 32. Rg5 1-0",
     "date": "09-03-2019",
+    "in_progress": false,
     "event": "Taça AXP 2018/2019",
     "round": 2,
     "table": 4,
@@ -317,6 +332,7 @@
   {
     "pgn": "1. e4 e5 2. Nf3 d6 3. Bc4 Qd7 4. O-O Nf6 5. Nc3 Be7 6. d4 exd4 7. Nxd4 c5 8. Nf5 Bf8 9. Bf4 Nc6 10. Nxd6+ Kd8 11. Nxf7+ Ke8 12. Nxh8 Qg4 13. Bf7+ Ke7 14. Qd6# 1-0",
     "date": "12-01-2019",
+    "in_progress": false,
     "event": "Taça Portugal 2018/2019",
     "round": 1,
     "table": 4,
@@ -338,7 +354,8 @@
   {
     "pgn": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Bd3 Bxd3 6. Qxd3 Qb6 7. O-O c5 8. c3 cxd4 9. cxd4 Nc6 10. a3 Nge7 11. b4 Nf5 12. Rd1 Be7 13. Nc3 O-O 14. Nxd5 exd5 15. Qxf5 a5 16. bxa5 Rxa5 17. Qd3 Rfa8 18. h3 Qa7 19. Qb3 h6 20. Bd2 Ra4 21. Be3 Rxa3 22. Rxa3 Qxa3 23. Qxd5 Qa4 24. Rc1 Rd8 25. Qe4 Qa5 26. Qg4 Kh8 27. Qe4 Rd5 28. Bd2 Qd8 29. Be3 Qd7 30. Qc2 Bd8 31. Qb2 Be7 32. Rb1 b5 33. Qb3 b4 34. Rd1 Na5 35. Qb2 Qb5 36. Nd2 Qd3 37. Qb1 Qa3 38. Rc1 g5 39. Nc4 Nxc4 40. Rxc4 Rb5 41. Bc1 Qa4 42. Rc7 Qd1+ 43. Kh2 Qxd4 44. Rxe7 Rxe5 45. Rxe5 Qxe5+ 46. g3 Qc5 47. Be3 Qc4 48. Qb2+ Kg8 49. Kg2 f5 50. Bd2 b3 51. Bc3 Qd5+ 52. Kh2 h5 53. Bh8 Qf7 54. Bd4 g4 55. h4 Qd5 56. Kg1 Kh7 57. Kf1 Qc4+ 58. Ke1 Qd3 59. Qc3 Qb1+ 60. Kd2 Qa2+ 61. Kc1 Qa3+ 62. Kb1 Qa2+ 63. Kc1 Qa3+ 64. Qb2 Qb4 65. Qc3 Qa3+ 66. Kd2 Qa2+ 67. Ke3 Kg6 68. Qc6+ Kf7 69. Qd7+ Kf8 70. Qxf5+ Ke7 71. Bc5+ Kd8 72. Bb6+ Ke7 73. Qe5+ Kd7 74. Qd5+ Ke7 75. Bc5+ Kf6 76. Qd6+ Kf5 77. Qd5+ Kf6 78. Qg5+ Ke6 79. Qe7+ Kd5 80. Qd6+ Kc4 81. Qd4+ Kb5 82. Qb4+ Kc6 83. Bd4 Qc2 84. Qc3+ Kd5 85. Qxc2 bxc2 86. Bb2 1-0",
     "date": "05-01-2019",
-    "event": "Campeonato Nacional 3ª Divisão",
+    "in_progress": false,
+    "event": "Campeonato Nacional 3ª Divisão 2018/2019",
     "round": 1,
     "table": 3,
     "white": {
@@ -359,7 +376,8 @@
   {
     "pgn": "1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. e5 Nfd7 5. f4 c5 6. Nf3 Nc6 7. Be3 cxd4 8. Nxd4 Bc5 9. Na4 Qa5+ 10. c3 Be7 11. b4 Qc7 12. a3 Nxd4 13. Bxd4 O-O 14. Bd3 f5 15. O-O Nb8 16. Rf3 Bd7 17. Nc5 b6 18. Nxd7 Nxd7 19. Rh3 g6 20. Rc1 Qb7 21. Qe2 a5 22. g4 Rf7 23. gxf5 gxf5 24. Kh1 Kh8 25. Qh5 Rg7 26. Rg1 Rag8 27. Rxg7 Rxg7 28. Qe8+ Nf8 29. Bb5 axb4 30. cxb4 Rg4 31. Be3 d4+ 32. Bc6 Qa6 33. Rg3 Rxg3 34. hxg3 dxe3 35. Qxe7 Ng6 36. Qf6+ Kg8 37. Qxe6+ Kg7 38. Qf6+ Kh6 39. Qg5+ Kg7 40. Qf6+ Kh6 41. Qg5+ 1/2-1/2",
     "date": "23-02-2019",
-    "event": "Campeonato Nacional 3ª Divisão",
+    "in_progress": false,
+    "event": "Campeonato Nacional 3ª Divisão 2018/2019",
     "round": 2,
     "table": 2,
     "white": {
@@ -380,7 +398,8 @@
   {
     "pgn": "1. g3 e5 2. Bg2 d5 3. d3 Nf6 4. Nf3 Nc6 5. O-O Bc5 6. c3 a5 7. Bg5 h6 8. Bxf6 Qxf6 9. Nxe5 Qxe5 10. d4 Nxd4 11. cxd4 Bxd4 12. Nd2 Bxb2 13. Rb1 c6 14. e4 O-O 15. exd5 cxd5 16. Nf3 Qc3 17. Qe2 Ba3 18. Rb3 Qc5 19. Qd3 Bb4 20. a3 Qc4 21. axb4 b5 22. bxa5 Rxa5 23. Nd2 Qxd3 24. Rxd3 b4 25. Bxd5 Ba6 26. Bc4 Bxc4 27. Nxc4 Rc5 28. Ne3 Rc3 29. Rxc3 bxc3 30. Rc1 Rc8 31. Nd5 Kf8 32. Rxc3 Rd8 33. Ne3 g6 34. Rc7 Rd6 35. Ng4 Kg7 36. Ne5 Rf6 37. Kg2 Rf5 38. f4 Kg8 39. Kf3 h5 40. Ke4 Kf8 41. h3 Kg7 42. Rc6 Rf6 43. Rxf6 Kxf6 44. g4 hxg4 45. hxg4 Ke6 46. Nxf7 Kxf7 47. Ke5 Ke7 48. g5 Kf7 49. Kd6 Kf8 50. Ke6 Kg7 51. Ke7 Kg8 52. Kf6 Kh7 53. Kf7 1-0",
     "date": "16-03-2019",
-    "event": "Campeonato Nacional 3ª Divisão",
+    "in_progress": false,
+    "event": "Campeonato Nacional 3ª Divisão 2018/2019",
     "round": 3,
     "table": 2,
     "white": {
@@ -401,7 +420,8 @@
   {
     "pgn": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h6 7. Nf3 Nd7 8. Bd3 Bxd3 9. Qxd3 Ngf6 10. Bd2 e6 11. O-O-O Qc7 12. Ne4 Nxe4 13. Qxe4 Nf6 14. Qe2 Bd6 15. Ne5 O-O-O 16. Nc4 Bf4 17. Bxf4 Qxf4+ 18. Qe3 Nd5 19. Qxf4 Nxf4 20. c3 h5 21. Ne5 Rhf8 22. g3 Nd5 23. Rhe1 Kc7 24. Kc2 Rde8 25. Re2 Rd8 26. Rd3 Ne7 27. Rf3 Nf5 28. b3 b6 29. Rd3 g6 30. a4 a5 31. Nf3 Rde8 32. Ng5 Rd8 33. Red2 Rd7 1/2-1/2",
     "date": "11-05-2019",
-    "event": "Campeonato Nacional 3ª Divisão",
+    "in_progress": false,
+    "event": "Campeonato Nacional 3ª Divisão 2018/2019",
     "round": 5,
     "table": 3,
     "white": {
@@ -422,7 +442,8 @@
   {
     "pgn": "1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. Bf4 dxc4 5. e3 b5 6. a4 Qb6 7. axb5 cxb5 8. b3 e6 9. bxc4 Bb4 10. Qb3 bxc4 11. Qxc4 Ba6 12. Qb3 Nd5 13. Qa4+ Ke7 14. Bxa6 Bxc3+ 15. Kf1 Bxa1 16. Qa3+ Kd8 17. Bb7 Qxb7 1-0",
     "date": "11-05-2019",
-    "event": "Campeonato Nacional 3ª Divisão",
+    "in_progress": false,
+    "event": "Campeonato Nacional 3ª Divisão 2018/2019",
     "round": 6,
     "table": 2,
     "white": {
@@ -434,10 +455,32 @@
     "black": {
         "title": "",
         "name": "Rui Alves",
-        "elo": 1651,
+        "elo": 0,
         "club": "GX Porto"
     },
     "result": "black",
     "view": "black"
+  },
+  {
+    "pgn": "1. e4 d5 2. exd5 Qxd5 3. Nc3 Qd8 4. d4 e6 5. Nf3 Nf6 6. Bc4 Bb4 7. Bd2 O-O 8. Qe2 c5 9. dxc5 Bxc5 10. O-O-O Bd7 11. Ne5 Qb6 12. Bg5 Bxf2 13. Bxf6 Be3+ 14. Kb1 Bc5 15. Qg4 g6 16. Nxd7 Nxd7 17. Rxd7 Ba3 18. Bb3 Bc5 19. Na4 Qc6 20. Nxc5 Qxc5 21. Qg5 Qf2 22. Qe5 Qxg2 23. Rhd1 Qf3 24. Bxe6 Rae8 25. Bxf7+ Rxf7 26. Qxe8+ Rf8 27. Rg7+ 1-0",
+    "date": "17-11-2019",
+    "in_progress": true,
+    "event": "Campeonato Distrital Absoluto Porto 2019",
+    "round": 1,
+    "table": null,
+    "white": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 1651,
+        "club": "GX Porto"
+    },
+    "black": {
+        "title": "",
+        "name": "Johnny Ferreira",
+        "elo": 0,
+        "club": "A. Criança"
+    },
+    "result": "white",
+    "view": "white"
   }
 ]
