@@ -482,5 +482,27 @@
     },
     "result": "white",
     "view": "white"
+  },
+  {
+    "pgn": "1. Nf3 d5 2. g3 c5 3. b3 Nc6 4. Bb2 Nf6 5. Bg2 Qc7 6. O-O e5 7. d3 h6 8. e4 dxe4 9. dxe4 Be6 10. Nc3 Rd8 11. Nd5 Nxd5 12. exd5 Bxd5 13. Qe2 Bd6 14. Nxe5 Bxe5 15. Rfe1 Bxg2 16. Bxe5 Nxe5 17. Qxe5+ Qxe5 18. Rxe5+ Kd7 19. Kxg2 Kc6 20. Re7 Rhf8 21. a4 Rd2 22. a5 Rd7 23. Rae1 Rfd8 24. h4 Rxe7 25. Rxe7 Rd7 26. Rxd7 Kxd7 27. Kf3 Kc6 28. c4 Kd6 29. Ke4 Ke6 30. h5 g6 31. g4 gxh5 32. gxh5 f5+ 33. Ke3 Ke5 34. f4+ Ke6 35. Kd3 Kd6 36. Kc3 Kc6 37. b4 b5 38. bxc5 Kxc5 39. cxb5 Kxb5 40. Kd4 Kxa5 41. Ke5 Kb6 42. Kxf5 a5 43. Kg6 a4 44. f5 a3 45. f6 a2 46. f7 a1=Q 47. f8=Q Qb1+ 48. Qf5 Qc1 49. Kg7 Kc7 50. Qf7+ Kd8 51. Qf6+ Ke8 52. Qe6+ Kd8 53. Qxh6 Qc7+ 54. Kh8 Qe5+ 55. Kh7 Qe7+ 56. Qg7 Qe4+ 57. Kh8 Qf5 58. h6 Ke8 59. Qg8+ Ke7 60. Qg3 Qf8+ 61. Kh7 Qf5+ 62. Kg8 Qf7+ 63. Kh8 Qf8+ 64. Qg8 Qf5 65. Qg7+ Ke8 66. Qg8+ Ke7 67. Kg7 Qf6+ 68. Kh7 Qf5+ 69. Kh8 Qf7 70. Qg5+ Ke6 71. Qe3+ Kf6 72. Qd4+ Ke7 73. Qe5+ Kf8 74. Qg7+ Ke8 75. Qe5+ Kf8 76. Qd6+ Ke8 77. Qc6+ Ke7 78. Qc5+ Ke8 79. Qe5+ Kf8 80. h7 Qg6 81. Qb8+ Ke7 82. Qc7+ Ke8 83. Qg7 Qf7 84. Qe5+ Kf8 85. Qa1 Ke7 86. Qa3+ Ke8 87. Qe3+ Kf8 88. Qe5 Qg6 89. Qd4 Ke7 90. Qg7+ Qf7 91. Qe5+ Kf8 92. Qg5 Ke8 93. Qe3+ Kf8 94. Qd4 Ke7 95. Qc3 Qf8# 0-1",
+    "date": "29-11-2019",
+    "in_progress": true,
+    "event": "Campeonato Distrital Absoluto Porto 2019",
+    "round": 3,
+    "table": null,
+    "white": {
+        "title": "",
+        "name": "Simão Pintor",
+        "elo": 2137,
+        "club": "Profigaia"
+    },
+    "black": {
+        "title": "",
+        "name": "Rui Alves",
+        "elo": 1651,
+        "club": "GX Porto"
+    },
+    "result": "black",
+    "view": "black"
   }
 ]
