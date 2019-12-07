@@ -7,16 +7,16 @@
     "round": 1,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "João Branco",
-        "elo": 1677,
-        "club": "EX Porto"
+      "title": "",
+      "name": "João Branco",
+      "elo": 1677,
+      "club": "EX Porto"
     },
     "result": "black",
     "view": "white"
@@ -29,16 +29,16 @@
     "round": 2,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Manuel Salvador",
-        "elo": 0,
-        "club": "EX Porto"
+      "title": "",
+      "name": "Manuel Salvador",
+      "elo": 0,
+      "club": "EX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "result": "black",
     "view": "black"
@@ -51,16 +51,16 @@
     "round": 3,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Rafael Borges",
-        "elo": 0,
-        "club": "CX Colégio Português"
+      "title": "",
+      "name": "Rafael Borges",
+      "elo": 0,
+      "club": "CX Colégio Português"
     },
     "result": "white",
     "view": "white"
@@ -73,16 +73,16 @@
     "round": 4,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Miguel Sismeiro",
-        "elo": 1614,
-        "club": "EX Porto"
+      "title": "",
+      "name": "Miguel Sismeiro",
+      "elo": 1614,
+      "club": "EX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "result": "white",
     "view": "black"
@@ -95,16 +95,16 @@
     "round": 5,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Sara Soares",
-        "elo": 1329,
-        "club": "EX Porto"
+      "title": "",
+      "name": "Sara Soares",
+      "elo": 1329,
+      "club": "EX Porto"
     },
     "result": "black",
     "view": "white"
@@ -117,16 +117,16 @@
     "round": 6,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Duarte Basílio",
-        "elo": 0,
-        "club": "AA Coimbra"
+      "title": "",
+      "name": "Duarte Basílio",
+      "elo": 0,
+      "club": "AA Coimbra"
     },
     "black": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "result": "black",
     "view": "black"
@@ -139,16 +139,16 @@
     "round": 1,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Artur Sequeira",
-        "elo": 1626,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Artur Sequeira",
+      "elo": 1626,
+      "club": "GX Porto"
     },
     "result": "white",
     "view": "white"
@@ -161,16 +161,16 @@
     "round": 2,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Alberto Pinto Monteiro",
-        "elo": 1835,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Alberto Pinto Monteiro",
+      "elo": 1835,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "result": "black",
     "view": "black"
@@ -183,16 +183,16 @@
     "round": 3,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Alberto Paulo Ferreira",
-        "elo": 2048,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Alberto Paulo Ferreira",
+      "elo": 2048,
+      "club": "GX Porto"
     },
     "result": "black",
     "view": "white"
@@ -205,16 +205,16 @@
     "round": 4,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Rui Mendes",
-        "elo": 1786,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Mendes",
+      "elo": 1786,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "result": "white",
     "view": "black"
@@ -227,16 +227,16 @@
     "round": 5,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Alvaro Sousa Brandão",
-        "elo": 1620,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Alvaro Sousa Brandão",
+      "elo": 1620,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "result": "black",
     "view": "black"
@@ -249,16 +249,16 @@
     "round": 6,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Nuno Rosário",
-        "elo": 1684,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Nuno Rosário",
+      "elo": 1684,
+      "club": "GX Porto"
     },
     "result": "white",
     "view": "white"
@@ -271,16 +271,16 @@
     "round": 7,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Miguel Coelho",
-        "elo": 1402,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Miguel Coelho",
+      "elo": 1402,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "result": "draw",
     "view": "black"
@@ -293,16 +293,16 @@
     "round": 1,
     "table": 4,
     "white": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 1639,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1639,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Daniel Silva",
-        "elo": 0,
-        "club": "EX Porto"
+      "title": "",
+      "name": "Daniel Silva",
+      "elo": 0,
+      "club": "EX Porto"
     },
     "result": "white",
     "view": "white"
@@ -315,16 +315,16 @@
     "round": 2,
     "table": 4,
     "white": {
-        "title": "",
-        "name": "Ricardo Andrade",
-        "elo": 1720,
-        "club": "GD Dias Ferreira"
+      "title": "",
+      "name": "Ricardo Andrade",
+      "elo": 1720,
+      "club": "GD Dias Ferreira"
     },
     "black": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 1639,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1639,
+      "club": "GX Porto"
     },
     "result": "white",
     "view": "black"
@@ -337,16 +337,16 @@
     "round": 1,
     "table": 4,
     "white": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 1639,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1639,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Francisca Camacho",
-        "elo": 0,
-        "club": "CX Colégio Português"
+      "title": "",
+      "name": "Francisca Camacho",
+      "elo": 0,
+      "club": "CX Colégio Português"
     },
     "result": "white",
     "view": "white"
@@ -359,16 +359,16 @@
     "round": 1,
     "table": 3,
     "white": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 1639,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1639,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Nuno Azevedo",
-        "elo": 1557,
-        "club": "CX UGTV"
+      "title": "",
+      "name": "Nuno Azevedo",
+      "elo": 1557,
+      "club": "CX UGTV"
     },
     "result": "white",
     "view": "white"
@@ -381,16 +381,16 @@
     "round": 2,
     "table": 2,
     "white": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 1639,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1639,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "NM",
-        "name": "Stephane Silva",
-        "elo": 2043,
-        "club": "CA Téssera"
+      "title": "NM",
+      "name": "Stephane Silva",
+      "elo": 2043,
+      "club": "CA Téssera"
     },
     "result": "draw",
     "view": "white"
@@ -403,16 +403,16 @@
     "round": 3,
     "table": 2,
     "white": {
-        "title": "",
-        "name": "Daniel Silva",
-        "elo": 1650,
-        "club": "AX Gaia"
+      "title": "",
+      "name": "Daniel Silva",
+      "elo": 1650,
+      "club": "AX Gaia"
     },
     "black": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 1672,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1672,
+      "club": "GX Porto"
     },
     "result": "white",
     "view": "black"
@@ -425,16 +425,16 @@
     "round": 5,
     "table": 3,
     "white": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 1651,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1651,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Rafael Ribeiro",
-        "elo": 1744,
-        "club": "CX Colégio Português"
+      "title": "",
+      "name": "Rafael Ribeiro",
+      "elo": 1744,
+      "club": "CX Colégio Português"
     },
     "result": "draw",
     "view": "white"
@@ -447,16 +447,16 @@
     "round": 6,
     "table": 2,
     "white": {
-        "title": "",
-        "name": "João Castro",
-        "elo": 1484,
-        "club": "Profigaia"
+      "title": "",
+      "name": "João Castro",
+      "elo": 1484,
+      "club": "Profigaia"
     },
     "black": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 0,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 0,
+      "club": "GX Porto"
     },
     "result": "black",
     "view": "black"
@@ -469,16 +469,16 @@
     "round": 1,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 1651,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1651,
+      "club": "GX Porto"
     },
     "black": {
-        "title": "",
-        "name": "Johnny Ferreira",
-        "elo": 0,
-        "club": "A. Criança"
+      "title": "",
+      "name": "Johnny Ferreira",
+      "elo": 0,
+      "club": "A. Criança"
     },
     "result": "white",
     "view": "white"
@@ -491,18 +491,41 @@
     "round": 3,
     "table": null,
     "white": {
-        "title": "",
-        "name": "Simão Pintor",
-        "elo": 2137,
-        "club": "Profigaia"
+      "title": "",
+      "name": "Simão Pintor",
+      "elo": 2137,
+      "club": "Profigaia"
     },
     "black": {
-        "title": "",
-        "name": "Rui Alves",
-        "elo": 1651,
-        "club": "GX Porto"
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1651,
+      "club": "GX Porto"
     },
     "result": "black",
     "view": "black"
+  },
+  {
+    "pgn": "1. e4 c5 2. Nf3 e6 3. d3 d5 4. Nbd2 Nc6 5. g3 g6 6. Bg2 Bg7 7. O-O Nge7 8. Re1 O-O 9. c3 d4 10. Qc2 e5 11. a3 b6 12. b4 Be6 13. Ng5 Qd7 14. Nxe6 Qxe6 15. bxc5 bxc5 16. Nc4 Rfd8 17. Bd2 Rab8 18. Rab1 Qd7 19. Rxb8 Rxb8 20. Rb1 Qc7 21. Rxb8+ Qxb8 22. Qb2 Qxb2 23. Nxb2 Na5 24. c4 Nb3 25. Be1 Bh6 26. Na4 Nc6 27. Bf3 Bf8 28. Bd1 Nba5 1/2-1/2",
+    "date": "06-12-2019",
+    "in_progress": true,
+    "event": "Campeonato Distrital Absoluto Porto 2019",
+    "round": 4,
+    "table": null,
+    "white": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1651,
+      "club": "GX Porto"
+    },
+    "black": {
+      "title": "",
+      "name": "Duarte Duarte",
+      "elo": 1893,
+      "club": "A. Criança"
+    },
+    "result": "draw",
+    "view": "white"
   }
 ]
+
