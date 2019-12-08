@@ -75,7 +75,6 @@ module.exports = {
       "new-parens": "error",
       "no-mixed-operators": "error",
       "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
-      "no-nested-ternary": "error",
       "no-trailing-spaces": "error",
       "no-tabs": "error",
       "object-curly-spacing": ["error", "always"],

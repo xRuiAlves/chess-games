@@ -22,6 +22,28 @@ const GameItem = (game) => (
                         <strong>{game.black.club}</strong>
                     </p>
             }
+
+            {game.result && game.view &&
+                <p>
+                    <strong>
+                        {game.result === "draw" &&
+                            <span className="game-draw">
+                                Draw
+                            </span>
+                        }
+                        {game.result !== "draw" && game.result === game.view &&
+                            <span className="game-victory">
+                                Victory
+                            </span>
+                        }
+                        {game.result !== "draw" && game.result !== game.view &&
+                            <span className="game-defeat">
+                                Defeat
+                            </span>}
+                    </strong>
+                </p>
+            }
+
         </div>
 
         <p>

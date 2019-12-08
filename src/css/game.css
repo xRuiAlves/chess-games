@@ -85,3 +85,15 @@ header.game-header .game-date {
 .game-item .game-date::before {
     content: ", ";
 }
+
+.game-victory {
+    color: #238c27;
+}
+
+.game-defeat {
+    color: #960f0f;
+}
+
+.game-draw {
+    color: #828282;
+}
