@@ -526,6 +526,28 @@
     },
     "result": "draw",
     "view": "white"
+  },
+  {
+    "pgn": "1. e4 c5 2. Nc3 e6 3. g3 Nc6 4. Bg2 g6 5. d3 Bg7 6. Be3 Qa5 7. Ne2 b5 8. a3 Bd4 9. b4 Bxc3+ 10. Nxc3 cxb4 11. axb4 Qxb4 12. Qd2 a6 13. O-O e5 14. Rfb1 Qe7 15. Nxb5 d6 16. Bb6 Rb8 17. Nc7+ Kf8 18. Nd5 Qe6 19. Bc7 Rxb1+ 20. Rxb1 Nge7 21. Qh6+ Kg8 22. Rb6 1-0",
+    "date": "07-12-2019",
+    "in_progress": true,
+    "event": "Campeonato Distrital Absoluto Porto 2019",
+    "round": 5,
+    "table": null,
+    "white": {
+      "title": "",
+      "name": "Rui Guimarães",
+      "elo": 2168,
+      "club": "GX 113"
+    },
+    "black": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1651,
+      "club": "GX Porto"
+    },
+    "result": "white",
+    "view": "black"
   }
 ]
 
