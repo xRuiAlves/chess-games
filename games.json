@@ -464,7 +464,7 @@
   {
     "pgn": "1. e4 d5 2. exd5 Qxd5 3. Nc3 Qd8 4. d4 e6 5. Nf3 Nf6 6. Bc4 Bb4 7. Bd2 O-O 8. Qe2 c5 9. dxc5 Bxc5 10. O-O-O Bd7 11. Ne5 Qb6 12. Bg5 Bxf2 13. Bxf6 Be3+ 14. Kb1 Bc5 15. Qg4 g6 16. Nxd7 Nxd7 17. Rxd7 Ba3 18. Bb3 Bc5 19. Na4 Qc6 20. Nxc5 Qxc5 21. Qg5 Qf2 22. Qe5 Qxg2 23. Rhd1 Qf3 24. Bxe6 Rae8 25. Bxf7+ Rxf7 26. Qxe8+ Rf8 27. Rg7+ 1-0",
     "date": "17-11-2019",
-    "in_progress": true,
+    "in_progress": false,
     "event": "Campeonato Distrital Absoluto Porto 2019",
     "round": 1,
     "table": null,
@@ -486,7 +486,7 @@
   {
     "pgn": "1. Nf3 d5 2. g3 c5 3. b3 Nc6 4. Bb2 Nf6 5. Bg2 Qc7 6. O-O e5 7. d3 h6 8. e4 dxe4 9. dxe4 Be6 10. Nc3 Rd8 11. Nd5 Nxd5 12. exd5 Bxd5 13. Qe2 Bd6 14. Nxe5 Bxe5 15. Rfe1 Bxg2 16. Bxe5 Nxe5 17. Qxe5+ Qxe5 18. Rxe5+ Kd7 19. Kxg2 Kc6 20. Re7 Rhf8 21. a4 Rd2 22. a5 Rd7 23. Rae1 Rfd8 24. h4 Rxe7 25. Rxe7 Rd7 26. Rxd7 Kxd7 27. Kf3 Kc6 28. c4 Kd6 29. Ke4 Ke6 30. h5 g6 31. g4 gxh5 32. gxh5 f5+ 33. Ke3 Ke5 34. f4+ Ke6 35. Kd3 Kd6 36. Kc3 Kc6 37. b4 b5 38. bxc5 Kxc5 39. cxb5 Kxb5 40. Kd4 Kxa5 41. Ke5 Kb6 42. Kxf5 a5 43. Kg6 a4 44. f5 a3 45. f6 a2 46. f7 a1=Q 47. f8=Q Qb1+ 48. Qf5 Qc1 49. Kg7 Kc7 50. Qf7+ Kd8 51. Qf6+ Ke8 52. Qe6+ Kd8 53. Qxh6 Qc7+ 54. Kh8 Qe5+ 55. Kh7 Qe7+ 56. Qg7 Qe4+ 57. Kh8 Qf5 58. h6 Ke8 59. Qg8+ Ke7 60. Qg3 Qf8+ 61. Kh7 Qf5+ 62. Kg8 Qf7+ 63. Kh8 Qf8+ 64. Qg8 Qf5 65. Qg7+ Ke8 66. Qg8+ Ke7 67. Kg7 Qf6+ 68. Kh7 Qf5+ 69. Kh8 Qf7 70. Qg5+ Ke6 71. Qe3+ Kf6 72. Qd4+ Ke7 73. Qe5+ Kf8 74. Qg7+ Ke8 75. Qe5+ Kf8 76. Qd6+ Ke8 77. Qc6+ Ke7 78. Qc5+ Ke8 79. Qe5+ Kf8 80. h7 Qg6 81. Qb8+ Ke7 82. Qc7+ Ke8 83. Qg7 Qf7 84. Qe5+ Kf8 85. Qa1 Ke7 86. Qa3+ Ke8 87. Qe3+ Kf8 88. Qe5 Qg6 89. Qd4 Ke7 90. Qg7+ Qf7 91. Qe5+ Kf8 92. Qg5 Ke8 93. Qe3+ Kf8 94. Qd4 Ke7 95. Qc3 Qf8# 0-1",
     "date": "29-11-2019",
-    "in_progress": true,
+    "in_progress": false,
     "event": "Campeonato Distrital Absoluto Porto 2019",
     "round": 3,
     "table": null,
@@ -508,7 +508,7 @@
   {
     "pgn": "1. e4 c5 2. Nf3 e6 3. d3 d5 4. Nbd2 Nc6 5. g3 g6 6. Bg2 Bg7 7. O-O Nge7 8. Re1 O-O 9. c3 d4 10. Qc2 e5 11. a3 b6 12. b4 Be6 13. Ng5 Qd7 14. Nxe6 Qxe6 15. bxc5 bxc5 16. Nc4 Rfd8 17. Bd2 Rab8 18. Rab1 Qd7 19. Rxb8 Rxb8 20. Rb1 Qc7 21. Rxb8+ Qxb8 22. Qb2 Qxb2 23. Nxb2 Na5 24. c4 Nb3 25. Be1 Bh6 26. Na4 Nc6 27. Bf3 Bf8 28. Bd1 Nba5 1/2-1/2",
     "date": "06-12-2019",
-    "in_progress": true,
+    "in_progress": false,
     "event": "Campeonato Distrital Absoluto Porto 2019",
     "round": 4,
     "table": null,
@@ -530,7 +530,7 @@
   {
     "pgn": "1. e4 c5 2. Nc3 e6 3. g3 Nc6 4. Bg2 g6 5. d3 Bg7 6. Be3 Qa5 7. Ne2 b5 8. a3 Bd4 9. b4 Bxc3+ 10. Nxc3 cxb4 11. axb4 Qxb4 12. Qd2 a6 13. O-O e5 14. Rfb1 Qe7 15. Nxb5 d6 16. Bb6 Rb8 17. Nc7+ Kf8 18. Nd5 Qe6 19. Bc7 Rxb1+ 20. Rxb1 Nge7 21. Qh6+ Kg8 22. Rb6 1-0",
     "date": "07-12-2019",
-    "in_progress": true,
+    "in_progress": false,
     "event": "Campeonato Distrital Absoluto Porto 2019",
     "round": 5,
     "table": null,
@@ -539,6 +539,28 @@
       "name": "Rui Guimarães",
       "elo": 2168,
       "club": "GX 113"
+    },
+    "black": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1651,
+      "club": "GX Porto"
+    },
+    "result": "white",
+    "view": "black"
+  },
+  {
+    "pgn": "1. d4 g6 2. c4 Bg7 3. Nc3 Nf6 4. g3 O-O 5. Bg2 d6 6. Nf3 Re8 7. e4 Nbd7 8. O-O e5 9. d5 Nb6 10. Nd2 Nh5 11. b4 Bh6 12. c5 Nd7 13. cxd6 cxd6 14. Nc4 Bf8 15. Bd2 Nb6 16. Na5 Ng7 17. Qe2 Rb8 18. Rfc1 Bd7 19. Be3 Be7 20. Qd2 f5 21. f3 Rf8 22. Bf1 Nh5 23. Ne2 fxe4 24. fxe4 Bf6 25. Rc3 Qe7 26. Rac1 Na4 27. Rc7 b6 28. Nc6 Qe8 29. Nxb8 1-0",
+    "date": "13-12-2019",
+    "in_progress": false,
+    "event": "Campeonato Distrital Absoluto Porto 2019",
+    "round": 6,
+    "table": null,
+    "white": {
+      "title": "",
+      "name": "Ricardo Marques",
+      "elo": 1558,
+      "club": "GD Dias Ferreira"
     },
     "black": {
       "title": "",
