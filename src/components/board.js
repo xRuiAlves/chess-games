@@ -113,6 +113,15 @@ const parseFen = (fen) => {
     return parsed_fen.join("");
 };
 
+const setUrlMoveNumber = (move_number, num_moves) => {
+    if (history.pushState) {
+        const move = Math.max(0, Math.min(move_number, num_moves));
+        const query_params = move > 0 ? `?move=${move}` : "";
+        const url = `${window.location.protocol}//${window.location.host}${window.location.pathname}${query_params}`;
+        window.history.pushState({ path: url }, "", url);
+    }
+};
+
 class Board extends Component {
     constructor(props) {
         super(props);
@@ -181,14 +190,20 @@ class Board extends Component {
         fens.unshift(parseFen(chess.fen()));
         raw_fens.unshift(chess.fen());
 
+        const move = new URLSearchParams(window.location.search).get("move");
+        let move_number = 0;
+        if (move && !isNaN(move)) {
+            const num_moves = fens.length - 1;
+            move_number = Math.max(0, Math.min(parseInt(move, 10), num_moves));
+        }
+
         this.setState({
             fens,
             raw_fens,
             reversed_view,
             pgn_elems,
-        });
-
-        drawBoardFromFen(fens[0], reversed_view);
+            move_number,
+        }, () => this.updateMoveNumber(move_number));
     }
 
     componentWillUnmount() {
@@ -196,6 +211,7 @@ class Board extends Component {
     }
 
     updateMoveNumber = (move_number) => {
+        setUrlMoveNumber(move_number, this.state.fens.length - 1);
         this.setState({ move_number }, this.drawBoard);
     }
 
