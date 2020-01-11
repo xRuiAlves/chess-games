@@ -614,5 +614,27 @@
     },
     "result": "white",
     "view": "white"
+  },
+  {
+    "pgn": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Qc2 Bd6 7. Bd3 dxc4 8. Bxc4 b5 9. Be2 Bb7 10. O-O a6 11. e4 e5 12. Bg5 O-O 13. Rad1 Qc7 14. g3 exd4 15. Nxd4 b4 16. Nf5 Bxg3 17. hxg3 bxc3 18. Qxc3 c5 19. Rxd7 Qxd7 20. Bxf6 h6 21. Bxg7 1-0",
+    "date": "11-01-2020",
+    "in_progress": true,
+    "event": "Campeonato Nacional 2ª Divisão 2019/2020",
+    "round": 2,
+    "table": 3,
+    "white": {
+      "title": "",
+      "name": "Guilherme Borges",
+      "elo": 2132,
+      "club": "GD Dias Ferreira"
+    },
+    "black": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1643,
+      "club": "GX Porto"
+    },
+    "result": "white",
+    "view": "black"
   }
 ]
