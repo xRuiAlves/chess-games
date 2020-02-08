@@ -636,5 +636,27 @@
     },
     "result": "white",
     "view": "black"
+  },
+  {
+    "pgn": "1. e4 d5 2. exd5 Qxd5 3. Nc3 Qd6 4. d4 Nf6 5. Nf3 a6 6. Bc4 Bg4 7. Bb3 Nc6 8. Be3 e6 9. h3 Bh5 10. g4 Bg6 11. d5 Nxd5 12. Nxd5 exd5 13. Qxd5 O-O-O 14. Qxd6 Bxd6 15. Nh4 Be4 16. O-O Ne5 17. f3 Bc6 18. f4 Ng6 19. Nf5 Rhe8 20. Bxf7 Rxe3 21. Nxe3 Nxf4 22. Rxf4 Bxf4 23. Nf5 Bg5 24. Rf1 g6 25. h4 gxf5 26. hxg5 fxg4 27. Be6+ Bd7 28. Bxd7+ Rxd7 29. Rf8+ 1/2-1/2",
+    "date": "08-02-2020",
+    "in_progress": true,
+    "event": "Campeonato Nacional 2ª Divisão 2019/2020",
+    "round": 3,
+    "table": 3,
+    "white": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1647,
+      "club": "GX Porto"
+    },
+    "black": {
+      "title": "",
+      "name": "Miguel Palhas",
+      "elo": 1484,
+      "club": "ADC Perre"
+    },
+    "result": "draw",
+    "view": "white"
   }
 ]
