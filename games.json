@@ -658,5 +658,27 @@
     },
     "result": "draw",
     "view": "white"
+  },
+  {
+    "pgn": "1. Nf3 d5 2. g3 c5 3. Bg2 Nc6 4. d3 Nf6 5. O-O g6 6. Nbd2 Bg7 7. e4 O-O 8. Re1 dxe4 9. dxe4 e5 10. c3 Qc7 11. Qc2 a5 12. a4 b6 13. Nc4 Ba6 14. Na3 Na7 15. Be3 Ng4 16. Bc1 Rad8 17. h3 Nf6 18. Be3 Bd3 19. Qc1 Bxe4 20. Bh6 Rd3 21. Rxe4 Nxe4 22. Bxg7 Kxg7 23. Ne1 Nxg3 24. fxg3 Rxg3 25. Qc2 f5 26. Rd1 f4 27. Rd3 Rxd3 28. Qxd3 Rd8 29. Qe4 Kf6 30. Nf3 Re8 31. h4 h6 32. Bh3 Qc6 33. Qxc6+ Nxc6 34. Bd7 Re6 35. Nd2 Ne7 36. Nac4 Nf5 37. Ne4+ Ke7 38. Bxe6 Kxe6 39. Nxb6 Nxh4 40. Nxc5+ Kd6 41. b4 g5 42. Nc4+ Kd5 43. Nxa5 e4 44. c4+ Kd4 45. Nc6+ Kxc4 46. Nxe4 Nf5 47. Nd2+ Kd5 48. b5 Nd6 49. Nb3 Kc4 50. Nbd4 Kc5 51. a5 Nxb5 52. a6 Kb6 53. Nxb5 Kxa6 1/2-1/2",
+    "date": "07-03-2020",
+    "in_progress": false,
+    "event": "Taça AXP 2019/2020",
+    "round": 2,
+    "table": 3,
+    "white": {
+      "title": "",
+      "name": "Bruno Lopes",
+      "elo": 1543,
+      "club": "AX Gaia"
+    },
+    "black": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1638,
+      "club": "GX Porto"
+    },
+    "result": "draw",
+    "view": "black"
   }
 ]
