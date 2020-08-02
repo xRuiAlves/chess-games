@@ -4,13 +4,13 @@ import "../css/history-table.css";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { getPlayerHistory } from "../utils/api";
+import { getLivePlayerHistory } from "../utils/api";
 
 export default class History extends React.Component {
     state = {};
 
     componentDidMount() {
-        getPlayerHistory().then((res) => res.status === 200 && this.setState({ history: res.data }));
+        getLivePlayerHistory().then((res) => res.status === 200 && this.setState({ history: res.data }));
     }
 
     render() {

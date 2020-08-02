@@ -51,14 +51,14 @@ const Game = ({ data }) => {
                 </h2>
                 <p>
                     <strong>{game.event}</strong>
-                    {game.round && <span>,&nbsp;&nbsp;Round <strong>{game.round}</strong></span>}
+                    {game.round && <span>, round <strong>{game.round}</strong></span>}
                 </p>
                 {game.table && game.white.club && game.black.club &&
                     <p>
                         <strong>{game.white.club}</strong>
                         <span> vs </span>
                         <strong>{game.black.club}</strong>
-                        <span>,&nbsp;&nbsp;Table <strong>{game.table}</strong></span>
+                        <span>, table <strong>{game.table}</strong></span>
                     </p>
                 }
             </header>

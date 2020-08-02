@@ -1,10 +1,20 @@
 import axios from "axios";
 
-const RATINGS_API_BASE_URL = "https://lit-wildwood-98645.herokuapp.com";
-const PLAYER_FIDE_NUM = 1962000;
+const API_URLS = Object.freeze({
+    LIVE_RATINGS_BASE_URL: "https://lit-wildwood-98645.herokuapp.com",
+    LICHESS_RATINGS_URL: "https://lichess.org/api/user",
+});
 
-export const getPlayerHistory = () => {
-    const endpoint = `${RATINGS_API_BASE_URL}/player/${PLAYER_FIDE_NUM}/history`;
+const PLAYER = Object.freeze({
+    id: "rui-alves",
+    username: "Rui-Alves",
+    fide_num: 1962000,
+});
 
-    return axios.get(endpoint);
-};
+export const getLivePlayerHistory = () => (
+    axios.get(`${API_URLS.LIVE_RATINGS_BASE_URL}/player/${PLAYER.fide_num}/history`)
+);
+
+export const getLichessRatings = () => (
+    axios.get(`${API_URLS.LICHESS_RATINGS_URL}/${PLAYER.id}`)
+);
