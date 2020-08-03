@@ -19,7 +19,6 @@ const Ratings = () => {
                 const history = res.data;
                 const current = history[0];
                 const highest = history.reduce((prev, curr) => curr.standard > prev.standard ? curr : prev);
-
                 setLiveRatings({
                     current: {
                         elo: current.standard,
@@ -64,33 +63,33 @@ const Ratings = () => {
                         <div>
                             Loading ...
                         </div> :
-                    <>
-                        {lichessRatingsError ?
-                            <div>
+                        <>
+                            {lichessRatingsError ?
+                                <div>
                                 Failed to fetch Lichess ratings.
-                            </div> :
-                            <>
-                                <div style={{ marginBottom: "0.4em" }}>
-                                    <strong>Nickname: </strong>
-                                    <a className="lichess-id"href={`${LICHESS_PROFILE_URL}/${lichessRatings.id}`}>
+                                </div> :
+                                <>
+                                    <div style={{ marginBottom: "0.4em" }}>
+                                        <strong>Nickname: </strong>
+                                        <a className="lichess-id"href={`${LICHESS_PROFILE_URL}/${lichessRatings.id}`}>
                                         @{lichessRatings.username}
-                                    </a>
-                                </div>
-                                <div style={{ marginBottom: "0.4em" }}>
-                                    <strong>Blitz: </strong>{lichessRatings.blitz}
-                                </div>
-                                <div style={{ marginBottom: "0.4em" }}>
-                                    <strong>Rapid: </strong>{lichessRatings.rapid}
-                                </div>
-                                <div style={{ marginBottom: "0.4em" }}>
-                                    <strong>Classical: </strong>{lichessRatings.classical}
-                                </div>
-                                <div style={{ marginBottom: "0.4em" }}>
-                                    <strong>Correspondence: </strong>{lichessRatings.correspondence}
-                                </div>
-                            </>
-                        }
-                    </>
+                                        </a>
+                                    </div>
+                                    <div style={{ marginBottom: "0.4em" }}>
+                                        <strong>Blitz: </strong>{lichessRatings.blitz}
+                                    </div>
+                                    <div style={{ marginBottom: "0.4em" }}>
+                                        <strong>Rapid: </strong>{lichessRatings.rapid}
+                                    </div>
+                                    <div style={{ marginBottom: "0.4em" }}>
+                                        <strong>Classical: </strong>{lichessRatings.classical}
+                                    </div>
+                                    <div style={{ marginBottom: "0.4em" }}>
+                                        <strong>Correspondence: </strong>{lichessRatings.correspondence}
+                                    </div>
+                                </>
+                            }
+                        </>
                     }
                 </div>
                 <div>
@@ -99,27 +98,27 @@ const Ratings = () => {
                         <div>
                             Loading ...
                         </div> :
-                    <>
-                        {liveRatingsError ?
-                            <div>
-                                Failed to fetch live ratings.
-                            </div> :
-                            <>
-                                <div style={{ marginBottom: "0.4em" }}>
-                                    <strong>Current: </strong>{liveRatings.current.elo}, as of {liveRatings.current.date}
-                                </div>
-                                <div style={{ marginBottom: "0.4em" }}>
-                                    <strong>Highest: </strong>{liveRatings.highest.elo}, as of {liveRatings.highest.date}
-                                </div>
+                        <>
+                            {liveRatingsError ?
                                 <div>
+                                Failed to fetch live ratings.
+                                </div> :
+                                <>
+                                    <div style={{ marginBottom: "0.4em" }}>
+                                        <strong>Current: </strong>{liveRatings.current.elo}, as of {liveRatings.current.date}
+                                    </div>
+                                    <div style={{ marginBottom: "0.4em" }}>
+                                        <strong>Highest: </strong>{liveRatings.highest.elo}, as of {liveRatings.highest.date}
+                                    </div>
+                                    <div>
                                     See my full ratings list{" "}
-                                    <Link className="emphasized-anchor" to={"/history"}>
+                                        <Link className="emphasized-anchor" to={"/history"}>
                                         here
-                                    </Link>.
-                                </div>
-                            </>
-                        }
-                    </>
+                                        </Link>.
+                                    </div>
+                                </>
+                            }
+                        </>
                     }
                 </div>
             </section>

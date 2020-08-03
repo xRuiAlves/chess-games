@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URLS = Object.freeze({
-    LIVE_RATINGS_BASE_URL: "https://lit-wildwood-98645.herokuapp.com",
+    LIVE_RATINGS_BASE_URL: "https://fide-ratings-scraper.herokuapp.com",
     LICHESS_RATINGS_URL: "https://lichess.org/api/user",
 });
 
