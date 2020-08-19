@@ -45,6 +45,7 @@ const Ratings = () => {
                     rapid: data.perfs.rapid.rating,
                     classical: data.perfs.classical.rating,
                     correspondence: data.perfs.correspondence.rating,
+                    puzzle: data.perfs.puzzle.rating,
                 });
                 setLichessRatingsLoading(false);
             })
@@ -86,6 +87,9 @@ const Ratings = () => {
                                     </div>
                                     <div style={{ marginBottom: "0.4em" }}>
                                         <strong>Correspondence: </strong>{lichessRatings.correspondence}
+                                    </div>
+                                    <div style={{ marginBottom: "0.4em" }}>
+                                        <strong>Puzzles: </strong>{lichessRatings.puzzle}
                                     </div>
                                 </>
                             }
