@@ -119,7 +119,7 @@ const setUrlMoveNumber = (move_number, num_moves) => {
         const move = Math.max(0, Math.min(move_number, num_moves));
         const query_params = move > 0 ? `?move=${move}` : "";
         const url = `${window.location.protocol}//${window.location.host}${window.location.pathname}${query_params}`;
-        window.history.pushState({ path: url }, "", url);
+        window.history.replaceState({ path: url }, "", url);
     }
 };
 
