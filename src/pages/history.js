@@ -10,7 +10,9 @@ export default class History extends React.Component {
     state = {};
 
     componentDidMount() {
-        getLivePlayerHistory().then((res) => res.status === 200 && this.setState({ history: res.data }));
+        getLivePlayerHistory()
+            .then((res) => res.json())
+            .then((res) => this.setState({ history: res }));
     }
 
     render() {

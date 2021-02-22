@@ -15,8 +15,9 @@ const Ratings = () => {
 
     useEffect(() => {
         getLivePlayerHistory()
+            .then((res) => res.json())
             .then((res) => {
-                const history = res.data;
+                const history = res;
                 const current = history[0];
                 const highest = history.reduce((prev, curr) => curr.standard > prev.standard ? curr : prev);
                 setLiveRatings({
@@ -37,15 +38,16 @@ const Ratings = () => {
             });
 
         getLichessRatings()
-            .then(({ data }) => {
+            .then((res) => res.json())
+            .then((res) => {
                 setLichessRatings({
-                    id: data.id,
-                    username: data.username,
-                    blitz: data.perfs.blitz.rating,
-                    rapid: data.perfs.rapid.rating,
-                    classical: data.perfs.classical.rating,
-                    correspondence: data.perfs.correspondence.rating,
-                    puzzle: data.perfs.puzzle.rating,
+                    id: res.id,
+                    username: res.username,
+                    blitz: res.perfs.blitz.rating,
+                    rapid: res.perfs.rapid.rating,
+                    classical: res.perfs.classical.rating,
+                    correspondence: res.perfs.correspondence.rating,
+                    puzzle: res.perfs.puzzle.rating,
                 });
                 setLichessRatingsLoading(false);
             })
