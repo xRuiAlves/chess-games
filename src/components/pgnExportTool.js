@@ -1,18 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { buildPGNString } from "../utils/pgnBuilder";
 import { saveAs } from "file-saver";
 import "../css/export-tool.css";
 
-const exportPGN = (pgn, white, black, date) => {
-    const file_content = new Blob([pgn], { type: "text/plain;charset=utf-8" });
+const exportPGN = (props) => {
+    const { white, black, date } = props;
+
     const white_name = white.name.split(" ").join("");
     const black_name = black.name.split(" ").join("");
     const file_name = `${white_name}_vs_${black_name}_${date}.pgn`;
+
+    const file_content = new Blob([buildPGNString(props)], { type: "text/plain;charset=utf-8" });
     saveAs(file_content, file_name);
 };
 
-const PGNExportTool = ({ pgn, white, black, date }) => (
-    <span className="export-tool-button" onClick={() => exportPGN(pgn, white, black, date)}>
+const PGNExportTool = (props) => (
+    <span className="export-tool-button" onClick={() => exportPGN(props)}>
         Export PGN
     </span>
 );
