@@ -1,3 +1,5 @@
+require("dotenv-flow").config();
+
 module.exports = {
     siteMetadata: {
         title: "Rui Chess Games",
@@ -30,7 +32,7 @@ module.exports = {
         {
             resolve: "gatsby-plugin-google-analytics",
             options: {
-                trackingId: "UA-154963609-1",
+                trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
             },
         },
     ],
