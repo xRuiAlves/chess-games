@@ -1,6 +1,7 @@
 .export-tool-button {
     display: inline-block;
     margin-top: 1.5em;
+    margin-right: 0.8em;
     background-color: var(--color-primary-lighter);
     cursor: pointer;
     padding: 0.3em 1em;
@@ -15,8 +16,4 @@
 
 .export-tool-button:hover {
     background-color: var(--color-primary-light)
-}
-
-.export-tool-button ~ .export-tool-button {
-    margin-left: 0.8em;
 }

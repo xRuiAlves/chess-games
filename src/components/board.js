@@ -9,6 +9,7 @@ import Chess from "chess.js";
 import { Link } from "gatsby";
 import PGNExportTool from "./pgnExportTool";
 import FENExportTool from "./fenExportTool";
+import LichessAnalysisTool from "./lichessAnalysisTool";
 
 const FEN_CHAR_TO_TYPE = {
     "p": "black-pawn",
@@ -297,6 +298,7 @@ class Board extends Component {
                 <div className="export-tools">
                     <PGNExportTool {...this.props} />
                     <FENExportTool fen={raw_fens[move_number] || ""} move_number={move_number} />
+                    <LichessAnalysisTool {...this.props} />
                 </div>
             </div>
             :
