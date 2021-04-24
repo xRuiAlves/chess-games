@@ -724,5 +724,27 @@
     },
     "result": "white",
     "view": "white"
+  },
+  {
+    "pgn": "1. e4 c5 2. Nf3 e6 3. d3 d5 4. Nbd2 Nf6 5. g3 Be7 6. Bg2 O-O 7. O-O Nc6 8. e5 Nd7 9. Re1 Qc7 10. Qe2 b5 11. Nf1 a5 12. a3 Ba6 13. Bf4 b4 14. a4 c4 15. Qd2 cxd3 16. cxd3 Nc5 17. Qd1 Nxd3 18. Ng5 Bxg5 0-1",
+    "date": "24-04-2021",
+    "in_progress": true,
+    "event": "Campeonato Nacional 3ª Divisão 2020/2021",
+    "round": 1,
+    "table": 2,
+    "white": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1651,
+      "club": "GX Porto"
+    },
+    "black": {
+      "title": "",
+      "name": "Fábio Barbosa",
+      "elo": 2077,
+      "club": "AX Gaia B"
+    },
+    "result": "black",
+    "view": "white"
   }
 ]
