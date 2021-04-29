@@ -15,7 +15,12 @@ const Ratings = () => {
 
     useEffect(() => {
         getLivePlayerHistory()
-            .then((res) => res.json())
+            .then((res) => {
+                if (!res.ok) {
+                    throw res.status;
+                }
+                return res.json();
+            })
             .then((res) => {
                 const history = res;
                 const current = history[0];
@@ -33,8 +38,8 @@ const Ratings = () => {
                 setLiveRatingsLoading(false);
             })
             .catch((_err) => {
-                setLiveRatingsLoading(false);
                 setLiveRatingsError(true);
+                setLiveRatingsLoading(false);
             });
 
         getLichessRatings()
