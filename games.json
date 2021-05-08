@@ -735,7 +735,7 @@
     "white": {
       "title": "",
       "name": "Rui Alves",
-      "elo": 1651,
+      "elo": 1649,
       "club": "GX Porto"
     },
     "black": {
@@ -745,6 +745,28 @@
       "club": "AX Gaia B"
     },
     "result": "black",
+    "view": "white"
+  },
+  {
+    "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. c3 dxc3 5. Nxc3 a6 6. Bc4 Qc7 7. Bb3 Nc6 8. O-O Nf6 9. Qe2 Bc5 10. e5 Ng4 11. Bf4 f5 12. h3 Nh6 13. Bxh6 gxh6 14. Nh4 Qxe5 15. Qh5+ Ke7 16. Qxh6 Qf6 17. Nxf5+ Kf7 18. Qxf6+ Kxf6 19. Ne4+ Kxf5 20. Nxc5 d5 21. g4+ Kf6 22. f4 Nd4 23. Rad1 Nxb3 24. Nxb3 Rd8 25. Nd4 b5 26. Rfe1 Rd6 27. Rc1 Bd7 28. g5+ Kf7 29. Nf3 Rc8 30. Rxc8 Bxc8 31. Rc1 Rd8 32. Rc7+ Kg8 33. Ne5 d4 34. Kf2 Kh8 35. Nf7+ 1-0",
+    "date": "08-05-2021",
+    "in_progress": true,
+    "event": "Campeonato Nacional 3ª Divisão 2020/2021",
+    "round": 2,
+    "table": 3,
+    "white": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1649,
+      "club": "GX Porto"
+    },
+    "black": {
+      "title": "",
+      "name": "João Cálix",
+      "elo": 1828,
+      "club": "Acad. Espinho A"
+    },
+    "result": "white",
     "view": "white"
   }
 ]
