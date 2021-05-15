@@ -768,5 +768,27 @@
     },
     "result": "white",
     "view": "white"
+  },
+  {
+    "pgn": "1. e4 c5 2. Nf3 d6 3. Bb5+ Bd7 4. Bxd7+ Qxd7 5. c4 Qg4 6. O-O Qxe4 7. d4 Nd7 8. Nc3 Qg4 9. Re1 O-O-O 10. Qa4 a6 11. Qa5 e6 12. Re4 Qf5 13. Rf4 Qh5 14. b4 Ngf6 15. b5 cxd4 16. Na4 Nc5 17. bxa6 1/2-1/2",
+    "date": "15-05-2021",
+    "in_progress": true,
+    "event": "Campeonato Nacional 3ª Divisão 2020/2021",
+    "round": 3,
+    "table": 2,
+    "white": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1649,
+      "club": "GX Porto"
+    },
+    "black": {
+      "title": "",
+      "name": "Igor Pires",
+      "elo": 1822,
+      "club": "CA Téssera B"
+    },
+    "result": "draw",
+    "view": "white"
   }
 ]
