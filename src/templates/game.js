@@ -14,7 +14,8 @@ const isMissingGameData = (game) => (
     !game.date ||
     !game.pgn ||
     !game.view ||
-    !game.result
+    !game.result ||
+    !game.lichess_url
 );
 
 const Game = ({ data }) => {
@@ -93,6 +94,7 @@ export const query = graphql`
             }
             result
             view
+            lichess_url
           }
         }
       }
