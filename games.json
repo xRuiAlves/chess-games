@@ -798,7 +798,7 @@
       "title": "",
       "name": "João Cálix",
       "elo": 1828,
-      "club": "Acad. Espinho A"
+      "club": "Acad. Espinho"
     },
     "result": "white",
     "view": "white",
@@ -821,10 +821,33 @@
       "title": "",
       "name": "Igor Pires",
       "elo": 1822,
-      "club": "CA Téssera B"
+      "club": "CA Téssera"
     },
     "result": "draw",
     "view": "white",
     "lichess_url": "https://lichess.org/7xKFeDwQ"
+  },
+  {
+    "pgn": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. Nc3 a6 5. a4 Qc7 6. O-O Nf6 7. d3 Be7 8. Bg5 O-O 9. Re1 d6 10. Re3 Ng4 11. Re1 Nxh2 12. Kxh2 d5+ 13. Kg1 dxc4 14. dxc4 Rd8 15. Qe2 Bxg5 16. Nxg5 Nd4 17. Qh5 h6 18. Rac1 hxg5 19. Qxg5 Bd7 20. Re3 f6 21. Qg6 Be8 22. Qg4 Qf7 23. Na2 Qh5 24. Qxh5 Bxh5 25. f3 b5 26. Kf2 bxc4 27. Rc3 e5 28. Rxc4 Bf7 29. Rxc5 Bxa2 30. b3 Bxb3 31. cxb3 Nxb3 32. R1c2 Nxc5 33. Rxc5 Rac8 0-1",
+    "date": "22-05-2021",
+    "in_progress": true,
+    "event": "Campeonato Nacional 3ª Divisão 2020/2021",
+    "round": 4,
+    "table": 2,
+    "white": {
+      "title": "",
+      "name": "Simão Lemos",
+      "elo": 0,
+      "club": "CXA Aveiro"
+    },
+    "black": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1649,
+      "club": "GX Porto"
+    },
+    "result": "black",
+    "view": "black",
+    "lichess_url": "https://lichess.org/yoZ3BGOV"
   }
 ]
