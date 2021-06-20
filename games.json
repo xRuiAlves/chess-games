@@ -761,7 +761,7 @@
   {
     "pgn": "1. e4 c5 2. Nf3 e6 3. d3 d5 4. Nbd2 Nf6 5. g3 Be7 6. Bg2 O-O 7. O-O Nc6 8. e5 Nd7 9. Re1 Qc7 10. Qe2 b5 11. Nf1 a5 12. a3 Ba6 13. Bf4 b4 14. a4 c4 15. Qd2 cxd3 16. cxd3 Nc5 17. Qd1 Nxd3 18. Ng5 Bxg5 0-1",
     "date": "24-04-2021",
-    "in_progress": true,
+    "in_progress": false,
     "event": "Campeonato Nacional 3ª Divisão 2020/2021",
     "round": 1,
     "table": 2,
@@ -784,7 +784,7 @@
   {
     "pgn": "1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. c3 dxc3 5. Nxc3 a6 6. Bc4 Qc7 7. Bb3 Nc6 8. O-O Nf6 9. Qe2 Bc5 10. e5 Ng4 11. Bf4 f5 12. h3 Nh6 13. Bxh6 gxh6 14. Nh4 Qxe5 15. Qh5+ Ke7 16. Qxh6 Qf6 17. Nxf5+ Kf7 18. Qxf6+ Kxf6 19. Ne4+ Kxf5 20. Nxc5 d5 21. g4+ Kf6 22. f4 Nd4 23. Rad1 Nxb3 24. Nxb3 Rd8 25. Nd4 b5 26. Rfe1 Rd6 27. Rc1 Bd7 28. g5+ Kf7 29. Nf3 Rc8 30. Rxc8 Bxc8 31. Rc1 Rd8 32. Rc7+ Kg8 33. Ne5 d4 34. Kf2 Kh8 35. Nf7+ 1-0",
     "date": "08-05-2021",
-    "in_progress": true,
+    "in_progress": false,
     "event": "Campeonato Nacional 3ª Divisão 2020/2021",
     "round": 2,
     "table": 3,
@@ -807,7 +807,7 @@
   {
     "pgn": "1. e4 c5 2. Nf3 d6 3. Bb5+ Bd7 4. Bxd7+ Qxd7 5. c4 Qg4 6. O-O Qxe4 7. d4 Nd7 8. Nc3 Qg4 9. Re1 O-O-O 10. Qa4 a6 11. Qa5 e6 12. Re4 Qf5 13. Rf4 Qh5 14. b4 Ngf6 15. b5 cxd4 16. Na4 Nc5 17. bxa6 1/2-1/2",
     "date": "15-05-2021",
-    "in_progress": true,
+    "in_progress": false,
     "event": "Campeonato Nacional 3ª Divisão 2020/2021",
     "round": 3,
     "table": 2,
@@ -830,7 +830,7 @@
   {
     "pgn": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. Nc3 a6 5. a4 Qc7 6. O-O Nf6 7. d3 Be7 8. Bg5 O-O 9. Re1 d6 10. Re3 Ng4 11. Re1 Nxh2 12. Kxh2 d5+ 13. Kg1 dxc4 14. dxc4 Rd8 15. Qe2 Bxg5 16. Nxg5 Nd4 17. Qh5 h6 18. Rac1 hxg5 19. Qxg5 Bd7 20. Re3 f6 21. Qg6 Be8 22. Qg4 Qf7 23. Na2 Qh5 24. Qxh5 Bxh5 25. f3 b5 26. Kf2 bxc4 27. Rc3 e5 28. Rxc4 Bf7 29. Rxc5 Bxa2 30. b3 Bxb3 31. cxb3 Nxb3 32. R1c2 Nxc5 33. Rxc5 Rac8 0-1",
     "date": "22-05-2021",
-    "in_progress": true,
+    "in_progress": false,
     "event": "Campeonato Nacional 3ª Divisão 2020/2021",
     "round": 4,
     "table": 2,
@@ -849,5 +849,28 @@
     "result": "black",
     "view": "black",
     "lichess_url": "https://lichess.org/yoZ3BGOV"
+  },
+  {
+    "pgn": "1. e4 c5 2. g3 Nc6 3. Bg2 e6 4. Nc3 a6 5. a4 Nf6 6. d3 d5 7. exd5 Nxd5 8. Nxd5 exd5 9. Ne2 Be7 10. O-O O-O 11. d4 Bg4 12. f3 Be6 13. c3 cxd4 14. Nxd4 Qb6 15. Kh1 Nxd4 16. Qxd4 Qxd4 17. cxd4 Rac8 18. Bd2 Rc4 19. Bc3 Bf6 20. Rfd1 b5 21. Bf1 Rxa4 22. Rxa4 bxa4 23. Ra1 Bd7 24. Bxa6 Bc6 25. Kg2 Ra8 26. Bd3 Be7 27. h4 g6 28. f4 h5 29. Kf3 f5 30. Ke3 Kf7 31. Kd2 Bd6 32. Bc2 Ke6 1/2-1/2",
+    "date": "19-06-2021",
+    "in_progress": false,
+    "event": "Campeonato Nacional 3ª Divisão 2020/2021",
+    "round": 6,
+    "table": 2,
+    "white": {
+      "title": "",
+      "name": "Nuno Azevedo",
+      "elo": 1502,
+      "club": "CX UGTV"
+    },
+    "black": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1686,
+      "club": "GX Porto"
+    },
+    "result": "draw",
+    "view": "black",
+    "lichess_url": "https://lichess.org/PTbX8lFO"
   }
 ]
