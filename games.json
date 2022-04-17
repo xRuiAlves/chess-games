@@ -895,5 +895,28 @@
     "result": "white",
     "view": "black",
     "lichess_url": "https://lichess.org/s83L0yRF"
+  },
+  {
+    "pgn": "1. e4 c6 2. d4 d5 3. e5 c5 4. Nf3 Bg4 5. c3 Nc6 6. Be2 e6 7. Be3 cxd4 8. cxd4 Nge7 9. O-O Nf5 10. h3 Bxf3 11. Bxf3 Qb6 12. Nd2 Nfxd4 13. Nb3 Nxf3+ 14. Qxf3 Qc7 15. Bf4 g6 16. Rac1 Bg7 17. Rfe1 O-O 18. Qe3 Rac8 19. Bh6 Bxh6 20. Qxh6 Qe7 21. Nd2 f6 22. Nf3 Nxe5 23. Nxe5 Rxc1 24. Rxc1 fxe5 25. Qe3 Qf6 26. Qxa7 d4 27. Rf1 Rf7 28. Qa4 e4 29. Qd1 d3 30. Qd2 Rc7 31. Rc1 Qd8 32. Rxc7 Qxc7 33. Kf1 Qc2 34. Ke1 Qb1+ 35. Qd1 Qxb2 36. a4 e5 37. Qd2 Qb1+ 38. Qd1 Qxd1+ 39. Kxd1 Kf7 40. Kd2 Ke6 41. Ke3 Kd5 42. f3 exf3 43. gxf3 Kc4 44. Kd2 Kd4 45. a5 g5 0-1",
+    "date": "02-04-2022",
+    "in_progress": true,
+    "event": "Campeonato Nacional 3ª Divisão 2021/2022",
+    "round": 6,
+    "table": 3,
+    "white": {
+      "title": "",
+      "name": "João Cálix",
+      "elo": 1710,
+      "club": "Acad. Espinho"
+    },
+    "black": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1675,
+      "club": "GX Porto"
+    },
+    "result": "black",
+    "view": "black",
+    "lichess_url": "https://lichess.org/r1vtYY9d"
   }
 ]
