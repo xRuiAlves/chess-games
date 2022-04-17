@@ -918,5 +918,27 @@
     "result": "black",
     "view": "black",
     "lichess_url": "https://lichess.org/r1vtYY9d"
+  },
+  {
+    "pgn": "1. e4 c6 2. Nf3 d5 3. Nc3 Bg4 4. h3 Bh5 5. Be2 Nf6 6. e5 Nfd7 7. d4 e6 8. O-O c5 9. Re1 Nc6 10. Be3 cxd4 11. Bxd4 Nxd4 12. Qxd4 Bc5 13. Qf4 O-O 14. Na4 Be7 15. c4 dxc4 16. Bxc4 Rc8 17. Bd3 Qa5 18. b3 Bxf3 19. gxf3 b5 20. Qe4 g6 21. Nb2 Ba3 22. Qe2 a6 23. f4 Qc3 24. Rab1 Nc5 25. Rec1 Qd4 26. Qe3 Bxb2 27. Rxb2 Qxe3 28. fxe3 Nxd3 29. Rxc8 Rxc8 30. Rd2 Nb4 31. Kf2 Rc2 32. Rxc2 Nxc2 33. Ke2 Nb4 34. a3 Nd5 35. Kd3 Kf8 36. Kd4 Ke7 37. Ke4 Kd7 38. Kf3 Kc6 39. b4 Nc3 40. e4 h6 41. f5 Nb1 42. Kg4 Nxa3 43. h4 Nc2 44. h5 g5 0-1",    "date": "08-04-2022",
+    "in_progress": true,
+    "event": "Torneio Interno GXP 2022",
+    "round": 1,
+    "table": 2,
+    "white": {
+      "title": "",
+      "name": "Herve Jullian",
+      "elo": 0,
+      "club": "GX Porto"
+    },
+    "black": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1675,
+      "club": "GX Porto"
+    },
+    "result": "black",
+    "view": "black",
+    "lichess_url": "https://lichess.org/HWWSux6T"
   }
 ]
