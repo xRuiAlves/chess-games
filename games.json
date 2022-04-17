@@ -872,5 +872,28 @@
     "result": "draw",
     "view": "black",
     "lichess_url": "https://lichess.org/PTbX8lFO"
+  },
+  {
+    "pgn": "1. d4 d5 2. Nf3 Nf6 3. c4 c6 4. cxd5 cxd5 5. Nc3 Bg4 6. Ne5 e6 7. Nxg4 Nxg4 8. Bf4 a6 9. e3 Nf6 10. Bd3 Bd6 11. Bxd6 Qxd6 12. O-O O-O 13. Rc1 Nbd7 14. Qb3 Ng4 15. g3 h5 16. Ne2 Nb6 17. a4 Rab8 18. Rc5 e5 19. a5 e4 20. Bxe4 dxe4 21. Qxb6 Qxb6 22. axb6 g6 23. Nc3 f5 24. Rc1 Nf6 25. Na4 Rfd8 26. Rc7 Nd5 27. Nc5 Rd6 28. Rxb7 Rxb7 29. Nxb7 Rxb6 30. Nc5 Kf7 31. b3 Ke7 32. Ra1 Nc7 33. h4 Kd6 34. Kf1 Kd5 35. Ke2 Kd6 36. Kd2 Kd5 37. Kc2 Kd6 38. Ra5 Ke7 39. Na4 Rc6+ 40. Rc5 Kd6 41. Rxc6+ Kxc6 42. Nc5 Kb5 43. Nd7 Nd5 44. Ne5 Ne7 45. Kc3 Nd5+ 46. Kb2 Ne7 47. Ka3 a5 48. Ka2 Kb6 49. Kb2 Ka6 50. d5 Nxd5 51. Nxg6 Kb5 52. Ka3 Kb6 53. Ne5 Kb5 54. Nc4 Ne7 55. Nd6+ Kc5 56. Ne8 Ng6 57. Ng7 Ne5 58. Nxh5 Ng4 59. Ng7 Nxf2 60. Nxf5 Ng4 61. h5 1-0",
+    "date": "11-12-2021",
+    "in_progress": false,
+    "event": "Taça AXP 2021/2022",
+    "round": 2,
+    "table": 3,
+    "white": {
+      "title": "",
+      "name": "Ricardo Andrade",
+      "elo": 1816,
+      "club": "GX 113"
+    },
+    "black": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1681,
+      "club": "GX Porto"
+    },
+    "result": "white",
+    "view": "black",
+    "lichess_url": "https://lichess.org/s83L0yRF"
   }
 ]
