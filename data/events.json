@@ -7,7 +7,7 @@
       "name": "Matosinhos, Portugal",
       "gmaps": "https://goo.gl/maps/rxveJwL81aYY7edy6"
     },
-    "tournamentPage": null,
+    "page": null,
     "category": "classic",
     "team": false,
     "rated": "yes",
@@ -26,7 +26,7 @@
       "name": "GX Porto, Porto, Portugal",
       "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
     },
-    "tournamentPage": "https://chess-results.com/tnr381385.aspx",
+    "page": "https://chess-results.com/tnr381385.aspx",
     "category": "classic",
     "team": false,
     "rated": "yes",
@@ -45,7 +45,7 @@
       "name": "Portugal",
       "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
     },
-    "tournamentPage": "https://chess-results.com/tnr397646.aspx",
+    "page": "https://chess-results.com/tnr397646.aspx",
     "category": "classic",
     "team": true,
     "rated": "yes",
@@ -64,7 +64,7 @@
       "name": "Portugal",
       "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
     },
-    "tournamentPage": "https://chess-results.com/tnr395577.aspx",
+    "page": "https://chess-results.com/tnr395577.aspx",
     "category": "classic",
     "team": true,
     "rated": "yes",
@@ -83,7 +83,7 @@
       "name": "Porto, Portugal",
       "gmaps": "https://goo.gl/maps/doDhwQspVskLc4ao7"
     },
-    "tournamentPage": "https://chess-results.com/tnr399397.aspx",
+    "page": "https://chess-results.com/tnr399397.aspx",
     "category": "classic",
     "team": true,
     "rated": "yes",
@@ -102,7 +102,7 @@
       "name": "Amanhã da Criança, Maia, Portugal",
       "gmaps": "https://goo.gl/maps/EktydRFFjZK6TZ9H7"
     },
-    "tournamentPage": "https://chess-results.com/tnr487096.aspx",
+    "page": "https://chess-results.com/tnr487096.aspx",
     "category": "classic",
     "team": false,
     "rated": "yes",
@@ -121,7 +121,7 @@
       "name": "Portugal",
       "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
     },
-    "tournamentPage": null,
+    "page": null,
     "category": "classic",
     "team": true,
     "rated": "yes",
@@ -140,7 +140,7 @@
       "name": "Portugal",
       "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
     },
-    "tournamentPage": "https://chess-results.com/tnr493486.aspx",
+    "page": "https://chess-results.com/tnr493486.aspx",
     "category": "classic",
     "team": true,
     "rated": "yes",
@@ -159,7 +159,7 @@
       "name": "Profigaia, Gaia, Portugal",
       "gmaps": "https://goo.gl/maps/8j6R97Vy4FdVaa7J6"
     },
-    "tournamentPage": "https://chess-results.com/tnr508732.aspx",
+    "page": "https://chess-results.com/tnr508732.aspx",
     "category": "classic",
     "team": true,
     "rated": "yes",
@@ -178,7 +178,7 @@
       "name": "Portugal",
       "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
     },
-    "tournamentPage": "https://chess-results.com/tnr546125.aspx",
+    "page": "https://chess-results.com/tnr546125.aspx",
     "category": "classic",
     "team": true,
     "rated": "yes",
@@ -197,7 +197,7 @@
       "name": "Grupo Xadrez 113, São Mamede, Portugal",
       "gmaps": "https://goo.gl/maps/6oH9s6ecc8NiMCwP6"
     },
-    "tournamentPage": "https://chess-results.com/tnr593500.aspx",
+    "page": "https://chess-results.com/tnr593500.aspx",
     "category": "classic",
     "team": true,
     "rated": "yes",
@@ -216,7 +216,7 @@
       "name": "Portugal",
       "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
     },
-    "tournamentPage": "https://chess-results.com/tnr599112.aspx",
+    "page": "https://chess-results.com/tnr599112.aspx",
     "category": "classic",
     "team": true,
     "rated": "yes",
@@ -235,7 +235,7 @@
       "name": "GX Porto, Porto, Portugal",
       "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
     },
-    "tournamentPage": "https://chess-results.com/tnr625757.aspx",
+    "page": "https://chess-results.com/tnr625757.aspx",
     "category": "classic",
     "team": false,
     "rated": "yes",
