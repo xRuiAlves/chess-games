@@ -7,12 +7,12 @@ import SEO from "../components/seo";
 import GamesList from "../components/gamesList";
 
 const Event = ({ data }) => {
-    const { event, games } = data.allSitePage.edges[0].node.context;
+    const event = data.allSitePage.edges[0].node.context;
 
     return (
         <Layout>
-            <SEO title={event} />
-            <GamesList header={event} games={games} />
+            <SEO title={event.name} />
+            <GamesList header={event.name} games={event.games} />
         </Layout>
     );
 };
@@ -23,7 +23,23 @@ export const query = graphql`
       edges {
         node {
           context {
-            event
+            name
+            date
+            finishDate
+            location {
+              name
+              gmaps
+            }
+            page
+            category
+            team
+            rated
+            ratingDiff
+            performance
+            numPlayers
+            startingPosition
+            rank
+            score
             games {
               pgn
               date

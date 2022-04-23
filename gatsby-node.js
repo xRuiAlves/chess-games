@@ -31,10 +31,7 @@ exports.createPages = ({ actions }) => {
         createPage({
             path: utils.buildEventUrl(event.name),
             component: event_template,
-            context: {
-                event: event.name,
-                games: event.games,
-            },
+            context: event,
         });
     });
 };
