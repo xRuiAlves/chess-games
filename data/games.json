@@ -925,7 +925,7 @@
     "in_progress": true,
     "event": "Torneio Interno GXP 2022",
     "round": 1,
-    "table": 2,
+    "table": null,
     "white": {
       "title": "",
       "name": "Herve Jullian",
@@ -948,7 +948,7 @@
     "in_progress": true,
     "event": "Torneio Interno GXP 2022",
     "round": 2,
-    "table": 1,
+    "table": null,
     "white": {
       "title": "",
       "name": "Rui Alves",
