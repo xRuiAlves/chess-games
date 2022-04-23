@@ -1,5 +1,6 @@
 const path = require("path");
-const data = require("./data/games.json");
+const games = require("./data/games.json");
+const tournaments = require("./data/tournaments.json");
 const utils = require("./src/utils/utils");
 
 exports.createPages = ({ actions }) => {
@@ -8,13 +9,16 @@ exports.createPages = ({ actions }) => {
     const game_template = path.resolve("./src/templates/game.js");
     const event_template = path.resolve("./src/templates/event.js");
 
-    const events = {};
+    const tournamentsMap = {};
+    tournaments.forEach((tournament) => {
+        tournamentsMap[tournament.name] = tournament;
+    });
 
-    data.forEach((game) => {
-        if (!events[game.event]) {
-            events[game.event] = [];
+    games.forEach((game) => {
+        if (!tournamentsMap[game.event].games) {
+            tournamentsMap[game.event].games = [];
         }
-        events[game.event].push(game);
+        tournamentsMap[game.event].games.push(game);
 
         createPage({
             path: utils.buildGameUrl(game),
@@ -23,13 +27,13 @@ exports.createPages = ({ actions }) => {
         });
     });
 
-    Object.keys(events).forEach((event_name) => {
+    Object.values(tournamentsMap).forEach((tournament) => {
         createPage({
-            path: utils.buildEventUrl(event_name),
+            path: utils.buildEventUrl(tournament.name),
             component: event_template,
             context: {
-                event: event_name,
-                games: events[event_name],
+                event: tournament.name,
+                games: tournament.games,
             },
         });
     });
