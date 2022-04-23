@@ -1,0 +1,249 @@
+[
+  {
+    "name": "I Torneio Amador Cidade Matosinhos",
+    "date": "17-02-2018",
+    "finishDate": "18-02-2018",
+    "location": {
+      "name": "Matosinhos, Portugal",
+      "gmaps": "https://goo.gl/maps/rxveJwL81aYY7edy6"
+    },
+    "tournamentPage": null,
+    "category": "classic",
+    "team": false,
+    "rated": "yes",
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 39,
+    "startingPosition": null,
+    "rank": 13,
+    "score": "3.0/6"
+  },
+  {
+    "name": "Torneio Interno GXP 2018",
+    "date": "14-10-2018",
+    "finishDate": "24-11-2018",
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "tournamentPage": "https://chess-results.com/tnr381385.aspx",
+    "category": "classic",
+    "team": false,
+    "rated": "yes",
+    "ratingDiff": null,
+    "performance": "1817",
+    "numPlayers": 28,
+    "startingPosition": 27,
+    "rank": 4,
+    "score": "4.5/7"
+  },
+  {
+    "name": "Campeonato Nacional 3ª Divisão 2018/2019",
+    "date": "05-01-2019",
+    "finishDate": "11-05-2019",
+    "location": {
+      "name": "Portugal",
+      "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
+    },
+    "tournamentPage": "https://chess-results.com/tnr397646.aspx",
+    "category": "classic",
+    "team": true,
+    "rated": "yes",
+    "ratingDiff": "+30.4",
+    "performance": "1768",
+    "numPlayers": null,
+    "startingPosition": null,
+    "rank": null,
+    "score": "3.0/5"
+  },
+  {
+    "name": "Taça Portugal 2018/2019",
+    "date": "12-01-2019",
+    "finishDate": null,
+    "location": {
+      "name": "Portugal",
+      "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
+    },
+    "tournamentPage": "https://chess-results.com/tnr395577.aspx",
+    "category": "classic",
+    "team": true,
+    "rated": "yes",
+    "ratingDiff": "+0.0",
+    "performance": null,
+    "numPlayers": null,
+    "startingPosition": null,
+    "rank": null,
+    "score": "1.0/1"
+  },
+  {
+    "name": "Taça AXP 2018/2019",
+    "date": "18-01-2019",
+    "finishDate": "09-03-2019",
+    "location": {
+      "name": "Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/doDhwQspVskLc4ao7"
+    },
+    "tournamentPage": "https://chess-results.com/tnr399397.aspx",
+    "category": "classic",
+    "team": true,
+    "rated": "yes",
+    "ratingDiff": "-15.6",
+    "performance": null,
+    "numPlayers": null,
+    "startingPosition": null,
+    "rank": null,
+    "score": "1.0/2"
+  },
+  {
+    "name": "Campeonato Distrital Absoluto Porto 2019",
+    "date": "17-11-2019",
+    "finishDate": "20-12-2019",
+    "location": {
+      "name": "Amanhã da Criança, Maia, Portugal",
+      "gmaps": "https://goo.gl/maps/EktydRFFjZK6TZ9H7"
+    },
+    "tournamentPage": "https://chess-results.com/tnr487096.aspx",
+    "category": "classic",
+    "team": false,
+    "rated": "yes",
+    "ratingDiff": "-8.0",
+    "performance": 1651,
+    "numPlayers": 58,
+    "startingPosition": 9,
+    "rank": 20,
+    "score": "3.5/7"
+  },
+  {
+    "name": "Taça Portugal 2019/2020",
+    "date": "04-01-2020",
+    "finishDate": null,
+    "location": {
+      "name": "Portugal",
+      "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
+    },
+    "tournamentPage": null,
+    "category": "classic",
+    "team": true,
+    "rated": "yes",
+    "ratingDiff": "+0.0",
+    "performance": null,
+    "numPlayers": null,
+    "startingPosition": null,
+    "rank": null,
+    "score": "1.0/1"
+  },
+  {
+    "name": "Campeonato Nacional 2ª Divisão 2019/2020",
+    "date": "11-01-2020",
+    "finishDate": "18-10-2020",
+    "location": {
+      "name": "Portugal",
+      "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
+    },
+    "tournamentPage": "https://chess-results.com/tnr493486.aspx",
+    "category": "classic",
+    "team": true,
+    "rated": "yes",
+    "ratingDiff": "+4.8",
+    "performance": 1704,
+    "numPlayers": null,
+    "startingPosition": null,
+    "rank": null,
+    "score": "2.0/5"
+  },
+  {
+    "name": "Taça AXP 2019/2020",
+    "date": "07-03-2020",
+    "finishDate": null,
+    "location": {
+      "name": "Profigaia, Gaia, Portugal",
+      "gmaps": "https://goo.gl/maps/8j6R97Vy4FdVaa7J6"
+    },
+    "tournamentPage": "https://chess-results.com/tnr508732.aspx",
+    "category": "classic",
+    "team": true,
+    "rated": "yes",
+    "ratingDiff": "-5.6",
+    "performance": null,
+    "numPlayers": null,
+    "startingPosition": null,
+    "rank": null,
+    "score": "0.5/1"
+  },
+  {
+    "name": "Campeonato Nacional 3ª Divisão 2020/2021",
+    "date": "24-04-2021",
+    "finishDate": "19-06-2021",
+    "location": {
+      "name": "Portugal",
+      "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
+    },
+    "tournamentPage": "https://chess-results.com/tnr546125.aspx",
+    "category": "classic",
+    "team": true,
+    "rated": "yes",
+    "ratingDiff": "+26.4",
+    "performance": 1714,
+    "numPlayers": null,
+    "startingPosition": null,
+    "rank": null,
+    "score": "3.0/5"
+  },
+  {
+    "name": "Taça AXP 2021/2022",
+    "date": "11-12-2021",
+    "finishDate": null,
+    "location": {
+      "name": "Grupo Xadrez 113, São Mamede, Portugal",
+      "gmaps": "https://goo.gl/maps/6oH9s6ecc8NiMCwP6"
+    },
+    "tournamentPage": "https://chess-results.com/tnr593500.aspx",
+    "category": "classic",
+    "team": true,
+    "rated": "yes",
+    "ratingDiff": "-6.4",
+    "performance": null,
+    "numPlayers": null,
+    "startingPosition": null,
+    "rank": null,
+    "score": "0.0/1"
+  },
+  {
+    "name": "Campeonato Nacional 3ª Divisão 2021/2022",
+    "date": "02-04-2022",
+    "finishDate": "In progress...",
+    "location": {
+      "name": "Portugal",
+      "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
+    },
+    "tournamentPage": "https://chess-results.com/tnr599112.aspx",
+    "category": "classic",
+    "team": true,
+    "rated": "yes",
+    "ratingDiff": "+11.0",
+    "performance": null,
+    "numPlayers": null,
+    "startingPosition": null,
+    "rank": null,
+    "score": "1.0/1"
+  },
+  {
+    "name": "Torneio Interno GXP 2022",
+    "date": "08-04-2022",
+    "finishDate": "In progress...",
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "tournamentPage": "https://chess-results.com/tnr625757.aspx",
+    "category": "classic",
+    "team": false,
+    "rated": "yes",
+    "ratingDiff": "+0.0",
+    "performance": null,
+    "numPlayers": null,
+    "startingPosition": null,
+    "rank": null,
+    "score": "2.0/2"
+  }
+]
