@@ -1,6 +1,6 @@
 import React from "react";
 import { minDate, maxDate, compareDates } from "../utils/utils";
-import games from "../../games.json";
+import games from "../../data/games.json";
 import EventItem from "./eventItem.js";
 
 const buildEvents = () => {
