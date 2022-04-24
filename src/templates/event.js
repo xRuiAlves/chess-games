@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import "../css/game.css";
@@ -13,6 +13,7 @@ import { faCalendar } from "@fortawesome/free-regular-svg-icons";
 import BlitzLogo from "../images/blitz2.png"
 import RapidLogo from "../images/rapid2.png"
 import ClassicLogo from "../images/classic2.png"
+
 
 const Event = ({ data }) => {
     const event = data.allSitePage.edges[0].node.context;
@@ -101,6 +102,16 @@ const Event = ({ data }) => {
               <p className="event-description">
                 {event.notes}
               </p>
+            }
+            {event.category && event.category !== "Classic" &&
+              <div className="event-description">
+                <p>
+                  This is a <strong>{event.category}</strong> event and the games were not annotated. Thus, there is no record of this tournament's games.
+                </p>
+                <p>
+                  Please click <Link to="/" className="emphasized-anchor">here</Link> to browse return to the main page and browse for other events.
+                </p>
+              </div>
             }
             {event.games && event.games.length > 0 &&
               <GamesList games={event.games} />

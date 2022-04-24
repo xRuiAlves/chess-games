@@ -26,8 +26,9 @@ a {
 }
 
 .emphasized-anchor {
+    color: var(--color-primary-dark);
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .page-content {
@@ -41,7 +42,7 @@ section {
 }
 
 section.ratings .lichess-id {
-    color: var(--color-primary);
+    color: var(--color-primary-dark);
     font-weight: 500;
     text-decoration: underline;
 }
