@@ -59,11 +59,13 @@ const GameItem = (game) => (
             <FontAwesomeIcon icon={faHashtag} className="event-data-item-logo"/>
             <span className="event-data-item-field">Round {game.round}</span>
         </div>
-        
-        <div className="event-data-item">
-            <FontAwesomeIcon icon={faChessBoard} className="event-data-item-logo"/>
-            <span className="event-data-item-field">{ordinalNumber(game.table)} board</span>
-        </div>
+
+        {game.table && 
+            <div className="event-data-item">
+                <FontAwesomeIcon icon={faChessBoard} className="event-data-item-logo"/>
+                <span className="event-data-item-field">{ordinalNumber(game.table)} board</span>
+            </div>
+        }
     </Link>
 );
 
