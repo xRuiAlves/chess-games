@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-import { buildGameUrl, prettifyPlayerData } from "../utils/utils";
+import { dateToLongFormat, buildGameUrl, prettifyPlayerData, ordinalNumber } from "../utils/utils";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHashtag, faChessBoard } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar } from "@fortawesome/free-regular-svg-icons";
 import "../css/game.css";
 
 const GameItem = (game) => (
@@ -45,21 +48,22 @@ const GameItem = (game) => (
 
         </div>
 
-        <p>
-            <strong>Date: </strong>{game.date}
-        </p>
+        <div className="event-data-item">
+            <div>
+                <FontAwesomeIcon icon={faCalendar} className="event-data-item-logo"/>
+                <span className="event-data-item-field">{dateToLongFormat(game.date)}</span>
+            </div>
+        </div>
 
-        {game.round &&
-                <p>
-                    <strong>Round: </strong>{game.round}
-                </p>
-        }
-
-        {game.table &&
-                <p>
-                    <strong>Table: </strong>{game.table}
-                </p>
-        }
+        <div className="event-data-item">
+            <FontAwesomeIcon icon={faHashtag} className="event-data-item-logo"/>
+            <span className="event-data-item-field">Round {game.round}</span>
+        </div>
+        
+        <div className="event-data-item">
+            <FontAwesomeIcon icon={faChessBoard} className="event-data-item-logo"/>
+            <span className="event-data-item-field">{ordinalNumber(game.table)} board</span>
+        </div>
     </Link>
 );
 

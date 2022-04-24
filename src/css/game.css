@@ -50,6 +50,7 @@ header.game-header .game-date {
 }
 
 .game-item .game-header {
+    margin-top: 0.25em;
     transition-property: color;
     transition-duration: 0.2s;
 }
@@ -77,6 +78,10 @@ header.game-header .game-date {
     margin-bottom: 0.9em;
 }
 
+.game-item .data-fields {
+    margin-bottom: 0.225em;
+}
+
 .game-item p {
     margin: 0.2em;
 }
@@ -97,13 +102,13 @@ header.game-header .game-date {
     color: #828282;
 }
 
-.event-item .event-data-item {
+.game-item .event-data-item { 
     margin-top: 0.2em;
     display: flex;
     align-items: center;
 }
 
-.event-item .event-category-icon {
+.game-item .event-category-icon {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -114,9 +119,12 @@ header.game-header .game-date {
     margin-bottom: 0.1em;
 }
 
-.event-item .event-data-item .event-data-item-logo {
+.game-item .event-data-item .event-data-item-logo {
     width: 1.1em;
     margin-right: 0.4em;
-    margin-left: 0.15em;
+    color: var(--color-primary-darker);
+}
+
+.event-item .event-data-item .event-data-item-logo {
     color: var(--color-secondary-darker);
 }

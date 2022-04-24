@@ -110,5 +110,6 @@ module.exports = {
     minDate,
     maxDate,
     ordinalNumber,
+    dateToLongFormat,
     multiDayEventDate,
 };
