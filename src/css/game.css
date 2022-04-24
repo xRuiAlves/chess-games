@@ -36,41 +36,36 @@ header.game-header .game-date {
 
 .game-item {
     position: relative;
-    background-color: var(--color-primary-lighterer);
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
     padding: 0.5em 1em;
-    -webkit-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.3);
-    -moz-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.3);
-    transition-property: box-shadow, background-color;
-    transition-duration: 0.3s;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2);
+    transition-property: box-shadow, color;
+    transition-duration: 0.2s;
     user-select: none;
     overflow: hidden;
+    font-weight: 500;
 }
 
-.game-item img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0.1;
-    z-index: inherit;
-    cursor: pointer;
+.game-item .game-header {
+    transition-property: color;
+    transition-duration: 0.2s;
 }
 
 .event-item {
-    background-color: var(--color-secondary-light);
+    border: 1.5px solid var(--color-secondary-dark);
 }
 
 .game-item:hover {
-    -webkit-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.52);
-    -moz-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.52);
-    box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.52);
-    background-color: var(--color-primary-lighter);
+    -webkit-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.4);
+    box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.4);
 }
 
-.event-item:hover {
-    background-color: var(--color-secondary);
+.game-item:hover .game-header {
+    color: var(--color-secondary-darkerer);
 }
 
 .game-item .game-header {
@@ -96,4 +91,28 @@ header.game-header .game-date {
 
 .game-draw {
     color: #828282;
+}
+
+.event-item .event-data-item {
+    margin-top: 0.2em;
+    display: flex;
+    align-items: center;
+}
+
+.event-item .event-category-icon {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1em;
+    margin-bottom: 0.1em;
+}
+
+.event-item .event-data-item .event-data-item-logo {
+    width: 1.1em;
+    margin-right: 0.4em;
+    margin-left: 0.15em;
+    color: var(--color-secondary-darker);
 }

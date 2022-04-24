@@ -2,10 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 import { buildGameUrl, prettifyPlayerData } from "../utils/utils";
 import "../css/game.css";
-import Watermark from "../css/images/watermark.jpg";
 
 const GameItem = (game) => (
-    <div className="game-item">
+    <Link to={buildGameUrl(game)} className="game-item">
         <div className="game-header">
             <p>
                 <span className="game-players">
@@ -61,10 +60,7 @@ const GameItem = (game) => (
                     <strong>Table: </strong>{game.table}
                 </p>
         }
-        <Link to={buildGameUrl(game)}>
-            <img src={Watermark} alt="" />
-        </Link>
-    </div>
+    </Link>
 );
 
 export default GameItem;
