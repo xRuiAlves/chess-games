@@ -10,9 +10,9 @@ import GamesList from "../components/gamesList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faGlobe, faPerson, faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar } from "@fortawesome/free-regular-svg-icons";
-import BlitzLogo from "../images/blitz.png"
-import RapidLogo from "../images/rapid.png"
-import ClassicLogo from "../images/classic.png"
+import BlitzLogo from "../images/blitz2.png"
+import RapidLogo from "../images/rapid2.png"
+import ClassicLogo from "../images/classic2.png"
 
 const Event = ({ data }) => {
     const event = data.allSitePage.edges[0].node.context;
@@ -108,29 +108,6 @@ const Event = ({ data }) => {
         </Layout>
     );
 };
-
-/*
-{
-  "name": "Torneio Interno GXP 2022",
-  "date": "08-04-2022",
-  "finishDate": "In progress...",
-  "location": {
-    "name": "GX Porto, Porto, Portugal",
-    "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
-  },
-  "page": "https://chess-results.com/tnr625757.aspx",
-  "category": "Classic (60m + 30s)",
-  "team": false,
-  "rated": "yes",
-  "ratingDiff": "+0.0",
-  "performance": null,
-  "numPlayers": null,
-  "startingPosition": null,
-  "rank": null,
-  "score": "2.0/2",
-  "notes": "I had to forfeit the tournament after the first 3 rounds because I was flying to the UK (and thus couldn't complete the tournament)."
-}
-*/
 
 const categoryItem = (category) => {
   if (category.startsWith("Blitz")) {
