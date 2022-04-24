@@ -31,9 +31,7 @@ const EventItem = ({ name, start, end, rounds, in_progress }) => (
         <p>
             <strong>{`Rounds${in_progress ? " played:" : ":"} `}</strong>{rounds}
         </p>
-        <Link to={buildEventUrl(name)}>
-            <img src={Watermark} alt="" />
-        </Link>
+        <Link to={buildEventUrl(name)} />
     </div>
 );
 
