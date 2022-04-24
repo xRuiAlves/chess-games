@@ -65,6 +65,10 @@ header.game-header .game-date {
 }
 
 .game-item:hover .game-header {
+    color: var(--color-primary-dark);
+}
+
+.event-item:hover .game-header {
     color: var(--color-secondary-darkerer);
 }
 
@@ -82,11 +86,11 @@ header.game-header .game-date {
 }
 
 .game-victory {
-    color: #238c27;
+    color: #2a8b3e;
 }
 
 .game-defeat {
-    color: #960f0f;
+    color: #852d3b;
 }
 
 .game-draw {

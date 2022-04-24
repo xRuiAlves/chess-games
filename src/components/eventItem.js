@@ -31,7 +31,7 @@ const EventItem = ({name, date, finishDate, category, timeControl, score, team})
             </div>
             <div className="event-data-item">
                     <FontAwesomeIcon icon={faChessBoard} className="event-data-item-logo"/>
-                    <span className="event-data-item-field">{numRounds} round{score > 1 ? "s" : ""}</span>
+                    <span className="event-data-item-field">{numRounds} round{numRounds > 1 ? "s" : ""}</span>
             </div>
                 <div className="event-data-item">
                 <FontAwesomeIcon icon={eventSoloOrTeamItem(team)} className="event-data-item-logo"/>
