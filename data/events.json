@@ -220,26 +220,6 @@
     "notes": null
   },
   {
-    "name": "Circuito de Rápidas GXP 2022 - Torneio 5",
-    "date": "30-03-2022",
-    "finishDate": null,
-    "location": {
-      "name": "GX Porto, Porto, Portugal",
-      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
-    },
-    "page": "https://chess-results.com/tnr624249.aspx",
-    "category": "Blitz",
-    "timeControl": "5m",
-    "team": true,
-    "rated": false,
-    "ratingDiff": null,
-    "performance": null,
-    "numPlayers": 8,
-    "rank": 2,
-    "score": "5.5 / 7",
-    "notes": null
-  },
-  {
     "name": "Campeonato Nacional 3ª Divisão 2021/2022",
     "date": "02-04-2022",
     "finishDate": "In progress",
@@ -257,6 +237,26 @@
     "numPlayers": null,
     "rank": null,
     "score": "1.0 / 1",
+    "notes": null
+  },
+  {
+    "name": "Circuito de Rápidas GXP 2022 - Torneio 5",
+    "date": "30-03-2022",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": "https://chess-results.com/tnr624249.aspx",
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": true,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 8,
+    "rank": 2,
+    "score": "5.5 / 7",
     "notes": null
   },
   {
