@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 :root {
     --color-primary: #5287c0;
     --color-primary-light: #7fa5ce;
@@ -5,6 +7,10 @@
     --color-primary-lighterer: #e7f2ff;
     --color-secondary: #ffc857;
     --color-secondary-light: #ffd480;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
