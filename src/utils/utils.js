@@ -66,6 +66,41 @@ const maxDate = (date1, date2) => compareDates(date1, date2) < 0 ? date2 : date1
 
 const parseShortDate = (date) => `${MONTHS[date.substr(4)]} ${date.substr(0, 4)}`;
 
+const dateToLongFormat = (date) => {
+    const dayRaw = date.substr(0, 2);
+    const day = parseInt(dayRaw[0] === "0" ? dayRaw[1] : dayRaw, 10);
+    const month = MONTHS[date.substr(3, 2)];
+    const year = date.substr(6, 4);
+
+    return `${month} ${ordinalNumber(day)}, ${year}`;
+}
+
+const ordinalNumber = (number) => {
+    const unitsDigit = number % 10;
+    const unitsAndTensDigits = number % 100;
+
+    if (unitsDigit == 1 && unitsAndTensDigits != 11) {
+        return number + "st";
+    }
+    if (unitsDigit == 2 && unitsAndTensDigits != 12) {
+        return number + "nd";
+    }
+    if (unitsDigit == 3 && unitsAndTensDigits != 13) {
+        return number + "rd";
+    }
+    return number + "th";
+}
+
+const multiDayEventDate = (startDate, finishDate) => {
+    if (!finishDate) {
+      return dateToLongFormat(startDate);
+    }
+    if (finishDate.startsWith("In progress")) {
+      return `Started ${dateToLongFormat(startDate)}. Currently in progress.`
+    }
+    return `${dateToLongFormat(startDate)} - ${dateToLongFormat(finishDate)}`;
+}
+
 module.exports = {
     buildGameUrl,
     prettifyPlayerData,
@@ -74,4 +109,6 @@ module.exports = {
     compareDates,
     minDate,
     maxDate,
+    ordinalNumber,
+    multiDayEventDate,
 };
