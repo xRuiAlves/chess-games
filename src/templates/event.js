@@ -102,7 +102,9 @@ const Event = ({ data }) => {
                 {event.notes}
               </p>
             }
-            <GamesList games={event.games} />
+            {event.games && event.games.length > 0 &&
+              <GamesList games={event.games} />
+            }
         </Layout>
     );
 };

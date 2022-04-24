@@ -1,28 +1,28 @@
 import React from "react";
 import { minDate, maxDate, compareDates } from "../utils/utils";
+import events from "../../data/events.json";
 import games from "../../data/games.json";
 import EventItem from "./eventItem.js";
 
 const buildEvents = () => {
-    const events = {};
+    const eventsMap = {};
+
+    events.forEach((event) => {
+        console.log(event);
+        eventsMap[event.name] = {
+            name: event.name,
+            rounds: 0,
+            start: event.date,
+            end: event.finishDate,
+            in_progress: event.finishDate && event.finishDate.startsWith("In progress"),
+        };
+    })
 
     games.forEach((game) => {
-        if (!events[game.event]) {
-            events[game.event] = {
-                name: game.event,
-                start: game.date,
-                end: game.date,
-                rounds: 1,
-                in_progress: game.in_progress,
-            };
-        } else {
-            events[game.event].rounds++;
-            events[game.event].start = minDate(game.date, events[game.event].start);
-            events[game.event].end = maxDate(game.date, events[game.event].end);
-        }
+        ++eventsMap[game.event].rounds;
     });
 
-    return Object.values(events)
+    return Object.values(eventsMap)
         .sort((ev1, ev2) => compareDates(ev2.start, ev1.start));
 };
 
