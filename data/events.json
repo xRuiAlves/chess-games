@@ -9,14 +9,15 @@
     },
     "page": null,
     "category": "Classic",
+    "timeControl": "90m + 30s",
     "team": false,
     "rated": "yes",
     "ratingDiff": null,
     "performance": null,
     "numPlayers": 39,
-    "startingPosition": null,
     "rank": 13,
-    "score": "3.0/6"
+    "score": "3.0 / 6",
+    "notes": "This was my first my first ever rated chess tournament, just shortly after joining my first chess club - Grupo de Xadrez do Porto."
   },
   {
     "name": "Torneio Interno GXP 2018",
@@ -28,14 +29,15 @@
     },
     "page": "https://chess-results.com/tnr381385.aspx",
     "category": "Classic",
+    "timeControl": "90m + 30s",
     "team": false,
     "rated": "yes",
     "ratingDiff": null,
     "performance": 1817,
     "numPlayers": 28,
-    "startingPosition": 27,
     "rank": 4,
-    "score": "4.5/7"
+    "score": "4.5 / 7",
+    "notes": "This was one of the most fun tournament I ever participated in. It had an amazing vibe and it went exceptionally well for me."
   },
   {
     "name": "Campeonato Nacional 3ª Divisão 2018/2019",
@@ -47,14 +49,15 @@
     },
     "page": "https://chess-results.com/tnr397646.aspx",
     "category": "Classic",
+    "timeControl": "90m + 30s",
     "team": true,
     "rated": "yes",
     "ratingDiff": "+30.4",
     "performance": 1768,
     "numPlayers": null,
-    "startingPosition": null,
     "rank": null,
-    "score": "3.0/5"
+    "score": "3.0 / 5",
+    "notes": "This was my first time playing in a team event, and the first time playing for my club. It went rather well!"
   },
   {
     "name": "Taça Portugal 2018/2019",
@@ -66,14 +69,15 @@
     },
     "page": "https://chess-results.com/tnr395577.aspx",
     "category": "Classic",
+    "timeControl": "90m + 30s",
     "team": true,
     "rated": "yes",
     "ratingDiff": "+0.0",
     "performance": null,
     "numPlayers": null,
-    "startingPosition": null,
     "rank": null,
-    "score": "1.0/1"
+    "score": "1.0 / 1",
+    "notes": null
   },
   {
     "name": "Taça AXP 2018/2019",
@@ -85,14 +89,15 @@
     },
     "page": "https://chess-results.com/tnr399397.aspx",
     "category": "Classic",
+    "timeControl": "90m + 30s",
     "team": true,
     "rated": "yes",
     "ratingDiff": "-15.6",
     "performance": null,
     "numPlayers": null,
-    "startingPosition": null,
     "rank": null,
-    "score": "1.0/2"
+    "score": "1.0 / 2",
+    "notes": null
   },
   {
     "name": "Campeonato Distrital Absoluto Porto 2019",
@@ -104,14 +109,15 @@
     },
     "page": "https://chess-results.com/tnr487096.aspx",
     "category": "Classic",
+    "timeControl": "90m + 30s",
     "team": false,
     "rated": "yes",
     "ratingDiff": "-8.0",
     "performance": 1651,
     "numPlayers": 58,
-    "startingPosition": 9,
     "rank": 20,
-    "score": "3.5/7"
+    "score": "3.5 / 7",
+    "notes": "This tournament got to a great start, and I beat a >2100 elo player for the first time. However, as the tournament progressed, I started playing terribly."
   },
   {
     "name": "Taça Portugal 2019/2020",
@@ -123,14 +129,15 @@
     },
     "page": null,
     "category": "Classic",
+    "timeControl": "90m + 30s",
     "team": true,
     "rated": "yes",
     "ratingDiff": "+0.0",
     "performance": null,
     "numPlayers": null,
-    "startingPosition": null,
     "rank": null,
-    "score": "1.0/1"
+    "score": "1.0 / 1",
+    "notes": null
   },
   {
     "name": "Campeonato Nacional 2ª Divisão 2019/2020",
@@ -142,14 +149,15 @@
     },
     "page": "https://chess-results.com/tnr493486.aspx",
     "category": "Classic",
+    "timeControl": "90m + 30s",
     "team": true,
     "rated": "yes",
     "ratingDiff": "+4.8",
     "performance": 1704,
     "numPlayers": null,
-    "startingPosition": null,
     "rank": null,
-    "score": "2.0/5"
+    "score": "2.0 / 5",
+    "notes": null
   },
   {
     "name": "Taça AXP 2019/2020",
@@ -161,14 +169,15 @@
     },
     "page": "https://chess-results.com/tnr508732.aspx",
     "category": "Classic",
+    "timeControl": "90m + 30s",
     "team": true,
     "rated": "yes",
     "ratingDiff": "-5.6",
     "performance": null,
     "numPlayers": null,
-    "startingPosition": null,
     "rank": null,
-    "score": "0.5/1"
+    "score": "0.5 / 1",
+    "notes": null
   },
   {
     "name": "Campeonato Nacional 3ª Divisão 2020/2021",
@@ -180,14 +189,15 @@
     },
     "page": "https://chess-results.com/tnr546125.aspx",
     "category": "Classic",
+    "timeControl": "90m + 30s",
     "team": true,
     "rated": "yes",
     "ratingDiff": "+26.4",
     "performance": 1714,
     "numPlayers": null,
-    "startingPosition": null,
     "rank": null,
-    "score": "3.0/5"
+    "score": "3.0 / 5",
+    "notes": null
   },
   {
     "name": "Taça AXP 2021/2022",
@@ -199,51 +209,54 @@
     },
     "page": "https://chess-results.com/tnr593500.aspx",
     "category": "Classic",
+    "timeControl": "90m + 30s",
     "team": true,
     "rated": "yes",
     "ratingDiff": "-6.4",
     "performance": null,
     "numPlayers": null,
-    "startingPosition": null,
     "rank": null,
-    "score": "0.0/1"
+    "score": "0.0 / 1",
+    "notes": null
   },
   {
     "name": "Campeonato Nacional 3ª Divisão 2021/2022",
     "date": "02-04-2022",
-    "finishDate": "In progress...",
+    "finishDate": "In progress",
     "location": {
       "name": "Portugal",
       "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
     },
     "page": "https://chess-results.com/tnr599112.aspx",
     "category": "Classic",
+    "timeControl": "90m + 30s",
     "team": true,
     "rated": "yes",
     "ratingDiff": "+11.0",
     "performance": null,
     "numPlayers": null,
-    "startingPosition": null,
     "rank": null,
-    "score": "1.0/1"
+    "score": "1.0 / 1",
+    "notes": null
   },
   {
     "name": "Torneio Interno GXP 2022",
     "date": "08-04-2022",
-    "finishDate": "In progress...",
+    "finishDate": "In progress",
     "location": {
       "name": "GX Porto, Porto, Portugal",
       "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
     },
     "page": "https://chess-results.com/tnr625757.aspx",
-    "category": "Classic (60m + 30s)",
+    "category": "Classic",
+    "timeControl": "60m + 30s",
     "team": false,
     "rated": "yes",
     "ratingDiff": "+0.0",
     "performance": null,
     "numPlayers": null,
-    "startingPosition": null,
     "rank": null,
-    "score": "2.0/2"
+    "score": "2.0 / 2",
+    "notes": "I had to forfeit the tournament after the first 3 rounds because I was flying to the UK (and thus couldn't complete the tournament)."
   }
 ]
