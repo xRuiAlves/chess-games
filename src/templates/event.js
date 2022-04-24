@@ -3,19 +3,147 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import "../css/game.css";
+import "../css/event.css";
+import { ordinalNumber, multiDayEventDate } from "../utils/utils";
 import SEO from "../components/seo";
 import GamesList from "../components/gamesList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faGlobe, faPerson, faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
+import { faCalendar } from "@fortawesome/free-regular-svg-icons";
+import BlitzLogo from "../images/blitz.png"
+import RapidLogo from "../images/rapid.png"
+import ClassicLogo from "../images/classic.png"
 
 const Event = ({ data }) => {
     const event = data.allSitePage.edges[0].node.context;
+    console.log(event);
 
     return (
         <Layout>
             <SEO title={event.name} />
-            <GamesList header={event.name} games={event.games} />
+            <header className="event-header">
+              <h2>{event.name}</h2>
+              {event.location && 
+                <div className="event-header-item">
+                  <a target="_blank" rel="noopener noreferrer" href={event.location.gmaps}>
+                    <FontAwesomeIcon icon={faLocationDot} className="event-header-item-logo"/>
+                    <span className="event-header-item-field">{event.location.name}</span>
+                  </a>
+                </div>
+              }
+              {event.date && 
+                <div className="event-header-item">
+                  <div>
+                    <FontAwesomeIcon icon={faCalendar} className="event-header-item-logo"/>
+                    <span className="event-header-item-field">{multiDayEventDate(event.date, event.finishDate)}</span>
+                  </div>
+                </div>
+              }
+              {event.category && 
+                <div className="event-header-item">
+                  <img className="event-category-icon event-header-item-logo" src={categoryItem(event.category)} />
+                  <span className="event-header-item-field">{event.category}</span>
+                </div>
+              }
+              {event.team !== null && 
+                <div className="event-header-item">
+                  <FontAwesomeIcon icon={eventSoloOrTeamItem(event.team)} className="event-header-item-logo"/>
+                  <span className="event-header-item-field">{event.team ? "Team" : "Individual"} event</span>
+                </div>
+              }
+              {event.page && 
+                <div className="event-header-item">
+                  <a target="_blank" rel="noopener noreferrer" href={event.page}>
+                    <FontAwesomeIcon icon={faGlobe} className="event-header-item-logo"/>
+                    <span className="event-header-item-field">Online page</span>
+                  </a>
+                </div>
+              }
+            </header>
+            <div className="event-extra-data">
+                {event.timeControl && 
+                  <div className="event-extra-data-item">
+                    <span className="event-extra-data-item-key">Time Control: </span>
+                    <span>{event.timeControl}</span>
+                  </div>
+                }
+                {event.rated && 
+                  <div className="event-extra-data-item">
+                    <span className="event-extra-data-item-key">Rated: </span>
+                    <span>{event.rated}</span>
+                  </div>
+                }
+                {event.ratingDiff && 
+                  <div className="event-extra-data-item">
+                    <span className="event-extra-data-item-key">Rating diff: </span>
+                    <span>{event.ratingDiff}</span>
+                  </div>
+                }
+                {event.numPlayers && 
+                  <div className="event-extra-data-item">
+                    <span className="event-extra-data-item-key">Number of players: </span>
+                    <span>{event.numPlayers}</span>
+                  </div>
+                }
+                {event.rank && 
+                  <div className="event-extra-data-item">
+                    <span className="event-extra-data-item-key">Rank: </span>
+                    <span>{ordinalNumber(event.rank)}</span>
+                  </div>
+                }
+                {event.score && 
+                  <div className="event-extra-data-item">
+                    <span className="event-extra-data-item-key">Score: </span>
+                    <span>{event.score}</span>
+                  </div>
+                }
+            </div>
+            {event.notes && 
+              <p className="event-description">
+                {event.notes}
+              </p>
+            }
+            <GamesList games={event.games} />
         </Layout>
     );
 };
+
+/*
+{
+  "name": "Torneio Interno GXP 2022",
+  "date": "08-04-2022",
+  "finishDate": "In progress...",
+  "location": {
+    "name": "GX Porto, Porto, Portugal",
+    "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+  },
+  "page": "https://chess-results.com/tnr625757.aspx",
+  "category": "Classic (60m + 30s)",
+  "team": false,
+  "rated": "yes",
+  "ratingDiff": "+0.0",
+  "performance": null,
+  "numPlayers": null,
+  "startingPosition": null,
+  "rank": null,
+  "score": "2.0/2",
+  "notes": "I had to forfeit the tournament after the first 3 rounds because I was flying to the UK (and thus couldn't complete the tournament)."
+}
+*/
+
+const categoryItem = (category) => {
+  if (category.startsWith("Blitz")) {
+    return BlitzLogo;
+  }
+  if (category.startsWith("Rapid")) {
+    return RapidLogo;
+  }
+  return ClassicLogo;
+}
+
+const eventSoloOrTeamItem = (isTeamEvent) => isTeamEvent
+  ? faPeopleGroup
+  : faPerson;
 
 export const query = graphql`
   query($path: String!) {
@@ -32,14 +160,15 @@ export const query = graphql`
             }
             page
             category
+            timeControl
             team
             rated
             ratingDiff
             performance
             numPlayers
-            startingPosition
             rank
             score
+            notes
             games {
               pgn
               date

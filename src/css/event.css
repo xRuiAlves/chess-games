@@ -1,0 +1,55 @@
+@import "common.css";
+
+.event-header {
+    margin-bottom: 1.5em;
+}
+
+.event-header h2 {
+    margin-bottom: 0.6em;
+}
+
+.event-header .event-header-item {
+    margin-top: 0.2em;
+    display: flex;
+    align-items: center;
+}
+
+.event-header .event-header-item a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+.event-category-icon {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1em;
+    margin-bottom: 0.1em;
+}
+
+.event-header .event-header-item .event-header-item-logo {
+    width: 1.1em;
+    margin-right: 0.4em;
+    color: var(--color-primary-darker);
+}
+
+.event-extra-data .event-extra-data-item .event-extra-data-item-key {
+    font-weight: 600;
+}
+
+.event-extra-data .event-extra-data-item {
+    margin-top: 0.1em
+}
+
+.event-extra-data {
+    margin-top: 1.75em;
+    margin-bottom: 1.75em;
+}
+
+.event-description {
+    margin-top: 1.75em;
+    margin-bottom: 2.25em;
+}
