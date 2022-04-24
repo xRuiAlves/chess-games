@@ -67,10 +67,10 @@ const Event = ({ data }) => {
                     <span>{event.timeControl}</span>
                   </div>
                 }
-                {event.rated && 
+                {event.rated !== null && 
                   <div className="event-extra-data-item">
                     <span className="event-extra-data-item-key">Rated: </span>
-                    <span>{event.rated}</span>
+                    <span>{event.rated ? "yes" : "no"}</span>
                   </div>
                 }
                 {event.ratingDiff && 
