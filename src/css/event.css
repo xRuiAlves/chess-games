@@ -61,12 +61,45 @@
 
 .event-filters {
     display: flex;
-    margin-bottom: 1em;
 }
 
 .event-filter {
+    min-width: 180px;
+}
+
+.event-filter ~ .event-filter {
     margin-left: 1em;
-    min-width: 10em;
+}
+
+@media only screen and (max-width: 700px) {
+    .event-list header {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .event-filters {
+        margin-bottom: 1.25em;
+        width: 100%;
+    }
+
+    .event-filter {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .event-filters {
+        flex-direction: column;
+    }
+
+    .event-filter ~ .event-filter {
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .event-filter {
+        width: 100%;
+    }
 }
 
 .event-filter .react-dropdown-select {
