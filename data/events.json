@@ -318,5 +318,25 @@
     "rank": 1,
     "score": "9.0 / 9",
     "notes": "This was the tournament that motivated me to join a chess club. A couple of months after, I would join \"Grupo de Xadrez do Porto\"."
+  },
+  {
+    "name": "Torneio da Festa do Avante! 2017",
+    "date": "02-09-2017",
+    "finishDate": null,
+    "location": {
+      "name": "Festa do Avante, Atalaia, Setúbal, Portugal",
+      "gmaps": "https://goo.gl/maps/gLtoKbgQcm58yeJ36"
+    },
+    "page": null,
+    "category": "Rapid",
+    "timeControl": "15m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": null,
+    "rank": 5,
+    "score": null,
+    "notes": "This was the first time I played in the Festa do Avante!'s chess tournament. In the following years, every time I went to the event, I always played in the chess tournament!"
   }
 ]
