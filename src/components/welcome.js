@@ -10,7 +10,7 @@ const Welcome = () => (
                 </a>.
             </p>
             <p style={{ marginBottom: "0.3em" }}>
-                In this website you can find a collection of all my classical games throughout my
+                In this website you can find a collection of all the events I played in throughout my
                 "chess career".
             </p>
             <p>
