@@ -28,7 +28,11 @@ const EventsList = () => {
     const [category, setCategory] = useState(DEFAULT_CATEGORY_OPTION);
     const [year, setYear] = useState(DEFAULT_YEAR_OPTION);
 
-    
+    const resetFilters = () => {
+        setCategory(DEFAULT_CATEGORY_OPTION);
+        setYear(DEFAULT_YEAR_OPTION);
+    }
+
     const filteredEvents = events
         .filter((event) => filterEventYear(event, year.value))
         .filter((event) => filterEventCategory(event, category.value))
@@ -62,7 +66,16 @@ const EventsList = () => {
                         <EventItem key={event.name} {...event} />
                     )}
                 </div>
-                : <div>{missingMessage(category.value, year.value)}</div>
+                : <div>
+                    {missingMessage(category.value, year.value)}{" "}
+                    Click{" "}
+                    <span 
+                        className="emphasized-anchor clickable"
+                        onClick={resetFilters}
+                    >
+                        here
+                    </span> to clear the search filters.
+                </div>
             }
         </section>
     );
