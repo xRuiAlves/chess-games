@@ -31,6 +31,10 @@ a {
     font-weight: 500;
 }
 
+.clickable {
+    cursor: pointer;
+}
+
 .page-content {
     margin: 0 auto;
     width: 88%;
