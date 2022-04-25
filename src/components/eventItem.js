@@ -34,10 +34,12 @@ const EventItem = ({name, date, finishDate, category, timeControl, score, team})
                     <FontAwesomeIcon icon={eventSoloOrTeamItem(team)} className="event-data-item-logo"/>
                     <span className="event-data-item-field">{team ? "Team" : "Individual"} event</span>
                 </div>
-                <div className="event-data-item">
-                        <FontAwesomeIcon icon={faHashtag} className="event-data-item-logo"/>
-                        <span className="event-data-item-field">{numRounds} round{numRounds > 1 ? "s" : ""}</span>
-                </div>
+                {numRounds && 
+                  <div className="event-data-item">
+                    <FontAwesomeIcon icon={faHashtag} className="event-data-item-logo"/>
+                    <span className="event-data-item-field">{numRounds} round{numRounds > 1 ? "s" : ""}</span>
+                  </div>
+                }
             </div>
         </Link>
     );
