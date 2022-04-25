@@ -338,5 +338,425 @@
     "rank": 5,
     "score": null,
     "notes": "This was the first time I played in the Festa do Avante!'s chess tournament. In the following years, every time I went to the event, I always played in the chess tournament!"
+  },
+  {
+    "name": "Torneio de Rápidas GXP Fevereiro 2018",
+    "date": "04-02-2018",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": "https://chess-results.com/tnr330231.aspx",
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 15,
+    "rank": 11,
+    "score": "3.0 / 6",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Março 2018",
+    "date": "04-03-2018",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": "https://chess-results.com/tnr341129.aspx",
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 8,
+    "rank": 4,
+    "score": "3.5 / 7",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Abril 2018 nº 1",
+    "date": "08-04-2018",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 9,
+    "rank": 4,
+    "score": "4.0 / 8",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Abril 2018 nº 2",
+    "date": "22-04-2018",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": null,
+    "rank": null,
+    "score": "2.5 / 7",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Outubro 2018",
+    "date": "26-10-2018",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": "https://chess-results.com/tnr386626.aspx",
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 9,
+    "rank": 7,
+    "score": "3.0 / 8",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Novembro 2018",
+    "date": "09-11-2018",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 9,
+    "rank": 4,
+    "score": "4.0 / 7",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Dezembro 2018",
+    "date": "15-12-2018",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 11,
+    "rank": 1,
+    "score": "8.0 / 9",
+    "notes": "This was my first time winning a tournament at the club."
+  },
+  {
+    "name": "Torneio de Rápidas GXP Janeiro 2019 nº 1",
+    "date": "11-01-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": "https://chess-results.com/tnr406925.aspx",
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 11,
+    "rank": 4,
+    "score": "4.0 / 7",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Janeiro 2019 nº 2",
+    "date": "25-01-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 8,
+    "rank": 3,
+    "score": "5.0 / 7",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Fevereiro 2019 nº 1",
+    "date": "06-02-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 10,
+    "rank": 4,
+    "score": "6.0 / 9",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Fevereiro 2019 nº 2",
+    "date": "08-02-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 6,
+    "rank": 2,
+    "score": "4.0 / 5",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Fevereiro 2019 nº 3",
+    "date": "22-02-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 4,
+    "rank": 1,
+    "score": "5.0 / 6",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Abril 2019 nº 1",
+    "date": "16-04-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 11,
+    "rank": 1,
+    "score": "10.0 / 10",
+    "notes": "This was the first time I got a perfect score in a tournament after joined the competitive chess scene. Moreover, this was a round-robin tournament, which means I won every match against every player in the tournament! The overall vibe in the tournament was super fun, and I carry great memories of this afternoon :)"
+  },
+  {
+    "name": "Torneio de Rápidas GXP Abril 2019 nº 2",
+    "date": "26-04-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": "https://chess-results.com/tnr435470.aspx",
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 11,
+    "rank": 4,
+    "score": "4.0 / 7",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas 79 Anos GXP",
+    "date": "06-05-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "3m + 2s",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 8,
+    "rank": 2,
+    "score": "5.0 / 7",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Maio 2019 nº 1",
+    "date": "10-05-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 4,
+    "rank": 3,
+    "score": "3.0 / 6",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Maio 2019 nº 2 (Aulas)",
+    "date": "25-05-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "3m + 2s",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 9,
+    "rank": 2,
+    "score": "6.5 / 8",
+    "notes": "This was an improvised tournament at the end of a Saturday morning's chess lessons. The tournament winner was the professor, Sandro."
+  },
+  {
+    "name": "Torneio de Rápidas GXP Junho 2019 nº 1",
+    "date": "21-06-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 11,
+    "rank": 5,
+    "score": "4.0 / 7",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Junho 2019 nº 2",
+    "date": "26-06-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 10,
+    "rank": 2,
+    "score": "8.0 / 9",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Novembro 2019 nº 1",
+    "date": "06-11-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": "https://chess-results.com/tnr486300.aspx",
+    "category": "Blitz",
+    "timeControl": "3m + 2s",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 6,
+    "rank": 3,
+    "score": "5.0 / 10",
+    "notes": null
+  },
+  {
+    "name": "Torneio de Rápidas GXP Novembro 2019 nº 2",
+    "date": "20-11-2019",
+    "finishDate": null,
+    "location": {
+      "name": "GX Porto, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/pi5u7SFkZgwXZAZH6"
+    },
+    "page": "https://chess-results.com/tnr490656.aspx",
+    "category": "Blitz",
+    "timeControl": "3m + 2s",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": 4,
+    "rank": 2,
+    "score": "4.0 / 6",
+    "notes": null
   }
 ]
