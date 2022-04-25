@@ -278,5 +278,45 @@
     "rank": null,
     "score": "2.0 / 2",
     "notes": "I had to forfeit the tournament after the first 3 rounds because I was flying to the UK (and thus couldn't complete the tournament)."
+  },
+  {
+    "name": "Torneio de Rápidas dos Gambozinos 2016",
+    "date": "01-07-2016",
+    "finishDate": null,
+    "location": {
+      "name": "Bando dos Gambozinos, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/RD5XYMQFogDCS7dG6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "5m",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": null,
+    "rank": 3,
+    "score": null,
+    "notes": "This was my first chess tournament, and it gave me the \"thirst\" to learn more about the game and improve."
+  },
+  {
+    "name": "Torneio de Rápidas dos Gambozinos 2017",
+    "date": "01-07-2017",
+    "finishDate": null,
+    "location": {
+      "name": "Bando dos Gambozinos, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/RD5XYMQFogDCS7dG6"
+    },
+    "page": null,
+    "category": "Blitz",
+    "timeControl": "3m + 3s",
+    "team": false,
+    "rated": false,
+    "ratingDiff": null,
+    "performance": null,
+    "numPlayers": null,
+    "rank": 1,
+    "score": "9.0 / 9",
+    "notes": "This was the tournament that motivated me to join a chess club. A couple of months after, I would join \"Grupo de Xadrez do Porto\"."
   }
 ]
