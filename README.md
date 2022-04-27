@@ -1,10 +1,8 @@
 # Chess Games
 
-Static web app featuring all my classic chess games.
+Static web app featuring all chess events I ever took part in.
 
 Built with :heart: using [Gatsby](https://www.gatsbyjs.org/).
-
-
 
 Visit and watch my games [here](https://rui-chess-games.netlify.com) (deployed using [Netlify](https://www.netlify.com/)).
 

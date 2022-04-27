@@ -3,7 +3,7 @@ require("dotenv-flow").config();
 module.exports = {
     siteMetadata: {
         title: "Rui Chess Games",
-        description: "Chess classic games web app",
+        description: "Personal chess games web app",
         author: "Rui Alves",
     },
     plugins: [
