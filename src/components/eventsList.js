@@ -106,12 +106,12 @@ const missingMessage = (category, year) => {
         return "There are no tournaments."
     }
     if (category === DEFAULT_CATEGORY_OPTION.value) {
-        return `There are no record of any tournaments in ${year}.`
+        return `There is no record of any tournaments in ${year}.`
     }
     if (year === DEFAULT_YEAR_OPTION.value) {
-        return `There are no record of any ${category} tournaments.`
+        return `There is no record of any ${category} tournaments.`
     }
-    return `There are no record of any ${category} tournaments in ${year}.`
+    return `There is no record of any ${category} tournaments in ${year}.`
 }
 
 
