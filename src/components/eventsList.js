@@ -48,6 +48,7 @@ const EventsList = () => {
                             values={[category]} 
                             options={GAME_CATEGORIES_OPTIONS}
                             onChange={([newCategory]) => setCategory(newCategory)} 
+                            searchable={false}
                         />
                     </div>
                     <div className="event-filter">
@@ -55,6 +56,7 @@ const EventsList = () => {
                             values={[year]} 
                             options={yearsOptions} 
                             onChange={([newYear]) => setYear(newYear)} 
+                            searchable={false}
                         />
                     </div>
                 </div>
