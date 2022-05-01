@@ -101,6 +101,9 @@ const multiDayEventDate = (startDate, finishDate) => {
     return `${dateToLongFormat(startDate)} - ${dateToLongFormat(finishDate)}`;
 }
 
+
+const parseNumRounds = (score) =>  score.replaceAll(" ", "").split("/")[1];
+
 module.exports = {
     buildGameUrl,
     prettifyPlayerData,
