@@ -1258,5 +1258,25 @@
     "rank": 1,
     "score": "14.5 / 15",
     "notes": "This was an online chess tournament, held on Lichess, which was held as part of a software engineering event. By winning this tournament by a very wide margin, I got a great prize: A beautiful wooden chess set, featuring a great board and very good looking pieces."
+  },
+  {
+    "name": "Kensington Holiday Inn Hotel FIDE Rapidplay",
+    "date": "01-05-2022",
+    "finishDate": null,
+    "location": {
+      "name": "Holiday Inn Hotel, Kensington, London, UK",
+      "gmaps": "https://goo.gl/maps/QxP5h11oDPbL9Cb79"
+    },
+    "page": "https://chess-results.com/tnr626093.aspx",
+    "category": "Rapid",
+    "timeControl": "20m + 5s",
+    "team": false,
+    "rated": true,
+    "ratingDiff": "+17.0",
+    "performance": 1868,
+    "numPlayers": 31,
+    "rank": 1,
+    "score": "6.0 / 6",
+    "notes": "This was my first tournament in a country other than Portugal. I played on the under 1450 ELO section, and won all the games to get first place! I even brought home a money prize of 100£, which felt really nice! :D"
   }
 ]
