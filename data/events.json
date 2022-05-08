@@ -1278,5 +1278,25 @@
     "rank": 1,
     "score": "6.0 / 6",
     "notes": "This was my first tournament in a country other than Portugal. I played on the under 1450 ELO section, and won all the games to get first place! I even brought home a money prize of 100£, which felt really nice! :D"
+  },
+  {
+    "name": "London League Blitz May 2022",
+    "date": "05-05-2022",
+    "finishDate": null,
+    "location": {
+      "name": "Mindsports Centre, London, UK",
+      "gmaps": "https://goo.gl/maps/rnfWh1VD5aHf7zGM8"
+    },
+    "page": "https://chess-results.com/tnr617513.aspx",
+    "category": "Blitz",
+    "timeControl": "3m + 2s",
+    "team": false,
+    "rated": true,
+    "ratingDiff": "+16.8",
+    "performance": 1579,
+    "numPlayers": 43,
+    "rank": 35,
+    "score": "4.5 / 12",
+    "notes": null
   }
 ]
