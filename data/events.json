@@ -1298,5 +1298,25 @@
     "rank": 35,
     "score": "4.5 / 12",
     "notes": null
+  },
+  {
+    "name": "Golders Green FIDE Rapidplay",
+    "date": "07-05-2022",
+    "finishDate": null,
+    "location": {
+      "name": "St Luke's Church, Hampstead, London, UK",
+      "gmaps": "https://goo.gl/maps/1rnesv36r9YFFkLz8"
+    },
+    "page": "https://chess-results.com/tnr633264.aspx",
+    "category": "Rapid",
+    "timeControl": "20m + 5s",
+    "team": false,
+    "rated": true,
+    "ratingDiff":  "+17.6",
+    "performance": 1580,
+    "numPlayers": 41,
+    "rank": 1,
+    "score": "5.5 / 6",
+    "notes": "I won the first place in the under 1450 ELO section, which got me a money prize of 60£ - Not too shabby! :P"
   }
 ]
