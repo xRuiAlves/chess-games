@@ -1318,5 +1318,25 @@
     "rank": 1,
     "score": "5.5 / 6",
     "notes": "I won the first place in the under 1450 ELO section, which got me a money prize of 60£ - Not too shabby! :P"
+  },
+  {
+    "name": "Hendon FIDE Blitz May 2022",
+    "date": "19-05-2022",
+    "finishDate": null,
+    "location": {
+      "name": "Cumberland Lawn Tennis Club, Hampstead, London, UK",
+      "gmaps": "https://goo.gl/maps/CTTFXPw5s9W6k72h7"
+    },
+    "page": "https://chess-results.com/tnr616247.aspx",
+    "category": "Blitz",
+    "timeControl": "10m",
+    "team": false,
+    "rated": true,
+    "ratingDiff":  "+23.6",
+    "performance": 1654,
+    "numPlayers": 30,
+    "rank": 14,
+    "score": "3.0 / 6",
+    "notes": null
   }
 ]
