@@ -12,4 +12,10 @@ To setup the project, install dependencies:
 npm install
 ```
 
+To run the project locally:
+
+```
+gatsby develop
+```
+
 To access other infos, use the [Official Gatsby Documentation](https://www.gatsbyjs.org/docs/).
