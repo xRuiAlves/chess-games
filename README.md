@@ -2,8 +2,6 @@
 
 Static web app featuring all chess events I ever took part in.
 
-Built with :heart: using [Gatsby](https://www.gatsbyjs.org/).
-
 Visit and watch my games [here](https://chess.rui-alves.me).
 
 ## Project setup
