@@ -945,7 +945,7 @@
   {
     "pgn": "1. Nf3 d5 2. c4 e6 3. cxd5 exd5 4. d4 Nf6 5. Bg5 Bb4+ 6. Nc3 c6 7. e3 O-O 8. Bd3 h6 9. Bh4 Qe8 10. Bxf6 gxf6 11. Bc2 Nd7 12. Qd3 f5 13. Qxf5 Qd8 14. Qh7# 1-0",
     "date": "22-04-2022",
-    "in_progress": true,
+    "in_progress": false,
     "event": "Torneio Interno GXP 2022",
     "round": 2,
     "table": null,
