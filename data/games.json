@@ -964,5 +964,28 @@
     "result": "white",
     "view": "white",
     "lichess_url": "https://lichess.org/U1ofYH9b"
+  },
+  {
+    "pgn": "1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. e4 Nf6 6. Nge2 e5 7. O-O O-O 8. f4 d6 9. d3 Qe7 10. Rb1 Bg4 11. fxe5 dxe5 12. Bg5 Nd4 13. Nd5 Nxe2+ 14. Qxe2 Nxd5 15. Qxg4 Bf6 16. Bh6 Nb4 17. Bxf8 Kxf8 18. Qf3 Bg5 19. h4 Bh6 20. Qf6 Be3+ 21. Kh2 Qxf6 22. Rxf6 Nxd3 23. Rf3 Nf2 24. Rf1 Ng4+ 25. Kh1 Rd8 26. Bh3 Nf2+ 27. R3xf2 Bxf2 28. Rxf2 Rd4 29. Be6 f6 30. Bd5 Kg7 31. Bxb7 Rxc4 32. Rd2 Rd4 33. Rc2 Rb4 34. Bd5 a6 35. Rxc5 Rxb2 36. Rc7+ Kh6 37. Rc6 Kh5 38. Rxa6 Kg4 39. Ra3 Kh3 40. Be6+ 1-0",
+    "date": "11-02-2023",
+    "in_progress": true,
+    "event": "Taça de Portugal 2022/2023",
+    "round": 3,
+    "table": 3,
+    "white": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1698,
+      "club": "GX Porto"
+    },
+    "black": {
+      "title": "",
+      "name": "Francisco Carvalho",
+      "elo": 1128,
+      "club": "Vitória SC"
+    },
+    "result": "white",
+    "view": "white",
+    "lichess_url": ""
   }
 ]
