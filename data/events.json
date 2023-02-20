@@ -60,7 +60,7 @@
     "notes": "This was my first time playing in a team event, and the first time playing for my club. It went rather well!"
   },
   {
-    "name": "Taça Portugal 2018/2019",
+    "name": "Taça de Portugal 2018/2019",
     "date": "12-01-2019",
     "finishDate": null,
     "location": {
@@ -120,7 +120,7 @@
     "notes": "This tournament got to a great start, and I beat a >2100 elo player for the first time. However, as the tournament progressed, I started playing terribly."
   },
   {
-    "name": "Taça Portugal 2019/2020",
+    "name": "Taça de Portugal 2019/2020",
     "date": "04-01-2020",
     "finishDate": null,
     "location": {
@@ -1461,7 +1461,7 @@
   },
   {
     "name": "Campeonato Distrital do Porto de Semi-Rápidas por Equipas 2022/2023",
-    "date": "15-01-2020",
+    "date": "15-01-2023",
     "finishDate": null,
     "location": {
       "name": "Escola Infanta D. Mafalda, Rio Tinto, Porto, Portugal",
@@ -1481,7 +1481,7 @@
   },
   {
     "name": "Campeonato Nacional de Semi-Rápidas por Equipas 2022/2023",
-    "date": "28-01-2020",
+    "date": "28-01-2023",
     "finishDate": null,
     "location": {
       "name": "Sport Operário Marinhense, Marinha Grande, Leiria, Portugal",
