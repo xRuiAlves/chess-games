@@ -1438,5 +1438,25 @@
     "rank": 19,
     "score": "3.0 / 6",
     "notes": null
+  },
+  {
+    "name": "Campeonato Nacional de Semi-Rápidas Individual 2022/2023",
+    "date": "19-11-2022",
+    "finishDate": null,
+    "location": {
+      "name": "Escola Secundária de Felgueiras, Felgueiras, Portugal",
+      "gmaps": "https://goo.gl/maps/dBb5jKeB9kYSu1YXA"
+    },
+    "page": "https://chess-results.com/tnr688493.aspx",
+    "category": "Blitz",
+    "timeControl": "10m + 5s",
+    "team": false,
+    "rated": true,
+    "ratingDiff": "+3.8",
+    "performance": 1579,
+    "numPlayers": 182,
+    "rank": 65,
+    "score": "4.5 / 8",
+    "notes": null
   }
 ]
