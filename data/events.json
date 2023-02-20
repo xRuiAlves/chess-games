@@ -1418,5 +1418,25 @@
     "rank": 7,
     "score": "4.0 / 6",
     "notes": null
+  },
+  {
+    "name": "Golders Green FIDE Rapidplay July 2022",
+    "date": "02-07-2022",
+    "finishDate": null,
+    "location": {
+      "name": "St Luke's Church, Hampstead, London, UK",
+      "gmaps": "https://goo.gl/maps/1rnesv36r9YFFkLz8"
+    },
+    "page": "https://chess-results.com/tnr652944.aspx",
+    "category": "Rapid",
+    "timeControl": "20m + 5s",
+    "team": false,
+    "rated": true,
+    "ratingDiff":  "+0.8",
+    "performance": 1319,
+    "numPlayers": 39,
+    "rank": 19,
+    "score": "3.0 / 6",
+    "notes": null
   }
 ]
