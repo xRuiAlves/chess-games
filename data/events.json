@@ -222,7 +222,7 @@
   {
     "name": "Campeonato Nacional 3ª Divisão 2021/2022",
     "date": "02-04-2022",
-    "finishDate": null,
+    "finishDate": "02-04-2022",
     "location": {
       "name": "Portugal",
       "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
