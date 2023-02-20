@@ -1498,5 +1498,25 @@
     "rank": null,
     "score": "3.0 / 8",
     "notes": null
+  },
+  {
+    "name": "Taça de Portugal 2022/2023",
+    "date": "11-02-2023",
+    "finishDate": null,
+    "location": {
+      "name": "Portugal",
+      "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
+    },
+    "page": "https://chess-results.com/tnr688799.aspx",
+    "category": "Classic",
+    "timeControl": "90m + 30s",
+    "team": true,
+    "rated": true,
+    "ratingDiff": "+1.6",
+    "performance": null,
+    "numPlayers": null,
+    "rank": null,
+    "score": "1.0 / 1",
+    "notes": null
   }
 ]
