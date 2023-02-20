@@ -1200,7 +1200,7 @@
     "notes": null
   },
   {
-    "name": "CN Semi-Rápidas por Equipas 2019/2020",
+    "name": "Campeonato Nacional de Semi-Rápidas por Equipas 2019/2020",
     "date": "18-01-2020",
     "finishDate": null,
     "location": {
@@ -1457,6 +1457,26 @@
     "numPlayers": 182,
     "rank": 65,
     "score": "4.5 / 8",
+    "notes": null
+  },
+  {
+    "name": "Campeonato Nacional de Semi-Rápidas por Equipas 2022/2023",
+    "date": "28-01-2020",
+    "finishDate": null,
+    "location": {
+      "name": "Sport Operário Marinhense, Marinha Grande, Leiria, Portugal",
+      "gmaps": "https://goo.gl/maps/cEx14S67smLavgWeA"
+    },
+    "page": "https://chess-results.com/tnr702965.aspx",
+    "category": "Rapid",
+    "timeControl": "10m + 5s",
+    "team": true,
+    "rated": true,
+    "ratingDiff": "-29.8",
+    "performance": 1454,
+    "numPlayers": null,
+    "rank": null,
+    "score": "3.0 / 8",
     "notes": null
   }
 ]
