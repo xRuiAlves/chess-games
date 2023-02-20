@@ -1338,5 +1338,25 @@
     "rank": 14,
     "score": "3.0 / 6",
     "notes": null
+  },
+  {
+    "name": "Campeonato Distrital Absoluto de Rápidas do Porto 2021/2022",
+    "date": "05-06-2022",
+    "finishDate": null,
+    "location": {
+      "name": "TRYP Expo Hotel, Porto, Portugal",
+      "gmaps": "https://goo.gl/maps/HEGBGSPTJG5rrEcV7"
+    },
+    "page": "https://chess-results.com/tnr641090.aspx",
+    "category": "Blitz",
+    "timeControl": "3m + 2s",
+    "team": false,
+    "rated": true,
+    "ratingDiff": "-4.4",
+    "performance": 1453,
+    "numPlayers": 77,
+    "rank": 16,
+    "score": "6.0 / 9",
+    "notes": null
   }
 ]
