@@ -74,28 +74,7 @@ export const query = graphql`
     allSitePage(filter: { path: { eq: $path } }) {
       edges {
         node {
-          context {
-            pgn
-            date
-            event
-            round
-            table
-            white {
-              name
-              elo
-              club
-              title
-            }
-            black {
-              name
-              elo
-              club
-              title
-            }
-            result
-            view
-            lichess_url
-          }
+          pageContext
         }
       }
     }

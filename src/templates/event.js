@@ -135,47 +135,7 @@ export const query = graphql`
     allSitePage(filter: { path: { eq: $path } }) {
       edges {
         node {
-          context {
-            name
-            date
-            finishDate
-            location {
-              name
-              gmaps
-            }
-            page
-            category
-            timeControl
-            team
-            rated
-            ratingDiff
-            performance
-            numPlayers
-            rank
-            score
-            notes
-            games {
-              pgn
-              date
-              event
-              round
-              table
-              white {
-                name
-                elo
-                club
-                title
-              }
-              black {
-                name
-                elo
-                club
-                title
-              }
-              result
-              view
-            }
-          }
+          pageContext
         }
       }
     }
