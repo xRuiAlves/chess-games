@@ -16,7 +16,7 @@ import ClassicLogo from "../images/classic2.png"
 
 
 const Event = ({ data }) => {
-    const event = data.allSitePage.edges[0].node.context;
+    const event = data.allSitePage.edges[0].node.pageContext;
 
     return (
         <Layout>

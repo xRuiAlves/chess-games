@@ -19,7 +19,7 @@ const isMissingGameData = (game) => (
 );
 
 const Game = ({ data }) => {
-    const game = data.allSitePage.edges[0].node.context;
+    const game = data.allSitePage.edges[0].node.pageContext;
 
     if (isMissingGameData(game)) {
         return (
