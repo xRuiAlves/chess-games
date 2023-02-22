@@ -3,7 +3,7 @@
   "private": true,
   "description": "A dashboard featuring all my chess games",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Rui Alves <ruialves.esrt.98@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
