@@ -1,5 +1,5 @@
 const API_URLS = Object.freeze({
-    LIVE_RATINGS_BASE_URL: "https://fide-ratings-scraper.herokuapp.com",
+    LIVE_RATINGS_BASE_URL: "https://mik76pphacoyeatnv2ulw6mgbi0waxss.lambda-url.eu-west-1.on.aws/",
     LICHESS_RATINGS_URL: "https://lichess.org/api/user",
 });
 
@@ -10,8 +10,12 @@ const PLAYER = Object.freeze({
 });
 
 export const getLivePlayerHistory = () => (
-    fetch(`${API_URLS.LIVE_RATINGS_BASE_URL}/player/${PLAYER.fide_num}/history`, {
-        method: "GET",
+    fetch(API_URLS.LIVE_RATINGS_BASE_URL, {
+        method: "POST",
+        body: JSON.stringify({
+            operation: "getPlayerHistory",
+            fideId: PLAYER.fide_num
+        })
     })
 );
 
