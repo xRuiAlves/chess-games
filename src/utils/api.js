@@ -9,18 +9,9 @@ const PLAYER = Object.freeze({
     fide_num: 1962000,
 });
 
-export const getLivePlayerHistory = () => (
-    fetch(API_URLS.LIVE_RATINGS_BASE_URL, {
-        method: "POST",
-        body: JSON.stringify({
-            operation: "getPlayerHistory",
-            fideId: PLAYER.fide_num
-        })
-    })
-);
+export const getLivePlayerHistory = () => fetch(API_URLS.LIVE_RATINGS_BASE_URL + "?" + new URLSearchParams({
+    operation: "getPlayerHistory",
+    fideId: PLAYER.fide_num
+}));
 
-export const getLichessRatings = () => (
-    fetch(`${API_URLS.LICHESS_RATINGS_URL}/${PLAYER.id}`, {
-        method: "GET",
-    })
-);
+export const getLichessRatings = () => fetch(`${API_URLS.LICHESS_RATINGS_URL}/${PLAYER.id}`);
