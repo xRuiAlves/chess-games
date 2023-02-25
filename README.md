@@ -17,3 +17,9 @@ To run the project locally:
 ```
 gatsby develop
 ```
+
+## Live ratings
+
+The **Online Lichess Ratings** are fetched from the [Lichess API](https://lichess.org/api)
+
+The **FIDE Live Ratings** are fetched using my [fide-ratings-lambda](https://github.com/xRuiAlves/fide-ratings-lambda) project, which is an AWS Lambda function wrapper for my [fide-ratings-scraper](https://github.com/xRuiAlves/fide-ratings-scraper) project.
