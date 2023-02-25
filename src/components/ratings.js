@@ -66,7 +66,7 @@ const Ratings = () => {
         <div>
             <section className="grid-list ratings">
                 <div>
-                    <h2>Online Lichess Ratings</h2>
+                    <h2>Lichess Online live Ratings</h2>
                     {lichessRatingsLoading ?
                         <div>
                             Loading ...
@@ -104,7 +104,7 @@ const Ratings = () => {
                     }
                 </div>
                 <div>
-                    <h2>Live Ratings</h2>
+                    <h2>FIDE Classical live Ratings</h2>
                     {liveRatingsLoading ?
                         <div>
                             Loading ...
