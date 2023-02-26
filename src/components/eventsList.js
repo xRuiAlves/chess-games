@@ -43,10 +43,33 @@ const EventsList = () => {
 
     const [category, setCategory] = useState(initialCategory);
     const [year, setYear] = useState(initialYear);
+
+    const updateSearchParams = (paramName, paramValue) => {
+        console.log("here")
+        const origin = window.location.origin;
+        const searchParams = new URLSearchParams(window.location.search);
+        searchParams.set(paramName, paramValue);
+        const newSearchParamsStr = "?" + [...searchParams.entries()].map(param => param.join("=")).join("&");
+        const newUrl = origin + newSearchParamsStr;
+
+        if (history.pushState) {
+            window.history.replaceState({ path: newUrl }, "", newUrl);
+        }
+    }
+
+    const updateCategory = (categoryOption) => {
+        setCategory(categoryOption);
+        updateSearchParams("category", categoryOption.value);
+    }
+
+    const updateYear = (yearOption) => {
+        setYear(yearOption);
+        updateSearchParams("year", yearOption.value);
+    }
     
     const resetFilters = () => {
-        setCategory(DEFAULT_CATEGORY_OPTION);
-        setYear(DEFAULT_YEAR_OPTION);
+        updateCategory(DEFAULT_CATEGORY_OPTION);
+        updateYear(DEFAULT_YEAR_OPTION);
     }
 
     const filteredEvents = events
@@ -63,7 +86,7 @@ const EventsList = () => {
                         <Select 
                             values={[category]} 
                             options={GAME_CATEGORIES_OPTIONS}
-                            onChange={([newCategory]) => setCategory(newCategory)} 
+                            onChange={([newCategory]) => updateCategory(newCategory)} 
                             searchable={false}
                         />
                     </div>
@@ -71,7 +94,7 @@ const EventsList = () => {
                         <Select 
                             values={[year]} 
                             options={yearsOptions} 
-                            onChange={([newYear]) => setYear(newYear)} 
+                            onChange={([newYear]) => updateYear(newYear)} 
                             searchable={false}
                         />
                     </div>
