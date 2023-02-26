@@ -1,18 +1,23 @@
 import React, { useState } from "react";
-import { compareDates } from "../utils/utils";
+import { compareDates, capitalizeFirstLetter } from "../utils/utils";
 import events from "../../data/events.json";
 import EventItem from "./eventItem.js";
 import Select from "react-dropdown-select";
 import "../css/event.css";
 
-const GAME_CATEGORIES_OPTIONS = [
+const SEARCH_PARAMS = Object.freeze({
+    CATEGORY: "category",
+    YEAR: "year"
+});
+const GAME_CATEGORIES_OPTIONS = Object.freeze([
     { value: "All Categories", label: "All Categories" },
     { value: "Classic", label: "Classic" },
     { value: "Rapid", label: "Rapid" },
     { value: "Blitz", label: "Blitz" },
-];
+]);
 const DEFAULT_CATEGORY_OPTION = GAME_CATEGORIES_OPTIONS[0];
 const DEFAULT_YEAR_OPTION = { value: "All Years", label: "All Years" };
+
 
 const EventsList = () => {
     const years = new Set();
@@ -25,9 +30,20 @@ const EventsList = () => {
     const yearsOptions = [...years].sort((y1, y2) => y2 - y1).map((year) => ({ value: year, label: year }));
     yearsOptions.splice(0, 0, { value: "All Years", label: "All Years" });
 
-    const [category, setCategory] = useState(DEFAULT_CATEGORY_OPTION);
-    const [year, setYear] = useState(DEFAULT_YEAR_OPTION);
+    const searchParams = new URLSearchParams(window.location.search);
+    const categorySearchParam = (searchParams.get(SEARCH_PARAMS.CATEGORY) || "").toLowerCase();
+    const yearSeachParam = searchParams.get(SEARCH_PARAMS.YEAR);
 
+    const initialCategory = GAME_CATEGORIES_OPTIONS.map(opt => opt.value.toLowerCase()).includes(categorySearchParam)
+        ? { value: capitalizeFirstLetter(categorySearchParam), label: capitalizeFirstLetter(categorySearchParam) }
+        : DEFAULT_CATEGORY_OPTION;
+    const initialYear = years.has(yearSeachParam) 
+        ? { value: yearSeachParam, label: yearSeachParam }
+        : DEFAULT_YEAR_OPTION;
+
+    const [category, setCategory] = useState(initialCategory);
+    const [year, setYear] = useState(initialYear);
+    
     const resetFilters = () => {
         setCategory(DEFAULT_CATEGORY_OPTION);
         setYear(DEFAULT_YEAR_OPTION);
