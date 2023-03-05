@@ -1518,5 +1518,25 @@
     "rank": null,
     "score": "1.0 / 1",
     "notes": null
+  },
+  {
+    "name": "Campeonato Nacional 3ª Divisão 2022/2023",
+    "date": "04-03-2023",
+    "finishDate": null,
+    "location": {
+      "name": "Portugal",
+      "gmaps": "https://goo.gl/maps/52HfigaPxphn4baSA"
+    },
+    "page": "https://chess-results.com/tnr708380.aspx",
+    "category": "Classic",
+    "timeControl": "90m + 30s",
+    "team": true,
+    "rated": true,
+    "ratingDiff": "0.0",
+    "performance": null,
+    "numPlayers": null,
+    "rank": null,
+    "score": "0.0 / 1",
+    "notes": null
   }
 ]
