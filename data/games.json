@@ -987,5 +987,28 @@
     "result": "white",
     "view": "white",
     "lichess_url": "https://lichess.org/kXc29ID0"
+  },
+  {
+    "pgn": "1. c4 e5 2. Nc3 Nf6 3. g3 Bc5 4. Rb1 O-O 5. b4 Be7 6. Bg2 d6 7. d4 c6 8. Nf3 Bf5 9. Rb2 e4 10. Ng5 d5 11. cxd5 cxd5 12. Nh3 Qc8 13. Nb5 a6 14. Rc2 Qd7 15. Rc7 Qxb5 16. Qb3 Bxb4+ 17. Bd2 Bxd2+ 18. Kxd2 Qxb3 19. axb3 Nc6 20. e3 Rab8 21. Rc1 Rfc8 22. Rxc8+ Rxc8 23. Nf4 b5 24. h3 g5 25. Ne2 h5 26. Nc3 Na5 27. b4 Nb3+ 0-1",
+    "date": "04-03-2023",
+    "in_progress": true,
+    "event": "Campeonato Nacional 3ª Divisão 2022/2023",
+    "round": 3,
+    "table": 2,
+    "white": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1675,
+      "club": "GX Porto"
+    },
+    "black": {
+      "title": "",
+      "name": "João Pombo",
+      "elo": 0,
+      "club": "CXA Aveiro"
+    },
+    "result": "black",
+    "view": "white",
+    "lichess_url": "https://lichess.org/kbpAA8YQ"
   }
 ]
