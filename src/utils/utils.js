@@ -50,7 +50,7 @@ const prettifyPlayerData = (player) => {
     const name = prettifyPlayerName(player.name);
 
     if (player.elo === 0) {
-        player.elo = "no elo";
+        player.elo = "unrated";
     }
 
     return player.elo ? `${name} (${player.elo})` : name;
