@@ -12,10 +12,8 @@ const isMissingGameData = (game) => (
     !game.black.name ||
     !game.event ||
     !game.date ||
-    !game.pgn ||
     !game.view ||
-    !game.result ||
-    !game.lichess_url
+    !game.result
 );
 
 const Game = ({ data }) => {
@@ -64,7 +62,12 @@ const Game = ({ data }) => {
                 }
             </header>
 
-            <Board {...game} />
+            {
+                game.pgn
+                    ? <Board {...game} />
+                    : <p>There is no <strong>pgn</strong> available for this game.</p>
+            }
+            
         </Layout>
     );
 };
