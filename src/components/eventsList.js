@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { compareDates, capitalizeFirstLetter } from "../utils/utils";
+import { compareDates, capitalizeFirstLetter, isBrowser } from "../utils/utils";
 import events from "../../data/events.json";
 import EventItem from "./eventItem.js";
 import Select from "react-dropdown-select";
@@ -30,17 +30,28 @@ const EventsList = () => {
     const yearsOptions = [...years].sort((y1, y2) => y2 - y1).map((year) => ({ value: year, label: year }));
     yearsOptions.splice(0, 0, { value: "All Years", label: "All Years" });
 
-    const searchParams = new URLSearchParams(window.location.search);
-    const categorySearchParam = (searchParams.get(SEARCH_PARAMS.CATEGORY) || "").toLowerCase();
-    const yearSeachParam = searchParams.get(SEARCH_PARAMS.YEAR);
+    const getInitialCategoryAndYear = () => {
+        if (!isBrowser()) {
+            return ({
+                initialCategory: DEFAULT_CATEGORY_OPTION,
+                initialYear: DEFAULT_YEAR_OPTION
+            });
+        }
+        const searchParams = new URLSearchParams(window.location.search);
+        const categorySearchParam = (searchParams.get(SEARCH_PARAMS.CATEGORY) || "").toLowerCase();
+        const yearSeachParam = searchParams.get(SEARCH_PARAMS.YEAR);
+    
+        return ({
+            initialCategory: GAME_CATEGORIES_OPTIONS.map(opt => opt.value.toLowerCase()).includes(categorySearchParam)
+                ? { value: capitalizeFirstLetter(categorySearchParam), label: capitalizeFirstLetter(categorySearchParam) }
+                : DEFAULT_CATEGORY_OPTION,
+            initialYear: years.has(yearSeachParam) 
+                ? { value: yearSeachParam, label: yearSeachParam }
+                : DEFAULT_YEAR_OPTION
+        });
+    }
 
-    const initialCategory = GAME_CATEGORIES_OPTIONS.map(opt => opt.value.toLowerCase()).includes(categorySearchParam)
-        ? { value: capitalizeFirstLetter(categorySearchParam), label: capitalizeFirstLetter(categorySearchParam) }
-        : DEFAULT_CATEGORY_OPTION;
-    const initialYear = years.has(yearSeachParam) 
-        ? { value: yearSeachParam, label: yearSeachParam }
-        : DEFAULT_YEAR_OPTION;
-
+    const { initialCategory, initialYear } = getInitialCategoryAndYear()
     const [category, setCategory] = useState(initialCategory);
     const [year, setYear] = useState(initialYear);
 
