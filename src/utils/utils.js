@@ -50,7 +50,7 @@ const prettifyPlayerData = (player) => {
     const name = prettifyPlayerName(player.name);
 
     if (player.elo === 0) {
-        player.elo = "unrated";
+        player.elo = "no elo";
     }
 
     return player.elo ? `${name} (${player.elo})` : name;
@@ -105,6 +105,8 @@ const parseNumRounds = (score) =>  score.replaceAll(" ", "").split("/")[1];
 
 const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1);
 
+const isBrowser = () => typeof window !== "undefined"
+
 module.exports = {
     buildGameUrl,
     prettifyPlayerData,
@@ -116,5 +118,6 @@ module.exports = {
     ordinalNumber,
     dateToLongFormat,
     multiDayEventDate,
-    capitalizeFirstLetter
+    capitalizeFirstLetter,
+    isBrowser
 };
