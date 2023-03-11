@@ -113,8 +113,6 @@ const multiDayEventDate = (startDate, finishDate) => {
   return `${dateToLongFormat(startDate)} - ${dateToLongFormat(finishDate)}`
 }
 
-const parseNumRounds = score => score.replaceAll(" ", "").split("/")[1]
-
 const capitalizeFirstLetter = string =>
   string.charAt(0).toUpperCase() + string.slice(1)
 
