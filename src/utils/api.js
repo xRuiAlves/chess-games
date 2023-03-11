@@ -1,6 +1,6 @@
 const API_URLS = Object.freeze({
   LIVE_RATINGS_BASE_URL:
-    "https://mik76pphacoyeatnv2ulw6mgbi0waxss.lambda-url.eu-west-1.on.aws/",
+    "https://ixtgilprmzjn7vvfm3mbm5epjm0skfla.lambda-url.eu-west-1.on.aws/",
   LICHESS_RATINGS_URL: "https://lichess.org/api/user",
 })
 
