@@ -1,4 +1,4 @@
-require("dotenv-flow").config()
+require("dotenv-flow").config();
 
 module.exports = {
   siteMetadata: {
