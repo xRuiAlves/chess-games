@@ -64,7 +64,6 @@ const EventsList = () => {
   const [year, setYear] = useState(initialYear)
 
   const updateSearchParams = (paramName, paramValue) => {
-    console.log("here")
     const origin = window.location.origin
     const searchParams = new URLSearchParams(window.location.search)
     searchParams.set(paramName, paramValue)
