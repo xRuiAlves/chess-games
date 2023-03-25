@@ -1021,7 +1021,7 @@
     "white": {
       "title": "",
       "name": "Rui Alves",
-      "elo": 1675,
+      "elo": 1700,
       "club": "GX Porto"
     },
     "black": {
@@ -1033,5 +1033,28 @@
     "result": "black",
     "view": "white",
     "lichess_url": "https://lichess.org/kbpAA8YQ"
+  },
+  {
+    "pgn": "1. c4 e6 2. Nc3 Nf6 3. g3 d5 4. cxd5 exd5 5. Bg2 c6 6. d4 h6 7. Qc2 (7. Nf3 Bf5 8. O-O Be7 9. Ne5 (9. Nh4 Bh7 10. Bh3 g5 11. Nf5 g4 12. Bxg4 Nxg4 13. Nxe7 Qxe7 14. e4 Nf6) 9... Nbd7 10. Be3 Nxe5 11. dxe5 Nd7) 7... Bb4 8. Nf3 O-O 9. O-O Re8 10. Re1 Na6 11. a3 Bd6 12. b4 Nc7 13. Rb1 a6 14. Na4 Nb5 15. Nc5 Qb6 16. a4 Nc7 17. a5 Qb5 18. e4 Qc4 19. Qxc4 dxc4 20. Nxb7 Bxb7 21. e5 Bxe5 22. Nxe5 Nd7 23. Bf4 Nxe5 24. Bxe5 Nd5 25. Rec1 f6 26. Bd6 Rad8 27. Bc5 c3 28. Rb3 Rd7 29. Kf1 Kf7 30. Bh3 Rdd8 31. Bg2 Rd7 32. Bxd5+ cxd5 33. Rcxc3 Bc6 34. Bb6 Bb5+ 35. Kg2 Bc4 36. Ra3 Re6 37. Re3 Bb5 38. g4 g6 39. h4 Rde7 40. Rf3 Kg7 41. Rae3 g5 42. Kg3 Kg6 43. Bd8 Rxe3 44. fxe3 Re6 45. hxg5 hxg5 46. Kf2 Rd6 47. Be7 Re6 48. Bd8 Rd6 49. Bb6 Re6 50. Bc5 Re4 51. Rg3 Bd7 52. Kf3 Ba4 53. Rg1 Bd7 54. Bb6 Bb5 55. Bd8 Re8 56. Bc7 Re7 57. Rc1 Bc4 58. Bd8 Re8 59. Bb6 Re4 60. Rxc4 Rxe3+ 61. Kxe3 dxc4 62. d5 f5 63. gxf5+ Kxf5 64. Kd4 1-0",
+    "date": "25-03-2023",
+    "in_progress": true,
+    "event": "Campeonato Nacional 3ª Divisão 2022/2023",
+    "round": 4,
+    "table": 3,
+    "white": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1700,
+      "club": "GX Porto"
+    },
+    "black": {
+      "title": "",
+      "name": "Duarte Lourenço",
+      "elo": 0,
+      "club": "CX UGTV"
+    },
+    "result": "white",
+    "view": "white",
+    "lichess_url": "https://lichess.org/rSAyOEY4"
   }
 ]
