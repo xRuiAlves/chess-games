@@ -1056,5 +1056,28 @@
     "result": "white",
     "view": "white",
     "lichess_url": "https://lichess.org/rSAyOEY4"
+  },
+  {
+    "pgn": "1. c4 Nf6 2. Nc3 e6 3. g3 d5 4. cxd5 exd5 5. d4 c6 6. Nf3 Bd6 7. Bg2 O-O 8. O-O h6 9. Bf4 Bxf4 10. gxf4 Bf5 11. Ne5 Re8 12. e3 Nbd7 13. Re1 Nf8 14. b4 Qb6 15. Qb3 N6d7 16. b5 Nxe5 17. fxe5 Nd7 18. Rec1 Rec8 19. bxc6 bxc6 20. Na4 Qa5 21. Nc5 Rab8 22. Qc3 Rb5 23. Qxa5 Rxa5 24. Nb7 Ra3 25. Nd6 1-0",
+    "date": "16-04-2023",
+    "in_progress": true,
+    "event": "Campeonato Nacional 3ª Divisão 2022/2023",
+    "round": 5,
+    "table": 2,
+    "white": {
+      "title": "",
+      "name": "Rui Alves",
+      "elo": 1700,
+      "club": "GX Porto"
+    },
+    "black": {
+      "title": "",
+      "name": "Eduardo Ferreira",
+      "elo": 1713,
+      "club": "CX Colégio Português"
+    },
+    "result": "white",
+    "view": "white",
+    "lichess_url": "https://lichess.org/QPxLHqln"
   }
 ]
