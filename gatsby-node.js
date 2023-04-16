@@ -5,7 +5,6 @@ const utils = require("./src/utils/utils")
 exports.createPages = ({ actions }) => {
   const { createPage } = actions
 
-  const game_template = path.resolve("./src/templates/game.js")
   const event_template = path.resolve("./src/templates/event.js")
 
   const eventsMap = {}
