@@ -1,8 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
 import {
   dateToLongFormat,
-  buildGameUrl,
   prettifyPlayerData,
   ordinalNumber,
 } from "../utils/utils"

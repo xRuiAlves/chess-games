@@ -25,12 +25,6 @@ const normalizeEventName = name =>
     .join("-")
     .toLowerCase()
 
-const buildGameUrl = game => {
-  const white = normalizePlayerName(game.white.name)
-  const black = normalizePlayerName(game.black.name)
-  return `/game/${white}-vs-${black}-${game.date}`
-}
-
 const buildEventUrl = event_name =>
   `tournament/${normalizeEventName(event_name)}`
 
@@ -119,7 +113,6 @@ const capitalizeFirstLetter = string =>
 const isBrowser = () => typeof window !== "undefined"
 
 module.exports = {
-  buildGameUrl,
   prettifyPlayerData,
   parseShortDate,
   buildEventUrl,
