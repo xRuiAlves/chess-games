@@ -12,7 +12,7 @@ import { faCalendar } from "@fortawesome/free-regular-svg-icons"
 import "../css/game.css"
 
 const GameItem = game => (
-  <Link to={buildGameUrl(game)} className="game-item">
+  <div className="game-item">
     <div className="game-header">
       <p>
         <span className="game-players">
@@ -73,7 +73,7 @@ const GameItem = game => (
         </span>
       </div>
     )}
-  </Link>
+  </div>
 )
 
 export default GameItem
