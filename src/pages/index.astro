@@ -1,4 +1,8 @@
 ---
+import { getCollection } from "astro:content";
+
+const tournaments = await getCollection("tournaments");
+const games = await getCollection("games");
 ---
 
 <html lang="en">
@@ -8,5 +12,6 @@
     </head>
     <body>
         <h1>Chess</h1>
+        <p>{tournaments.length} tournaments, {games.length} games</p>
     </body>
 </html>
