@@ -28,7 +28,7 @@ interface Props {
 }
 
 const { game, tournament, prev, next } = Astro.props;
-const { round, table, date, white, black, view, lichess_url } = game.data;
+const { round, table, date, white, black, view } = game.data;
 const outcome = gameOutcome(game);
 const outcomeLabel = { win: "Win", loss: "Loss", draw: "Draw" }[outcome];
 const team = tournament.data.team;
@@ -74,7 +74,6 @@ const description = gameDescription(game);
             <div class="actions">
                 <a href={pgnUrl} download={pgnFileName(game)}><Icon name="download" />Download PGN</a>
                 <button type="button" data-copy-fen><Icon name="copy" /><span>Copy FEN</span></button>
-                {lichess_url && <a href={lichess_url}><Icon name="external-link" />Analyse on Lichess</a>}
             </div>
             <p class="hint">Use the <kbd>←</kbd> and <kbd>→</kbd> keys to move through the game.</p>
         </article>

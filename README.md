@@ -46,7 +46,7 @@ To add its games, add one object per game to `data/games.json`:
 - `event` must be the tournament's `name`.
 - `pgn` holds the moves, like `1. e4 e5 2. Nf3 Nc6 ... 1-0`.
 - `result` is `white`, `black` or `draw`, and `view` is the color I played.
-- `lichess_url` is optional. It adds an "Analyse on Lichess" link.
+- `lichess_url` is the game on Lichess, or `null`.
 
 Each game with moves gets a page at `/tournament/<tournament>/round-<round>/`. The page has a board to replay the game, a PGN download, and a button to copy the position as FEN. To link to a position, add `?move=<n>` to the URL.
 
