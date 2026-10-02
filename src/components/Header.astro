@@ -95,17 +95,20 @@ const path = Astro.url.pathname.replace(/\/$/, "") || "/";
     }
 
     @media (max-width: 520px) {
-        .name {
+        .name,
+        .about {
             display: none;
         }
     }
 
     @media (max-width: 420px) {
         nav a {
-            padding: 6px 8px;
+            padding: 6px 7px;
         }
+    }
 
-        .about {
+    @media (max-width: 370px) {
+        .section {
             display: none;
         }
     }
