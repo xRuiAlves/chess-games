@@ -6,7 +6,7 @@ import { getTournaments } from "../utils/tournaments";
 const recent = (await getTournaments()).slice(0, 4);
 ---
 
-<BaseLayout title="Page not found" description="This page does not exist.">
+<BaseLayout title="Page not found" description="This page does not exist." noindex>
     <div class="container">
         <section class="intro">
             <p class="code">404</p>
