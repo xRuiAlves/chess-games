@@ -1,0 +1,386 @@
+---
+import Icon from "./Icon.astro";
+import { boardFromFen, type Replay } from "../utils/games";
+
+interface Props {
+    replay: Replay;
+    orientation: "white" | "black";
+    result: string;
+}
+
+const { replay, orientation, result } = Astro.props;
+const FILES = "abcdefgh";
+const start = boardFromFen(replay.startFen);
+const squares = [...start].map((piece, i) => ({
+    name: `${FILES[i % 8]}${8 - Math.floor(i / 8)}`,
+    piece: piece === "." ? undefined : piece,
+    dark: (Math.floor(i / 8) + (i % 8)) % 2 === 1,
+}));
+const moves = Array.from({ length: Math.ceil(replay.plies.length / 2) }, (_, i) => ({
+    number: i + 1,
+    white: { ply: 2 * i + 1, san: replay.plies[2 * i].san },
+    black: replay.plies[2 * i + 1] && { ply: 2 * i + 2, san: replay.plies[2 * i + 1].san },
+}));
+---
+
+<div class="viewer" data-viewer data-orientation={orientation}>
+    <div class="board-area">
+        <div class="board-frame">
+            <div class="ranks" aria-hidden="true">{[8, 7, 6, 5, 4, 3, 2, 1].map((r) => <span>{r}</span>)}</div>
+            <div class="board" role="img" aria-label="Starting position" data-board>
+                {squares.map((sq) => (
+                    <div class:list={["sq", sq.dark ? "dark" : "light"]} data-sq={sq.name} data-piece={sq.piece} />
+                ))}
+            </div>
+            <div class="files" aria-hidden="true">{[...FILES].map((f) => <span>{f}</span>)}</div>
+        </div>
+        <div class="controls">
+            <button type="button" data-go="first" aria-label="First move"><Icon name="chevrons-left" /></button>
+            <button type="button" data-go="prev" aria-label="Previous move"><Icon name="chevron-left" /></button>
+            <button type="button" data-go="next" aria-label="Next move"><Icon name="chevron-right" /></button>
+            <button type="button" data-go="last" aria-label="Last move"><Icon name="chevrons-right" /></button>
+            <button type="button" data-flip aria-label="Flip the board"><Icon name="flip" /></button>
+        </div>
+    </div>
+
+    <div class="moves-area">
+        <ol class="moves" data-moves aria-label="Moves">
+            {moves.map((move) => (
+                <li>
+                    <span class="num">{move.number}.</span>
+                    <button type="button" class="move" data-ply={move.white.ply}>{move.white.san}</button>
+                    {move.black && <button type="button" class="move" data-ply={move.black.ply}>{move.black.san}</button>}
+                </li>
+            ))}
+        </ol>
+        <p class="result">{result}</p>
+    </div>
+
+    <p class="visually-hidden" aria-live="polite" data-announce></p>
+    <script type="application/json" data-replay set:html={JSON.stringify(replay)} />
+</div>
+
+<script>
+    function boardFromFen(fen: string): string {
+        return fen.split(" ")[0].replace(/\//g, "").replace(/\d/g, (n) => ".".repeat(Number(n)));
+    }
+
+    for (const viewer of document.querySelectorAll<HTMLElement>("[data-viewer]")) {
+        const data = JSON.parse(viewer.querySelector("[data-replay]")!.textContent!) as {
+            startFen: string;
+            plies: { san: string; from: string; to: string; fen: string }[];
+        };
+        const squares = new Map(
+            [...viewer.querySelectorAll<HTMLElement>("[data-sq]")].map((el) => [el.dataset.sq!, el]),
+        );
+        const order = [...squares.values()];
+        const boardEl = viewer.querySelector<HTMLElement>("[data-board]")!;
+        const movesEl = viewer.querySelector<HTMLElement>("[data-moves]")!;
+        const moveButtons = [...viewer.querySelectorAll<HTMLButtonElement>("[data-ply]")];
+        const announce = viewer.querySelector<HTMLElement>("[data-announce]")!;
+        const go = (name: string) => viewer.querySelector<HTMLButtonElement>(`[data-go="${name}"]`)!;
+        const last = data.plies.length;
+        let ply = 0;
+
+        function moveLabel(n: number): string {
+            const { san } = data.plies[n - 1];
+            return `${Math.ceil(n / 2)}.${n % 2 === 0 ? ".." : ""} ${san}`;
+        }
+
+        function render(next: number, { scroll = true } = {}) {
+            ply = Math.max(0, Math.min(next, last));
+            const board = boardFromFen(ply === 0 ? data.startFen : data.plies[ply - 1].fen);
+            order.forEach((el, i) => {
+                const piece = board[i];
+                if (piece === ".") {
+                    delete el.dataset.piece;
+                } else {
+                    el.dataset.piece = piece;
+                }
+                el.removeAttribute("data-mark");
+            });
+            const move = data.plies[ply - 1];
+            if (move) {
+                squares.get(move.from)?.setAttribute("data-mark", "");
+                squares.get(move.to)?.setAttribute("data-mark", "");
+            }
+
+            moveButtons.forEach((button) => button.removeAttribute("aria-current"));
+            const current = moveButtons[ply - 1];
+            if (current) {
+                current.setAttribute("aria-current", "step");
+                if (scroll) {
+                    const list = movesEl.getBoundingClientRect();
+                    const item = current.getBoundingClientRect();
+                    if (item.top < list.top || item.bottom > list.bottom) {
+                        movesEl.scrollTop += item.top - list.top - list.height / 2 + item.height / 2;
+                    }
+                }
+            } else if (scroll) {
+                movesEl.scrollTop = 0;
+            }
+
+            const label = ply === 0 ? "Starting position" : `Position after ${moveLabel(ply)}`;
+            boardEl.setAttribute("aria-label", label);
+            announce.textContent = label;
+            go("first").disabled = go("prev").disabled = ply === 0;
+            go("next").disabled = go("last").disabled = ply === last;
+
+            const url = new URL(location.href);
+            if (ply > 0) {
+                url.searchParams.set("move", String(ply));
+            } else {
+                url.searchParams.delete("move");
+            }
+            history.replaceState(null, "", url);
+            viewer.dataset.fen = ply === 0 ? data.startFen : move.fen;
+        }
+
+        go("first").addEventListener("click", () => render(0));
+        go("prev").addEventListener("click", () => render(ply - 1));
+        go("next").addEventListener("click", () => render(ply + 1));
+        go("last").addEventListener("click", () => render(last));
+        viewer.querySelector("[data-flip]")!.addEventListener("click", () => {
+            viewer.dataset.orientation = viewer.dataset.orientation === "black" ? "white" : "black";
+        });
+        movesEl.addEventListener("click", (event) => {
+            const button = (event.target as HTMLElement).closest<HTMLButtonElement>("[data-ply]");
+            if (button) render(Number(button.dataset.ply));
+        });
+        document.addEventListener("keydown", (event) => {
+            const target = event.target instanceof Element ? event.target : null;
+            if (event.altKey || event.ctrlKey || event.metaKey || target?.closest("input, select, textarea")) return;
+            const keys: Record<string, number> = { ArrowLeft: ply - 1, ArrowRight: ply + 1, Home: 0, End: last };
+            if (event.key in keys) {
+                event.preventDefault();
+                render(keys[event.key]);
+            }
+        });
+
+        const requested = Number(new URLSearchParams(location.search).get("move"));
+        render(Number.isInteger(requested) ? requested : 0, { scroll: true });
+    }
+</script>
+
+<style>
+    .viewer {
+        --light-sq: #dee3e6;
+        --dark-sq: #8ca2ad;
+        --mark: #b9d32b;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 240px;
+        gap: 20px;
+    }
+
+    .board-frame {
+        display: grid;
+        grid-template-columns: 16px 1fr;
+        grid-template-areas:
+            "ranks board"
+            ". files";
+        gap: 4px;
+    }
+
+    .board {
+        grid-area: board;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        aspect-ratio: 1;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0 0 0 1px var(--border);
+    }
+
+    .sq {
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 92%;
+    }
+
+    .light {
+        background-color: var(--light-sq);
+    }
+
+    .dark {
+        background-color: var(--dark-sq);
+    }
+
+    .light[data-mark] {
+        background-color: color-mix(in srgb, var(--light-sq), var(--mark) 45%);
+    }
+
+    .dark[data-mark] {
+        background-color: color-mix(in srgb, var(--dark-sq), var(--mark) 45%);
+    }
+
+    .sq[data-piece="K"] { background-image: url("/pieces/white_king.png"); }
+    .sq[data-piece="Q"] { background-image: url("/pieces/white_queen.png"); }
+    .sq[data-piece="R"] { background-image: url("/pieces/white_rook.png"); }
+    .sq[data-piece="B"] { background-image: url("/pieces/white_bishop.png"); }
+    .sq[data-piece="N"] { background-image: url("/pieces/white_knight.png"); }
+    .sq[data-piece="P"] { background-image: url("/pieces/white_pawn.png"); }
+    .sq[data-piece="k"] { background-image: url("/pieces/black_king.png"); }
+    .sq[data-piece="q"] { background-image: url("/pieces/black_queen.png"); }
+    .sq[data-piece="r"] { background-image: url("/pieces/black_rook.png"); }
+    .sq[data-piece="b"] { background-image: url("/pieces/black_bishop.png"); }
+    .sq[data-piece="n"] { background-image: url("/pieces/black_knight.png"); }
+    .sq[data-piece="p"] { background-image: url("/pieces/black_pawn.png"); }
+
+    /* Flipping the board reverses the squares and the coordinates */
+    [data-orientation="black"] .board {
+        transform: rotate(180deg);
+    }
+
+    [data-orientation="black"] .sq {
+        transform: rotate(180deg);
+    }
+
+    .ranks,
+    .files {
+        display: flex;
+        color: var(--muted);
+        font-size: 0.75rem;
+        font-variant-numeric: tabular-nums;
+    }
+
+    .ranks {
+        grid-area: ranks;
+        flex-direction: column;
+    }
+
+    .files {
+        grid-area: files;
+    }
+
+    .ranks span,
+    .files span {
+        display: grid;
+        flex: 1;
+        place-items: center;
+    }
+
+    [data-orientation="black"] .ranks {
+        flex-direction: column-reverse;
+    }
+
+    [data-orientation="black"] .files {
+        flex-direction: row-reverse;
+    }
+
+    .controls {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+        margin: 12px 0 0 20px;
+    }
+
+    .controls button {
+        display: grid;
+        place-items: center;
+        height: 40px;
+        background-color: var(--surface-2);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        color: var(--text);
+        font-size: 1.125rem;
+        cursor: pointer;
+        transition: border-color 0.2s, color 0.2s;
+    }
+
+    .controls button:disabled {
+        color: var(--muted);
+        opacity: 0.5;
+        cursor: default;
+    }
+
+    @media (hover: hover) {
+        .controls button:not(:disabled):hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+    }
+
+    /* The move list takes the board's height and scrolls */
+    .moves-area {
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        min-height: 100%;
+    }
+
+    .moves {
+        flex: 1;
+        margin: 0;
+        padding: 6px;
+        overflow-y: auto;
+        background-color: var(--surface-2);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        list-style: none;
+        font-variant-numeric: tabular-nums;
+    }
+
+    .moves li {
+        display: grid;
+        grid-template-columns: 36px 1fr 1fr;
+        align-items: center;
+    }
+
+    .num {
+        padding-left: 6px;
+        color: var(--muted);
+        font-size: 0.8125rem;
+    }
+
+    .move {
+        padding: 5px 8px;
+        background: none;
+        border: 0;
+        border-radius: 6px;
+        color: var(--text);
+        font: inherit;
+        font-size: 0.9375rem;
+        font-weight: 500;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    @media (hover: hover) {
+        .move:hover {
+            background-color: var(--border);
+        }
+    }
+
+    .move[aria-current] {
+        background-color: var(--accent);
+        color: var(--on-accent);
+    }
+
+    .result {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-weight: 600;
+        text-align: center;
+    }
+
+    button:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+    }
+
+    @media (max-width: 760px) {
+        .viewer {
+            grid-template-columns: 1fr;
+        }
+
+        .moves-area {
+            height: auto;
+            min-height: 0;
+        }
+
+        .moves {
+            max-height: 220px;
+        }
+    }
+</style>
