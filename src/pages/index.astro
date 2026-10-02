@@ -1,17 +1,9 @@
 ---
-import { getCollection } from "astro:content";
-
-const tournaments = await getCollection("tournaments");
-const games = await getCollection("games");
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Rui Alves · Chess</title>
-    </head>
-    <body>
+<BaseLayout>
+    <div class="container">
         <h1>Chess</h1>
-        <p>{tournaments.length} tournaments, {games.length} games</p>
-    </body>
-</html>
+    </div>
+</BaseLayout>

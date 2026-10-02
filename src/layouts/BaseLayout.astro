@@ -1,0 +1,37 @@
+---
+import "@fontsource-variable/inter";
+import "../styles/global.css";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const { title, description = SITE_DESCRIPTION } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE_TITLE}` : SITE_TITLE;
+---
+
+<!doctype html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{fullTitle}</title>
+        <meta name="description" content={description}>
+        <meta name="theme-color" content="#0f1013">
+        <script is:inline>
+            try {
+                if (localStorage.getItem("theme") === "light") {
+                    document.documentElement.dataset.theme = "light";
+                }
+            } catch {}
+        </script>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <main id="main">
+            <slot />
+        </main>
+    </body>
+</html>
