@@ -3,6 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import GameRow from "../../components/GameRow.astro";
 import Icon from "../../components/Icon.astro";
 import { formatDateRange, getGames, getTournaments, isoDate, ordinal, type Tournament } from "../../utils/tournaments";
+import { tournamentSchema } from "../../utils/schema";
 
 export async function getStaticPaths() {
     const tournaments = await getTournaments();
@@ -36,7 +37,13 @@ const description = [
     .trim();
 ---
 
-<BaseLayout title={t.name} description={description}>
+<BaseLayout
+    title={t.name}
+    description={description}
+    image={`/og/tournament/${tournament.id}.png`}
+    imageAlt={t.name}
+    jsonLd={tournamentSchema(Astro.site!, tournament, games, description)}
+>
     <div class="container">
         <a class="back" href="/"><Icon name="arrow-left" />All tournaments</a>
         <article class="tournament card">

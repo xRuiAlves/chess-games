@@ -2,9 +2,13 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Ratings from "../components/Ratings.astro";
 import TournamentList from "../components/TournamentList.astro";
+import { getTournaments } from "../utils/tournaments";
+import { homeSchema } from "../utils/schema";
+
+const tournaments = await getTournaments();
 ---
 
-<BaseLayout>
+<BaseLayout jsonLd={homeSchema(Astro.site!, tournaments)}>
     <div class="container">
         <section class="intro">
             <h1>Chess</h1>

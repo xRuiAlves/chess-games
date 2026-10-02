@@ -4,6 +4,7 @@ import Icon from "../components/Icon.astro";
 import { FIDE_ID } from "../consts";
 import { formatDate, formatMonthYear, isoDate } from "../utils/tournaments";
 import { getFideRatings, ratingsDate } from "../utils/ratings";
+import { ratingsSchema } from "../utils/schema";
 
 const fide = await getFideRatings();
 const profileUrl = `https://ratings.fide.com/profile/${FIDE_ID}`;
@@ -28,6 +29,7 @@ const years = points
 
 <BaseLayout
     title="Ratings"
+    jsonLd={ratingsSchema(Astro.site!, fide)}
     description={fide
         ? `FIDE rating history of Rui Alves (FIDE ID ${FIDE_ID}): standard ${fide.current.standard}, rapid ${fide.current.rapid}, blitz ${fide.current.blitz}. Highest standard rating ${fide.highestStandard.standard}.`
         : `FIDE rating history of Rui Alves (FIDE ID ${FIDE_ID}).`}
