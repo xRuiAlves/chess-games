@@ -1,0 +1,19 @@
+{
+    "name": "chess-games",
+    "private": true,
+    "description": "Rui Alves's chess tournaments and games",
+    "type": "module",
+    "author": "Rui Alves",
+    "license": "MIT",
+    "engines": {
+        "node": ">=24"
+    },
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview"
+    },
+    "dependencies": {
+        "astro": "^7.3.5"
+    }
+}
