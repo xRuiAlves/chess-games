@@ -1,6 +1,6 @@
 # Chess Games
 
-Source of my chess site at [chess.ruialves.net](https://chess.ruialves.net). It lists the tournaments I played, their games, and my FIDE and Lichess ratings. Built with [Astro](https://astro.build).
+Source of my chess site at [chess.ruialves.net](https://chess.ruialves.net). It lists the tournaments I played, their games with a board to replay them move by move, and my FIDE and Lichess ratings. Built with [Astro](https://astro.build).
 
 ## Development
 
@@ -41,9 +41,16 @@ Add an object to `data/events.json`. Dates use the `DD-MM-YYYY` format, and fiel
 - `category` is `Classic`, `Rapid` or `Blitz`.
 - The tournament is published at `/tournament/<name in lowercase, with dashes>/`.
 
-To add its games, add one object per game to `data/games.json`. The `event` field must be the tournament's `name`. `result` is `white`, `black` or `draw`, and `view` is the color I played.
+To add its games, add one object per game to `data/games.json`:
 
-The build checks both files and fails on a missing or wrong field. It also makes each tournament's social preview image and sitemap entry.
+- `event` must be the tournament's `name`.
+- `pgn` holds the moves, like `1. e4 e5 2. Nf3 Nc6 ... 1-0`.
+- `result` is `white`, `black` or `draw`, and `view` is the color I played.
+- `lichess_url` is optional. It adds an "Analyse on Lichess" link.
+
+Each game with moves gets a page at `/tournament/<tournament>/round-<round>/`. The page has a board to replay the game, a PGN download, and a button to copy the position as FEN. To link to a position, add `?move=<n>` to the URL.
+
+The build checks both files and fails on a missing or wrong field. It also makes the social preview images and the sitemap entries.
 
 ## Ratings
 
