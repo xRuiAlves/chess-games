@@ -1,6 +1,6 @@
 # Chess Games
 
-Source of my chess site at [chess.ruialves.net](https://chess.ruialves.net). It lists the tournaments I played, their games with a board to replay them move by move, and my FIDE and Lichess ratings. Built with [Astro](https://astro.build).
+Source of my chess site at [chess.ruialves.net](https://chess.ruialves.net). It lists the tournaments I played, their games with a board to replay them move by move, and my FIDE and Lichess ratings.
 
 ## Development
 
