@@ -1,9 +1,45 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Ratings from "../components/Ratings.astro";
 ---
 
 <BaseLayout>
     <div class="container">
-        <h1>Chess</h1>
+        <section class="intro">
+            <h1>Chess</h1>
+            <p class="lede">
+                I'm <a href="https://ruialves.net/">Rui Alves</a>, a chess player from <a href="http://www.gxp.pt">Grupo de Xadrez do Porto</a>.
+                Here you'll find all the tournaments I played throughout my "chess career".
+            </p>
+            <p class="lede follow">
+                To play some games, reach out by <a href="mailto:rui@ruialves.net">email</a>.
+                For more projects, chess-related or not, visit my <a href="https://github.com/xRuiAlves">GitHub</a>.
+            </p>
+        </section>
+        <Ratings />
     </div>
 </BaseLayout>
+
+<style>
+    .intro {
+        padding: 24px 0 0;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: clamp(2.5rem, 7vw, 3.5rem);
+        line-height: 1.05;
+        letter-spacing: -0.035em;
+    }
+
+    .lede {
+        max-width: 62ch;
+        margin: 16px 0 0;
+        color: var(--muted);
+        font-size: 1.125rem;
+    }
+
+    .follow {
+        margin-top: 10px;
+    }
+</style>

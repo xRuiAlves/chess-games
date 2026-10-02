@@ -136,3 +136,14 @@ body::before {
         mask-image: linear-gradient(to bottom, #000 30%, transparent);
     }
 }
+
+.icon {
+    flex-shrink: 0;
+    width: 1em;
+    height: 1em;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}

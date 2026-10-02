@@ -1,0 +1,197 @@
+---
+import { formatDate, formatMonthYear } from "../utils/tournaments";
+import { getFideRatings, getLichessRatings, ratingsDate } from "../utils/ratings";
+
+const fide = await getFideRatings();
+const lichess = await getLichessRatings();
+
+const fideStats = fide
+    ? [
+          ["Standard", fide.current.standard],
+          ["Rapid", fide.current.rapid],
+          ["Blitz", fide.current.blitz],
+      ]
+    : [];
+const lichessStats = lichess
+    ? [
+          ["Blitz", lichess.blitz],
+          ["Rapid", lichess.rapid],
+          ["Classical", lichess.classical],
+          ["Correspondence", lichess.correspondence, "Corresp."],
+          ["Puzzles", lichess.puzzle],
+      ]
+    : [];
+---
+
+<section class="ratings" aria-labelledby="ratings-title">
+    <div class="section-head">
+        <h2 id="ratings-title">Ratings</h2>
+        <p class="as-of">As of {formatDate(ratingsDate)}</p>
+    </div>
+    <div class="cards">
+        <article class="card rating-card">
+            <header>
+                <h3>FIDE</h3>
+                {fide?.inactive && <span class="badge">Inactive</span>}
+            </header>
+            {fide ? (
+                <>
+                    <dl class="stats">
+                        {fideStats.map(([label, value]) => (
+                            <div>
+                                <dt>{label}</dt>
+                                <dd>{value ?? "–"}</dd>
+                            </div>
+                        ))}
+                    </dl>
+                    <p class="note">
+                        Highest standard rating: <strong>{fide.highestStandard.standard}</strong> ({formatMonthYear(fide.highestStandard.period)}).
+                        See the <a href="/ratings/">rating history</a> or the <a href={fide.url}>FIDE profile</a>.
+                    </p>
+                </>
+            ) : (
+                <p class="note">FIDE ratings are unavailable right now. See the <a href="https://ratings.fide.com/profile/1962000">FIDE profile</a>.</p>
+            )}
+        </article>
+        <article class="card rating-card">
+            <header>
+                <h3>Lichess</h3>
+            </header>
+            {lichess ? (
+                <>
+                    <dl class="stats">
+                        {lichessStats.map(([label, value, short]) => (
+                            <div>
+                                <dt>{short ? <abbr title={label as string}>{short}</abbr> : label}</dt>
+                                <dd>{value ?? "–"}</dd>
+                            </div>
+                        ))}
+                    </dl>
+                    <p class="note">Online as <a href={lichess.url} rel="me">@{lichess.username}</a>.</p>
+                </>
+            ) : (
+                <p class="note">Lichess ratings are unavailable right now. See the <a href="https://lichess.org/@/rui-alves" rel="me">Lichess profile</a>.</p>
+            )}
+        </article>
+    </div>
+</section>
+
+<style>
+    .ratings {
+        margin-top: 40px;
+    }
+
+    .section-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 4px 16px;
+        margin-bottom: 14px;
+    }
+
+    h2 {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    .as-of {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.8125rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1.25fr;
+        gap: 14px;
+    }
+
+    .rating-card {
+        padding: 22px 24px;
+    }
+
+    .rating-card header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 1.125rem;
+    }
+
+    .badge {
+        padding: 2px 8px;
+        background-color: var(--surface-2);
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+        gap: 14px 12px;
+        margin: 16px 0 0;
+    }
+
+    dt {
+        overflow: hidden;
+        color: var(--muted);
+        font-size: 0.8125rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    abbr {
+        text-decoration: none;
+    }
+
+    dd {
+        margin: 2px 0 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        font-variant-numeric: tabular-nums;
+    }
+
+    .note {
+        margin: 16px 0 0;
+        color: var(--muted);
+        font-size: 0.9375rem;
+    }
+
+    .note strong {
+        color: var(--text);
+    }
+
+    @media (max-width: 720px) {
+        .cards {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .cards {
+            gap: 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .rating-card {
+            padding: 20px 0;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid var(--border);
+            border-radius: 0;
+            box-shadow: none;
+        }
+    }
+</style>
