@@ -1,0 +1,112 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+
+const path = Astro.url.pathname.replace(/\/$/, "") || "/";
+---
+
+<header class="site-header">
+    <div class="container inner">
+        <a class="brand" href="/">
+            <span class="mark" aria-hidden="true">RA</span>
+            <span class="name">Rui Alves</span>
+            <span class="section">Chess</span>
+        </a>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="/" aria-current={path === "/" ? "page" : undefined}>Tournaments</a></li>
+                <li><a href="/ratings/" aria-current={path === "/ratings" ? "page" : undefined}>Ratings</a></li>
+                <li class="about"><a href="https://ruialves.net/" rel="me">About</a></li>
+                <li><ThemeToggle /></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<style>
+    .site-header {
+        padding: 28px 0;
+    }
+
+    .inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--text);
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        text-decoration: none;
+    }
+
+    .mark {
+        display: grid;
+        place-items: center;
+        width: 34px;
+        height: 34px;
+        background-color: #1f4e8c;
+        border-radius: 10px;
+        color: #ffffff;
+        font-family: var(--font-mono);
+        font-size: 0.875rem;
+    }
+
+    .section {
+        padding-left: 10px;
+        border-left: 1px solid var(--border);
+        color: var(--muted);
+        font-weight: 500;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav a {
+        display: block;
+        padding: 6px 12px;
+        border-radius: 10px;
+        color: var(--muted);
+        font-size: 0.9375rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.2s, background-color 0.2s;
+    }
+
+    nav a[aria-current="page"] {
+        color: var(--text);
+    }
+
+    @media (hover: hover) {
+        nav a:hover {
+            background-color: var(--surface-2);
+            color: var(--text);
+        }
+    }
+
+    @media (max-width: 520px) {
+        .name {
+            display: none;
+        }
+    }
+
+    @media (max-width: 420px) {
+        nav a {
+            padding: 6px 8px;
+        }
+
+        .about {
+            display: none;
+        }
+    }
+</style>

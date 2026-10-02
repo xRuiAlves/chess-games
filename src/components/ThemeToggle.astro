@@ -1,0 +1,72 @@
+<button class="theme-toggle" type="button" aria-label="Switch to light theme">
+    <svg class="icon sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+    <svg class="icon moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+</button>
+
+<script>
+    const THEME_COLORS = { dark: "#0f1013", light: "#f3f5f8" };
+
+    function apply(theme: "dark" | "light") {
+        document.documentElement.dataset.theme = theme;
+        document.querySelector('meta[name="theme-color"]')?.setAttribute("content", THEME_COLORS[theme]);
+        const next = theme === "dark" ? "light" : "dark";
+        document.querySelectorAll(".theme-toggle").forEach((button) => {
+            button.setAttribute("aria-label", `Switch to ${next} theme`);
+        });
+    }
+
+    apply(document.documentElement.dataset.theme === "light" ? "light" : "dark");
+
+    document.querySelectorAll(".theme-toggle").forEach((button) => {
+        button.addEventListener("click", () => {
+            const theme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+            apply(theme);
+            try {
+                localStorage.setItem("theme", theme);
+            } catch {}
+        });
+    });
+</script>
+
+<style>
+    .theme-toggle {
+        display: grid;
+        place-items: center;
+        width: 36px;
+        height: 36px;
+        margin-left: 4px;
+        padding: 0;
+        background-color: var(--surface-2);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        color: var(--text);
+        cursor: pointer;
+        transition: border-color 0.2s, color 0.2s;
+    }
+
+    @media (hover: hover) {
+        .theme-toggle:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+    }
+
+    .icon {
+        width: 18px;
+        height: 18px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .moon,
+    :global([data-theme="light"]) .sun {
+        display: none;
+    }
+
+    :global([data-theme="light"]) .moon {
+        display: block;
+    }
+</style>

@@ -1,0 +1,63 @@
+---
+import { FIDE_ID, LICHESS_USER } from "../consts";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="inner">
+            <p>© {year} Rui Alves</p>
+            <ul>
+                <li><a href="https://ruialves.net/" rel="me">ruialves.net</a></li>
+                <li><a href="https://blog.ruialves.net/">Blog</a></li>
+                <li><a href="https://github.com/xRuiAlves" rel="me">GitHub</a></li>
+                <li><a href={`https://lichess.org/@/${LICHESS_USER}`} rel="me">Lichess</a></li>
+                <li><a href={`https://ratings.fide.com/profile/${FIDE_ID}`}>FIDE</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .site-footer {
+        padding: 40px 0;
+        color: var(--muted);
+        font-size: 0.875rem;
+    }
+
+    .inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px 24px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+    }
+
+    p {
+        margin: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 18px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    @media (hover: hover) {
+        a:hover {
+            color: var(--text);
+        }
+    }
+</style>
