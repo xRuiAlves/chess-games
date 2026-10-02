@@ -11,7 +11,8 @@
     "scripts": {
         "dev": "astro dev",
         "build": "astro build",
-        "preview": "astro preview"
+        "preview": "astro preview",
+        "check": "astro check"
     },
     "dependencies": {
         "@astrojs/sitemap": "^3.7.4",
@@ -20,5 +21,9 @@
         "@resvg/resvg-js": "^2.6.2",
         "astro": "^7.3.5",
         "satori": "^0.34.1"
+    },
+    "devDependencies": {
+        "@astrojs/check": "^0.9.10",
+        "typescript": "^6.0.3"
     }
 }
