@@ -15,11 +15,14 @@ const toDate = (value) => {
     return new Date(Date.UTC(year, month - 1, day));
 };
 
-// Map each tournament URL to its last day, for the sitemap's lastmod
-const tournaments = JSON.parse(readFileSync(new URL("./data/events.json", import.meta.url), "utf8"));
-const tournamentDates = new Map(
-    tournaments.map((t) => [`/tournament/${slugify(t.name)}/`, toDate(t.finishDate ?? t.date)]),
-);
+// Map each tournament and game URL to its date, for the sitemap's lastmod
+const readData = (file) => JSON.parse(readFileSync(new URL(`./data/${file}`, import.meta.url), "utf8"));
+const pageDates = new Map([
+    ...readData("events.json").map((t) => [`/tournament/${slugify(t.name)}/`, toDate(t.finishDate ?? t.date)]),
+    ...readData("games.json")
+        .filter((g) => g.pgn)
+        .map((g) => [`/tournament/${slugify(g.event)}/round-${g.round}/`, toDate(g.date)]),
+]);
 const buildDate = new Date();
 
 export default defineConfig({
@@ -30,7 +33,7 @@ export default defineConfig({
             // The home and ratings pages show ratings read at build time
             serialize(item) {
                 const path = new URL(item.url).pathname;
-                item.lastmod = tournamentDates.get(path) ?? buildDate;
+                item.lastmod = pageDates.get(path) ?? buildDate;
                 return item;
             },
         }),
