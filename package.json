@@ -20,6 +20,7 @@
         "@fontsource/inter": "^5.3.0",
         "@resvg/resvg-js": "^2.6.2",
         "astro": "^7.3.5",
+        "chess.js": "^1.4.0",
         "satori": "^0.32.0"
     },
     "devDependencies": {
