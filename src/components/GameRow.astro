@@ -1,5 +1,7 @@
 ---
+import Icon from "./Icon.astro";
 import { formatDate, gameOutcome, isoDate, ordinal, playerName, type Game, type Player } from "../utils/tournaments";
+import { gameTitle, gameUrl, hasMoves } from "../utils/games";
 
 interface Props {
     game: Game;
@@ -17,11 +19,16 @@ const sides: { color: "white" | "black"; player: Player }[] = [
 ];
 ---
 
-<li class={`game ${outcome}`}>
+<li class:list={["game", outcome, { playable: hasMoves(game) }]}>
     <p class="meta">
         <span>Round {round}</span>
         {table && <span>{ordinal(table)} board</span>}
         <time datetime={isoDate(date)}>{formatDate(date)}</time>
+        {hasMoves(game) && (
+            <a class="replay" href={gameUrl(game)} aria-label={`Replay ${gameTitle(game)}, round ${round}`}>
+                Replay<Icon name="chevron-right" />
+            </a>
+        )}
     </p>
     <div class="players">
         {sides.map(({ color, player }) => (
@@ -51,11 +58,46 @@ const sides: { color: "white" | "black"; player: Player }[] = [
 
     .game:last-child {
         border-bottom: 0;
-        padding-bottom: 0;
     }
 
-    .game:first-child {
-        padding-top: 0;
+    .playable {
+        position: relative;
+        margin: 0 -12px;
+        padding-right: 12px;
+        padding-left: 12px;
+        border-radius: 12px;
+        transition: background-color 0.2s;
+    }
+
+    @media (hover: hover) {
+        .playable:hover {
+            background-color: var(--surface-2);
+        }
+    }
+
+    .playable:has(.replay:focus-visible) {
+        outline: 2px solid var(--accent);
+        outline-offset: -2px;
+    }
+
+    .replay {
+        display: inline-flex;
+        align-items: center;
+        gap: 2px;
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .replay:focus-visible {
+        outline: none;
+    }
+
+    .replay::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
     }
 
     .meta {
