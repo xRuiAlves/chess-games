@@ -60,13 +60,3 @@ The build reads the ratings when it runs:
 - Lichess ratings come from the [Lichess API](https://lichess.org/api).
 
 If a source is not available, the build still passes and the site says so.
-
-## Deploy
-
-- Build command: `npm run build`
-- Output directory: `dist/`
-
-`netlify.toml` sets both for Netlify. FIDE publishes new ratings once a month, so a GitHub Actions workflow (`.github/workflows/rebuild.yml`) rebuilds the site on the 2nd of each month. To turn it on:
-
-1. In Netlify, open **Site configuration → Build & deploy → Build hooks** and add a hook.
-2. In GitHub, add the hook URL as the `NETLIFY_BUILD_HOOK` repository secret.
