@@ -1,0 +1,199 @@
+---
+import TournamentCard from "./TournamentCard.astro";
+import { getTournaments, tournamentYears } from "../utils/tournaments";
+
+const tournaments = await getTournaments();
+const years = [...new Set(tournaments.flatMap(tournamentYears))].sort((a, b) => b - a);
+const categories = ["Classic", "Rapid", "Blitz"];
+---
+
+<section class="tournaments" aria-labelledby="tournaments-title">
+    <div class="section-head">
+        <h2 id="tournaments-title">Tournaments <span class="count" data-count>{tournaments.length}</span></h2>
+        <form class="filters" aria-label="Filter tournaments">
+            <label>
+                <span class="visually-hidden">Category</span>
+                <select name="category">
+                    <option value="">All categories</option>
+                    {categories.map((category) => <option value={category.toLowerCase()}>{category}</option>)}
+                </select>
+            </label>
+            <label>
+                <span class="visually-hidden">Year</span>
+                <select name="year">
+                    <option value="">All years</option>
+                    {years.map((year) => <option value={year}>{year}</option>)}
+                </select>
+            </label>
+        </form>
+    </div>
+    <ol class="list">
+        {tournaments.map((tournament) => (
+            <li>
+                <TournamentCard tournament={tournament} />
+            </li>
+        ))}
+    </ol>
+    <p class="empty" hidden>
+        No tournaments match these filters. <button type="button" data-reset>Clear the filters</button>.
+    </p>
+</section>
+
+<script>
+    const form = document.querySelector<HTMLFormElement>(".filters")!;
+    const items = [...document.querySelectorAll<HTMLLIElement>(".tournaments .list > li")];
+    const count = document.querySelector<HTMLElement>("[data-count]")!;
+    const empty = document.querySelector<HTMLElement>(".tournaments .empty")!;
+    const fields = { category: form.elements.namedItem("category") as HTMLSelectElement, year: form.elements.namedItem("year") as HTMLSelectElement };
+
+    function apply() {
+        const category = fields.category.value;
+        const year = fields.year.value;
+        let shown = 0;
+        for (const item of items) {
+            const card = item.firstElementChild as HTMLElement;
+            const match =
+                (!category || card.dataset.category?.toLowerCase() === category) &&
+                (!year || card.dataset.years?.split(" ").includes(year));
+            item.hidden = !match;
+            shown += match ? 1 : 0;
+        }
+        count.textContent = String(shown);
+        empty.hidden = shown > 0;
+
+        const params = new URLSearchParams();
+        if (category) params.set("category", category);
+        if (year) params.set("year", year);
+        const query = params.toString();
+        history.replaceState(null, "", query ? `?${query}` : location.pathname);
+    }
+
+    // Restore filters from the URL, like ?category=classic&year=2019
+    const params = new URLSearchParams(location.search);
+    for (const [name, select] of Object.entries(fields)) {
+        const value = params.get(name)?.toLowerCase();
+        if (value && [...select.options].some((option) => option.value === value)) {
+            select.value = value;
+        }
+    }
+
+    form.addEventListener("change", apply);
+    document.querySelector("[data-reset]")!.addEventListener("click", () => {
+        form.reset();
+        apply();
+    });
+    if (params.size > 0) {
+        apply();
+    }
+</script>
+
+<style>
+    .tournaments {
+        margin-top: 40px;
+    }
+
+    .section-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px 16px;
+        margin-bottom: 14px;
+    }
+
+    h2 {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    .count {
+        padding: 1px 8px;
+        background-color: var(--surface-2);
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        font-size: 0.75rem;
+        letter-spacing: 0;
+    }
+
+    .filters {
+        display: flex;
+        gap: 8px;
+    }
+
+    select {
+        appearance: none;
+        padding: 8px 34px 8px 12px;
+        background: var(--surface-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239ba3b0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 10px center / 16px;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        color: var(--text);
+        font: inherit;
+        font-size: 0.9375rem;
+        cursor: pointer;
+    }
+
+    select:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .list > li[hidden] {
+        display: none;
+    }
+
+    .empty {
+        margin: 0;
+        color: var(--muted);
+    }
+
+    .empty button {
+        padding: 0;
+        background: none;
+        border: 0;
+        color: var(--accent);
+        font: inherit;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 760px) {
+        .list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .list {
+            gap: 0;
+        }
+
+        .filters {
+            flex-basis: 100%;
+        }
+
+        .filters label {
+            flex: 1;
+        }
+
+        select {
+            width: 100%;
+        }
+    }
+</style>

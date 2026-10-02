@@ -1,0 +1,124 @@
+---
+import Icon, { type IconName } from "./Icon.astro";
+import { formatDateRange, isoDate, ordinal, rounds, tournamentUrl, tournamentYears, type Tournament } from "../utils/tournaments";
+
+interface Props {
+    tournament: Tournament;
+}
+
+const { tournament } = Astro.props;
+const { name, date, finishDate, category, timeControl, team, rank, numPlayers, score } = tournament.data;
+const totalRounds = rounds(tournament);
+const categoryIcon: Record<string, IconName> = { Classic: "hourglass", Rapid: "timer", Blitz: "zap" };
+---
+
+<article class="tournament card" data-category={category} data-years={tournamentYears(tournament).join(" ")}>
+    <p class="meta">
+        <Icon name="calendar" />
+        <time datetime={isoDate(date)}>{formatDateRange(date, finishDate)}</time>
+    </p>
+    <h3 class="title"><a href={tournamentUrl(tournament)}>{name}</a></h3>
+    <ul class="facts">
+        <li class={`category ${category.toLowerCase()}`}><Icon name={categoryIcon[category]} />{category} · {timeControl}</li>
+        <li><Icon name={team ? "users" : "user"} />{team ? "Team" : "Individual"}</li>
+        {totalRounds && <li><Icon name="hash" />{totalRounds} round{totalRounds > 1 ? "s" : ""}</li>}
+        {score && <li><Icon name="trophy" />{score}{rank && numPlayers ? ` · ${ordinal(rank)} of ${numPlayers}` : ""}</li>}
+    </ul>
+</article>
+
+<style>
+    .tournament {
+        position: relative;
+        padding: 20px 22px;
+        transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .tournament:has(a:focus-visible) {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+    }
+
+    @media (hover: hover) {
+        .tournament:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+    }
+
+    .meta {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.875rem;
+    }
+
+    .title {
+        margin: 6px 0 0;
+        font-size: 1.125rem;
+        line-height: 1.35;
+        letter-spacing: -0.01em;
+    }
+
+    .title a {
+        color: var(--text);
+        text-decoration: none;
+    }
+
+    .title a:focus-visible {
+        outline: none;
+    }
+
+    .title a::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+    }
+
+    .facts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 16px;
+        margin: 12px 0 0;
+        padding: 0;
+        color: var(--muted);
+        font-size: 0.875rem;
+        list-style: none;
+    }
+
+    .facts li {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .category {
+        color: var(--text);
+        font-weight: 500;
+    }
+
+    .category :global(.icon) {
+        color: var(--accent);
+    }
+
+    @media (max-width: 600px) {
+        .tournament {
+            padding: 18px 0;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid var(--border);
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .tournament:hover {
+            transform: none;
+        }
+
+        .tournament:has(a:focus-visible) {
+            outline-offset: 0;
+        }
+    }
+</style>
