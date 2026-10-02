@@ -1,6 +1,7 @@
 import { AUTHOR, SITE_DESCRIPTION, SITE_NAME } from "../consts";
 import type { FideRatings } from "./ratings";
 import { isoDate, tournamentUrl, type Game, type Tournament } from "./tournaments";
+import { gameTitle, gameUrl, hasMoves } from "./games";
 
 type JsonLd = Record<string, unknown>;
 
@@ -73,6 +74,7 @@ export function tournamentSchema(site: URL, tournament: Tournament, games: Game[
                 name: `${t.name}, round ${game.data.round}: ${game.data.white.name} vs ${game.data.black.name}`,
                 sport: "Chess",
                 startDate: isoDate(game.data.date),
+                ...(hasMoves(game) && { url: new URL(gameUrl(game), site).href }),
                 competitor: [game.data.white, game.data.black].map((p) => ({ "@type": "Person", name: p.name })),
             })),
         },
@@ -96,6 +98,35 @@ export function ratingsSchema(site: URL, fide: FideRatings | null): JsonLd[] {
         breadcrumbs(site, [
             ["Tournaments", "/"],
             ["Ratings", "/ratings/"],
+        ]),
+    ];
+}
+
+export function gameSchema(site: URL, game: Game, tournament: Tournament, description: string): JsonLd[] {
+    const url = new URL(gameUrl(game), site).href;
+    const players = [game.data.white, game.data.black].map((p) =>
+        p.name === AUTHOR.name ? person : { "@type": "Person", name: p.name },
+    );
+    return [
+        {
+            "@context": "https://schema.org",
+            "@type": "SportsEvent",
+            name: `${gameTitle(game)}, round ${game.data.round} of ${tournament.data.name}`,
+            description,
+            url,
+            sport: "Chess",
+            startDate: isoDate(game.data.date),
+            eventStatus: "https://schema.org/EventScheduled",
+            eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+            location: { "@type": "Place", name: tournament.data.location.name, address: tournament.data.location.name },
+            competitor: players,
+            superEvent: { "@type": "SportsEvent", name: tournament.data.name, url: new URL(tournamentUrl(tournament), site).href },
+            image: new URL(`/og/tournament/${tournament.id}/round-${game.data.round}.png`, site).href,
+        },
+        breadcrumbs(site, [
+            ["Tournaments", "/"],
+            [tournament.data.name, tournamentUrl(tournament)],
+            [`Round ${game.data.round}`, gameUrl(game)],
         ]),
     ];
 }

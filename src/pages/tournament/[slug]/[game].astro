@@ -4,6 +4,7 @@ import Board from "../../../components/Board.astro";
 import Icon from "../../../components/Icon.astro";
 import { formatDate, gameOutcome, getGames, getTournaments, isoDate, ordinal, playerName, tournamentUrl, type Game, type Tournament } from "../../../utils/tournaments";
 import { gameDescription, gameSlug, gameTitle, gameUrl, hasMoves, pgnFileName, replay, resultLabel } from "../../../utils/games";
+import { gameSchema } from "../../../utils/schema";
 
 export async function getStaticPaths() {
     const paths = [];
@@ -32,9 +33,16 @@ const outcome = gameOutcome(game);
 const outcomeLabel = { win: "Win", loss: "Loss", draw: "Draw" }[outcome];
 const team = tournament.data.team;
 const pgnUrl = `${gameUrl(game).replace(/\/$/, "")}.pgn`;
+const description = gameDescription(game);
 ---
 
-<BaseLayout title={`${gameTitle(game)} · ${tournament.data.name}`} description={gameDescription(game)}>
+<BaseLayout
+    title={`${gameTitle(game)} · ${tournament.data.name}`}
+    description={description}
+    image={`/og/tournament/${tournament.id}/${gameSlug(game)}.png`}
+    imageAlt={`Final position of ${gameTitle(game)}`}
+    jsonLd={gameSchema(Astro.site!, game, tournament, description)}
+>
     <div class="container">
         <a class="back" href={tournamentUrl(tournament)}><Icon name="arrow-left" />{tournament.data.name}</a>
         <article class="game card">
