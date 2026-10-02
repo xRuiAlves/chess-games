@@ -1,0 +1,21 @@
+name: Monthly rebuild
+
+# FIDE publishes new ratings once a month. Rebuild the site so that it shows them.
+on:
+  schedule:
+    - cron: "0 6 2 * *"
+  workflow_dispatch:
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger the Netlify build hook
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: |
+          if [ -z "$NETLIFY_BUILD_HOOK" ]; then
+            echo "::warning::The NETLIFY_BUILD_HOOK secret is not set. Skip the rebuild."
+            exit 0
+          fi
+          curl --fail --silent --show-error -X POST -d '{}' "$NETLIFY_BUILD_HOOK"
