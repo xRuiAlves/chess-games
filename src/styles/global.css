@@ -31,7 +31,7 @@
     --font-sans: "Inter Variable", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
     --radius: 20px;
-    --container: 880px;
+    --container: 960px;
 }
 
 *,
