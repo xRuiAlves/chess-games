@@ -10,12 +10,12 @@ jobs:
   rebuild:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger the Netlify build hook
+      - name: Trigger the Cloudflare Pages deploy hook
         env:
-          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+          CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
         run: |
-          if [ -z "$NETLIFY_BUILD_HOOK" ]; then
-            echo "::warning::The NETLIFY_BUILD_HOOK secret is not set. Skip the rebuild."
+          if [ -z "$CLOUDFLARE_DEPLOY_HOOK" ]; then
+            echo "::warning::The CLOUDFLARE_DEPLOY_HOOK secret is not set. Skip the rebuild."
             exit 0
           fi
-          curl --fail --silent --show-error -X POST -d '{}' "$NETLIFY_BUILD_HOOK"
+          curl --fail --silent --show-error -X POST "$CLOUDFLARE_DEPLOY_HOOK"
