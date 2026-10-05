@@ -1,3 +1,7 @@
+# Keep the pages.dev copy out of search results. The custom domain does not match this rule.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
 /tournament/*.pgn
   Content-Type: application/vnd.chess-pgn; charset=utf-8
   Content-Disposition: attachment
