@@ -4,9 +4,3 @@
 
 [build.environment]
   NODE_VERSION = "24"
-
-[[headers]]
-  for = "/tournament/*.pgn"
-  [headers.values]
-    Content-Type = "application/vnd.chess-pgn; charset=utf-8"
-    Content-Disposition = "attachment"
