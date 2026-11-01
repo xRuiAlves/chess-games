@@ -21,7 +21,7 @@
         "@resvg/resvg-js": "^2.6.2",
         "astro": "^7.3.5",
         "chess.js": "^1.4.0",
-        "satori": "^0.32.0"
+        "satori": "^0.33.5"
     },
     "devDependencies": {
         "@astrojs/check": "^0.9.10",
